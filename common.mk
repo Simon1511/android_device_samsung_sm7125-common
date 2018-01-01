@@ -328,10 +328,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti-sm7125
-
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/power/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+    android.hardware.power-service.samsung-libperfmgr
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -428,7 +425,10 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(COMMON_PATH)
+    $(COMMON_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/samsung/aidl/power-libperfmgr
 
 # Prop files
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop

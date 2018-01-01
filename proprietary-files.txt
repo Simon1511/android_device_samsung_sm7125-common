@@ -855,7 +855,6 @@ vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/targetconfig.xml
-vendor/etc/powerhint.xml
 vendor/etc/lm/AppClassifierFeature.xml
 vendor/etc/lm/GameOptimizationFeature.xml
 vendor/etc/msm_irqbalance.conf
