@@ -147,6 +147,9 @@ AUDIOSERVER_MULTILIB := 32
 # Keymaster
 TARGET_KEYMASTER_VARIANT := samsung
 
+# FOD
+TARGET_SURFACEFLINGER_FOD_LIB := //$(COMMON_PATH):libfod_extension.sm7125
+
 # HIDL manifests
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/configs/framework_compatibility_matrix.xml

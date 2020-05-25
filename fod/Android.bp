@@ -1,0 +1,7 @@
+cc_library_static {
+    name: "libfod_extension.sm7125",
+    srcs: ["FodExtension.cpp"],
+    include_dirs: [
+        "frameworks/native/services/surfaceflinger/CompositionEngine/include"
+    ],
+}
