@@ -20,6 +20,7 @@
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
 #include <fstream>
+#include <cmath>
 
 #define FINGERPRINT_ACQUIRED_VENDOR 6
 
@@ -150,15 +151,7 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
 }
 
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t cur_brightness) {
-    if (cur_brightness <= 12) {
-        return 2200 / std::max(cur_brightness, 10);
-    } else if (cur_brightness <= 16) {
-        return 3000 / cur_brightness;
-    } else if (cur_brightness <= 20) {
-        return 3700 / cur_brightness;
-    } else {
-        return 4400 / cur_brightness;
-    }
+    return (int32_t)(255 + ( -40.9291 * pow((double) cur_brightness, 0.3)));
 }
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {
