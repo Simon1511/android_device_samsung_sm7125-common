@@ -21,6 +21,7 @@
 #include <hidl/HidlTransportSupport.h>
 #include <fstream>
 #include <cmath>
+#include <thread>
 
 #define FINGERPRINT_ACQUIRED_VENDOR 6
 
