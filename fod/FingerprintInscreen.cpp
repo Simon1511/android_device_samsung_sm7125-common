@@ -71,6 +71,7 @@ static hidl_vec<int8_t> stringToVec(const std::string& str) {
 
 FingerprintInscreen::FingerprintInscreen() {
     mSehBiometricsFingerprintService = ISehBiometricsFingerprint::getService();
+    set(TSP_CMD_PATH, "set_fod_rect,421,2018,659,2256");
     set(MASK_BRIGHTNESS_PATH, "319");
     set(TSP_CMD_PATH, "fod_enable,1,1,0");
 }
