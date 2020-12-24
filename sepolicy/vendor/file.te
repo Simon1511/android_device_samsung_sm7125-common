@@ -9,3 +9,5 @@ allow misc_file labeledfs:filesystem associate;
 
 type spu_file, fs_type;
 allow spu_file labeledfs:filesystem associate;
+
+type sysfs_sec_switch, fs_type, sysfs_type;

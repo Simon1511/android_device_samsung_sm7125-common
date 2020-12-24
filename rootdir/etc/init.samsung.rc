@@ -38,6 +38,8 @@ on init
     symlink /dev/block/bootdevice/by-name/steady  /dev/block/steady
     symlink /dev/block/bootdevice/by-name/persistent  /dev/block/persistent
 
+    chown system radio /sys/class/sec/switch/afc_disable
+
 # Create carrier folder for HiddenMenu
 on post-fs
     mkdir /efs/carrier 0755 system system
