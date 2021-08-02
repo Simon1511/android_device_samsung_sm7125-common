@@ -162,8 +162,10 @@ TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U | 0x400000000LL
 
 # HIDL manifests
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/manifest.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/configs/framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(COMMON_PATH)/configs/framework_compatibility_matrix.xml \
+    vendor/lineage/config/device_framework_matrix.xml
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
