@@ -83,6 +83,7 @@ vendor/lib/libcirrusspkrprot.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/libdrc.so
 vendor/lib/libspkrprot.so
+vendor/lib/libprofileparamstorage.so
 
 # Soundtrigger
 vendor/lib/hw/sound_trigger.primary.atoll.so
@@ -105,6 +106,8 @@ vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libswdap.so
+vendor/etc/dolby/dax-default.xml
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libqcreverb.so
