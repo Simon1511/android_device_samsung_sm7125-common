@@ -1,0 +1,11 @@
+type optics_file, fs_type;
+allow optics_file labeledfs:filesystem associate;
+
+type prism_file, fs_type;
+allow prism_file labeledfs:filesystem associate;
+
+type misc_file, fs_type;
+allow misc_file labeledfs:filesystem associate;
+
+type spu_file, fs_type;
+allow spu_file labeledfs:filesystem associate;
