@@ -1,3 +1,7 @@
+# Gatekeeper
+vendor/lib64/hw/gatekeeper.mdfpp.so
+
+
 vendor/lib/vendor.qti.hardware.btconfigstore@2.0.so
 vendor/lib/libcamera2ndk_vendor.so
 vendor/lib/libsomxflacd.so
@@ -604,7 +608,6 @@ vendor/lib/libcdfw.so
 vendor/lib/vendor.display.config@1.10.so
 vendor/lib/vendor.qti.hardware.display.mapperextensions@1.0.so
 vendor/lib/libscveObjectSegmentation.so
-vendor/lib/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib/libOmxAlacDec.so
 vendor/lib/libloc_core.so
 vendor/lib/vendor.qti.hardware.perf@2.1.so
@@ -917,7 +920,6 @@ vendor/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc
 vendor/etc/init/android.hardware.graphics.composer@2.4-service.rc
 vendor/etc/init/init.vendor.onebinary.rc
 vendor/etc/init/android.hardware.audio.service.rc
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.engmode@1.0-service.rc
 vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
@@ -1468,7 +1470,6 @@ vendor/lib64/hw/android.hardware.audio@5.0-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.camera.provider@4.0-impl.so
 vendor/lib64/hw/audio.sec_primary.default.so
 vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so
-vendor/lib64/hw/gatekeeper.mdfpp.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib64/hw/android.hardware.audio@2.0-impl.so
 vendor/lib64/hw/audio.r_submix.default.so
@@ -1792,7 +1793,6 @@ vendor/lib64/vendor.samsung.hardware.tlc.tima@1.0-impl.so
 vendor/lib64/vendor.display.config@1.10.so
 vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so
 vendor/lib64/libscveObjectSegmentation.so
-vendor/lib64/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/libOmxAlacDec.so
 vendor/lib64/libloc_core.so
 vendor/lib64/vendor.qti.hardware.perf@2.1.so
@@ -2039,7 +2039,6 @@ vendor/bin/hw/vendor.samsung.hardware.hyper-service
 vendor/bin/hw/vendor.samsung.hardware.light-service
 vendor/bin/hw/android.hardware.graphics.composer@2.4-service
 vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 vendor/bin/hw/vendor.qti.hardware.display.allocator-service
 vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
