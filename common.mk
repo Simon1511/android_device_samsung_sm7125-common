@@ -44,7 +44,14 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc \
     wifi_qcom.rc \
-    wifi_sec.rc
+    wifi_sec.rc \
+    init.audio.samsung.rc \
+    init.nfc.samsung.rc \
+    init.vendor.onebinary.rc \
+    init.vendor.rilchip.rc \
+    init.vendor.rilcommon.rc \
+    init.vendor.sensors.rc \
+    init.vendor.sysfw.rc
 
 # Vendor scripts
 PRODUCT_PACKAGES += \
@@ -56,7 +63,11 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.sh \
     init.qti.chg_policy.sh \
-    init.qti.dcvs.sh
+    init.qti.dcvs.sh \
+    init.qcom.coex.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.sensors.sh \
+    init.qti.qcv.sh
 
 # Audio
 PRODUCT_PACKAGES += \
