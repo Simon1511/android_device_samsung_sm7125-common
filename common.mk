@@ -67,7 +67,8 @@ PRODUCT_PACKAGES += \
     init.qcom.coex.sh \
     init.qcom.efs.sync.sh \
     init.qcom.sensors.sh \
-    init.qti.qcv.sh
+    init.qti.qcv.sh \
+    qca6234-service.sh
 
 # Audio
 PRODUCT_PACKAGES += \
