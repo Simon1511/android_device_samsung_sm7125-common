@@ -118,3 +118,6 @@ debug.stagefright.ccodec=1
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0
+
+# Wifi
+wifi.aware.interface=wifi-aware0
