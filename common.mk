@@ -121,6 +121,7 @@ PRODUCT_PACKAGES += \
     memtrack.atoll \
     libqdMetaData \
     libdisplayconfig.qti \
+    vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
@@ -256,7 +257,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.samsung-multihal \
-    android.frameworks.sensorservice@1.0
+    android.hardware.sensors@2.0-ScopedWakelock.vendor
 
 # Telephony
 PRODUCT_PACKAGES += \

@@ -1,0 +1,2 @@
+# Sensors
+vendor.sensor.file.permission                    u:object_r:vendor_sensors_prop:s0
