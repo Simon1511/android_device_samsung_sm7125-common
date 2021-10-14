@@ -1099,8 +1099,8 @@ vendor/etc/pdpcnt-conf.xml
 vendor/lib64/libsec-ril.so
 vendor/lib64/libsec-ril-dsds.so
 vendor/lib64/libsecril-client.so
-vendor/lib/libril.so
-vendor/lib64/libril.so
+-vendor/lib/libril.so
+-vendor/lib64/libril.so
 vendor/lib/librilqmiservices-ext.so
 vendor/lib64/librilqmiservices-ext.so
 vendor/lib/libconfigdb.so

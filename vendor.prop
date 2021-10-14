@@ -115,6 +115,15 @@ ro.hardware.gatekeeper=mdfpp
 debug.stagefright.omx_default_rank=0
 debug.stagefright.ccodec=1
 
+# RIL
+vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
+vendor.sec.rild.libpath2=/vendor/lib64/libsec-ril-dsds.so
+persist.vendor.radio.atfwd.start=true
+persist.vendor.radio.enableadvancedscan=true
+ro.carrier=unknown
+ro.radio.noril=no
+ro.vendor.epdg.support=true
+
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0

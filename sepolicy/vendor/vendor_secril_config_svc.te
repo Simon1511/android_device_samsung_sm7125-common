@@ -1,0 +1,4 @@
+type vendor_secril_config_svc, domain;
+type vendor_secril_config_svc_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(vendor_secril_config_svc)
