@@ -667,7 +667,6 @@ vendor/etc/sap.conf
 vendor/etc/lowi.conf
 vendor/etc/flp.conf
 vendor/etc/izat.conf
-vendor/etc/IPACM_cfg.xml
 vendor/etc/gnss_antenna_info.conf
 vendor/lib/libgps.utils.so
 vendor/lib64/libgps.utils.so
@@ -1080,7 +1079,6 @@ vendor/etc/init/ipacm-diag.rc
 vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/init/netmgrd.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
-vendor/etc/init/ipacm.rc
 vendor/etc/seccomp_policy/atfwd@2.0.policy
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml

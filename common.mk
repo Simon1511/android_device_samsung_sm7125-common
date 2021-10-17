@@ -290,6 +290,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
 
+# Tether
+PRODUCT_PACKAGES += \
+    ipacm \
+    IPACM_cfg.xml
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
