@@ -1276,6 +1276,7 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
 vendor/bin/cnss-daemon
+vendor/bin/hw/macloader
 vendor/lib/libqsap_sdk.so
 vendor/lib64/libqsap_sdk.so
 vendor/lib/libwfdaac_vendor.so
