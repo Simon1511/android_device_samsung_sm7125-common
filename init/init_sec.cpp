@@ -58,7 +58,7 @@ void vendor_load_properties()
         device = "a52q";
     }
 
-    name = device + "nseea";
+    name = device + "nsxx";
 
     LOG(INFO) << "Found bootloader: %s", bootloader.c_str();
     LOG(INFO) << "Setting ro.product.model: %s", model.c_str();
