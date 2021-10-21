@@ -243,6 +243,7 @@ vendor/lib/libqti_vndfwk_detect.so
 vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib/libbthost_if.so
 vendor/lib64/libbthost_if.so
+lib64/libaptX_encoder.so
 
 # Bluetooth firmware
 vendor/firmware/apbtfw11.tlv
