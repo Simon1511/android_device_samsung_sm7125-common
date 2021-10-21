@@ -120,6 +120,10 @@ ro.opengles.version=196610
 # Gatekeeper
 ro.hardware.gatekeeper=mdfpp
 
+# Keystore
+ro.hardware.keystore=mdfpp
+ro.security.keystore.keytype=sakv2,gak
+
 # Media
 debug.stagefright.omx_default_rank=0
 debug.stagefright.ccodec=1

@@ -165,7 +165,8 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0-service
+    android.hardware.keymaster@4.0-service.samsung \
+    libkeymaster4_1support.vendor
 
 # Light
 PRODUCT_PACKAGES += \
