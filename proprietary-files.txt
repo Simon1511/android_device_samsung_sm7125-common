@@ -681,6 +681,8 @@ vendor/lib64/hw/gatekeeper.mdfpp.so
 
 # GPS
 -vendor/app/CACertService/CACertService.apk
+vendor/lib/libjnihelper.so
+vendor/lib64/libjnihelper.so
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
 vendor/bin/loc_launcher
