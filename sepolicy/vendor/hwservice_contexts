@@ -1,3 +1,6 @@
+# Camera
+vendor.samsung.hardware.camera.provider::ISehCameraProvider		u:object_r:hal_camera_hwservice:s0
+
 # RIL
 vendor.samsung.hardware.radio.bridge::ISehBridge			u:object_r:hal_telephony_hwservice:s0
 vendor.samsung.hardware.radio::ISehRadio				u:object_r:hal_telephony_hwservice:s0

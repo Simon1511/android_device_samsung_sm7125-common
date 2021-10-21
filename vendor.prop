@@ -65,6 +65,10 @@ persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.vendor.bt.aac_frm_ctl.enabled=true
 vendor.qcom.bluetooth.soc=cherokee
 
+# Camera
+camera.disable_zsl_mode=1
+ro.camera.notify_nfc=1
+
 # Dalvik VM
 dalvik.vm.heapgrowthlimit=256m
 dalvik.vm.heapstartsize=8m
