@@ -45,7 +45,7 @@ class SunlightEnhancement : public ISunlightEnhancement {
 
     // Methods from ::android::hidl::base::V1_0::IBase follow.
   private:
-    bool mHasHBM = false;
+    std::string previous_brightness;
 };
 
 }  // namespace samsung
