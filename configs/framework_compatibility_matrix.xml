@@ -75,6 +75,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.lineage.biometrics.fingerprint.inscreen</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFingerprintInscreen</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>android.hardware.keymaster</name>
         <version>4.0</version>
         <interface>
