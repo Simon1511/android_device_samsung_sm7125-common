@@ -943,17 +943,9 @@ vendor/lib/libhta.so
 vendor/lib64/libhta.so
 
 # NFC
-vendor/bin/nqnfcinfo
-vendor/bin/hw/sec.android.hardware.nfc@1.2-service
-vendor/etc/init/sec.android.hardware.nfc@1.2-service.rc
--vendor/etc/vintf/manifest/sec.android.hardware.nfc@1.2-service.xml
 vendor/etc/nfc/sec_s3nrn4v_hwreg.bin
 vendor/etc/nfc/sec_s3nrn4v_swreg.bin
 vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
-vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
-vendor/lib64/nfc_nci_sec.so
-vendor/lib64/libNfcProperties.so
-vendor/lib/libsn100u_fw.so
 
 # OMX
 vendor/etc/seccomp_policy/mediacodec.policy

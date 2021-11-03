@@ -472,11 +472,11 @@ on post-fs-data
     mkdir /efs/biometrics 0770 system system
     mkdir /efs/biometrics/meta 0770 system system
 
-service nqnfcinfo /system/vendor/bin/nqnfcinfo
-    class late_start
-    group nfc
-    user system
-    oneshot
+#service nqnfcinfo /system/vendor/bin/nqnfcinfo
+#    class late_start
+#    group nfc
+#    user system
+#    oneshot
 
 service iop /system/vendor/bin/iop
     class main
