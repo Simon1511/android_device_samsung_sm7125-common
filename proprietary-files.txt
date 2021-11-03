@@ -949,11 +949,6 @@ vendor/etc/init/sec.android.hardware.nfc@1.2-service.rc
 -vendor/etc/vintf/manifest/sec.android.hardware.nfc@1.2-service.xml
 vendor/etc/nfc/sec_s3nrn4v_hwreg.bin
 vendor/etc/nfc/sec_s3nrn4v_swreg.bin
-vendor/etc/libnfc-mtp-SN100.conf
-vendor/etc/libnfc-qrd-SN100.conf
-vendor/etc/libnfc-sec-vendor.conf
-vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
-vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf
 vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
 vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
 vendor/lib64/nfc_nci_sec.so
