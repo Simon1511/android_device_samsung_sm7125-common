@@ -147,3 +147,7 @@ vendor.usb.use_ffs_mtp=0
 
 # Wifi
 wifi.aware.interface=wifi-aware0
+
+# WFD
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
