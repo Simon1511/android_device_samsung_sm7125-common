@@ -58,7 +58,6 @@ TARGET_KERNEL_CLANG_COMPILE := true
 # Build with Clang 11 for now
 TARGET_KERNEL_CLANG_VERSION := r383902b1
 TARGET_KERNEL_SOURCE        := kernel/samsung/sm7125
-TARGET_KERNEL_CONFIG        := vendor/lineage-a52q_defconfig
 TARGET_KERNEL_ARCH          := arm64
 TARGET_KERNEL_HEADER_ARCH   := arm64
 TARGET_LINUX_KERNEL_VERSION := 4.14
@@ -68,7 +67,6 @@ BOARD_KERNEL_CMDLINE += console=null androidboot.hardware=qcom androidboot.memcg
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_BOOTIMG_HEADER_VERSION := 2
 
-BOARD_NAME                   := SRPTH31C002
 BOARD_KERNEL_BASE            := 0x00000000
 BOARD_KERNEL_PAGESIZE        := 4096
 BOARD_RAMDISK_OFFSET         := 0x02000000
@@ -172,7 +170,6 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
-TARGET_SCREEN_DENSITY := 420
 
 # Fingerprint
 BUILD_FINGERPRINT := "samsung/a52qnsxx/a52q:11/RP1A.200720.012/A525FXXU4AUJ2:user/release-keys"

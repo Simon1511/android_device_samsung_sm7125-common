@@ -12,22 +12,6 @@ vendor/lib64/libadiertac.so
 vendor/lib/libaudcal.so
 vendor/lib64/libaudcal.so
 vendor/etc/acdbdata/adsp_avs_config.acdb
-vendor/etc/audconf/ODM/Global_cal.acdb
-vendor/etc/audconf/ODM/Bluetooth_cal.acdb
-vendor/etc/audconf/ODM/Headset_cal.acdb
-vendor/etc/audconf/ODM/General_cal.acdb
-vendor/etc/audconf/ODM/workspaceFile.qwsp
-vendor/etc/audconf/ODM/Speaker_cal.acdb
-vendor/etc/audconf/ODM/Hdmi_cal.acdb
-vendor/etc/audconf/ODM/Handset_cal.acdb
-vendor/etc/audconf/OPEN/Global_cal.acdb
-vendor/etc/audconf/OPEN/Bluetooth_cal.acdb
-vendor/etc/audconf/OPEN/Headset_cal.acdb
-vendor/etc/audconf/OPEN/General_cal.acdb
-vendor/etc/audconf/OPEN/workspaceFile.qwsp
-vendor/etc/audconf/OPEN/Speaker_cal.acdb
-vendor/etc/audconf/OPEN/Hdmi_cal.acdb
-vendor/etc/audconf/OPEN/Handset_cal.acdb
 
 # ADSP
 vendor/bin/adsprpcd
@@ -39,6 +23,9 @@ vendor/lib64/libadsprpc.so
 
 # ADSP modules
 vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
+vendor/lib64/libsnpe_dsp_domains_v2.so
+vendor/lib64/libSNPE.so
+vendor/lib64/libsnpe_wrapper.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
@@ -56,12 +43,6 @@ vendor/lib/rfsa/adsp/libdsp_streamer_skel.so
 vendor/lib/rfsa/adsp/libcamera_nn_skel.so
 vendor/lib/rfsa/adsp/libcvpdsp_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/libsnpe_dsp_domains_v2.so
-vendor/lib64/libsnpe_dsp_domains_v2.so
-vendor/lib/libSNPE.so
-vendor/lib/libsnpe_wrapper.so
-vendor/lib64/libsnpe_wrapper.so
-vendor/lib64/libSNPE.so
 
 # Audio
 vendor/lib/btaudio_offload_if.so
@@ -246,8 +227,6 @@ vendor/lib64/libbthost_if.so
 lib64/libaptX_encoder.so
 
 # Bluetooth firmware
-vendor/firmware/apbtfw11.tlv
-vendor/firmware/crbtfw21.tlv
 vendor/firmware/crnv21.b71
 vendor/firmware/crnv21.bin
 vendor/firmware/apnv11.bin
@@ -294,7 +273,6 @@ vendor/lib/libscveObjectTracker.so
 vendor/lib/libsmartfocusengine.so
 vendor/lib/libjpegQtable_interface.so
 vendor/lib/libdualcam_refocus_image.so
-vendor/lib/libsec2qc_conversion.so
 vendor/lib/libFacePreProcessing.camera.samsung.so
 vendor/lib/libimagecodec_native.quram.so
 vendor/lib/libarcsoft_stereodistancemeasure.so
@@ -308,7 +286,6 @@ vendor/lib/libcamxfdengine.so
 vendor/lib/libarcsoft_super_night_raw.so
 vendor/lib/libjpegencoder_sw.unifunc.so
 vendor/lib/hw/camera.unihal.default.so
-vendor/lib/hw/com.samsung.chi.override.so
 vendor/lib/hw/camera.qcom.so
 vendor/lib/libbeautyshot.arcsoft.so
 vendor/lib/libvideobeauty.arcsoft.so
@@ -329,32 +306,20 @@ vendor/lib/camera/com.samsung.sensormodule.8_0_sony_imx616_full.bin
 vendor/lib/camera/w_dual_calibration.bin
 vendor/lib/camera/com.samsung.tuned.lsi_s5kgd2.bin
 vendor/lib/camera/com.samsung.sensormodule.8_1_lsi_s5kgd2_full_otp.bin
-vendor/lib/camera/uw_dual_calibration.bin
-vendor/lib/camera/com.samsung.tuned.hynix_hi1336.bin
 vendor/lib/camera/com.samsung.sensor.s5kgd2.so
 vendor/lib/camera/com.samsung.sensor.imx616.so
-vendor/lib/camera/com.samsung.sensormodule.4_0_lsi_gc5035_macro.bin
 vendor/lib/camera/com.samsung.sensor.s5kgw1p.so
-vendor/lib/camera/com.samsung.tuned.lsi_gc5035.bin
-vendor/lib/camera/com.samsung.tuned.lsi_s5kgw1p.bin
 vendor/lib/camera/com.samsung.sensor.gc5035_macro.so
 vendor/lib/camera/com.samsung.sensormodule.1_0_sony_imx616.bin
-vendor/lib/camera/com.samsung.sensormodule.0_0_sony_imx682.bin
-vendor/lib/camera/com.samsung.tuned.sony_imx682.bin
 vendor/lib/camera/com.samsung.tuned.sony_imx616.bin
-vendor/lib/camera/com.samsung.sensormodule.4_1_lsi_dv_gc5035_macro_hw_2.bin
 vendor/lib/camera/f_dual_calibration.bin
 vendor/lib/camera/com.qti.eeprom.n24s64b_imx616.so
 vendor/lib/camera/com.samsung.sensormodule.1_1_lsi_s5kgd2.bin
 vendor/lib/camera/com.samsung.sensormodule.1_1_lsi_s5kgd2_otp.bin
-vendor/lib/camera/com.samsung.sensormodule.3_lsi_gc5035.bin
-vendor/lib/camera/ois_mcu_stm32g_fw.bin
 vendor/lib/camera/com.samsung.sensormodule.0_1_lsi_s5kgw1p.bin
 vendor/lib/camera/com.samsung.sensor.imx682.so
 vendor/lib/camera/com.samsung.sensormodule.2_1_hynix_hi1336.bin
-vendor/lib/camera/components/com.samsung.node.smooth_transition.so
 vendor/lib/camera/components/com.qti.eisv3.so
-vendor/lib/camera/components/com.samsung.node.uniplugin_recording.so
 vendor/lib/camera/components/com.samsung.node.capture_fusion.so
 vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
 vendor/lib/camera/components/com.qti.stats.pdlib.so
@@ -371,7 +336,6 @@ vendor/lib/camera/components/com.qti.stats.hafoverride.so
 vendor/lib/camera/components/com.qti.node.fcv.so
 vendor/lib/camera/components/com.samsung.node.uniplugin_preview.so
 vendor/lib/camera/components/com.qti.node.memcpy.so
-vendor/lib/camera/components/com.wrapper.stats.aec.so
 vendor/lib/camera/components/com.samsung.node.bayercheck.so
 vendor/lib/camera/components/com.qti.node.swregistration.so
 vendor/lib/camera/components/com.samsung.node.uniplugin_capture.so
@@ -385,7 +349,6 @@ vendor/lib/camera/components/libdepthmapwrapper.so
 vendor/lib/camera/components/com.qti.stats.asd.so
 vendor/lib/camera/components/com.wrapper.stats.af.so
 vendor/lib/camera/components/com.qti.node.gpu.so
-vendor/lib/camera/components/com.samsung.node.uniplugin_vdis.so
 vendor/lib/camera/components/com.samsung.node.realtimebokeh.so
 vendor/lib/camera/components/com.qti.node.dummysat.so
 vendor/lib/camera/components/com.qtistatic.stats.aec.so
@@ -399,17 +362,12 @@ vendor/lib/camera/components/com.qti.stats.afd.so
 vendor/lib/camera/com.samsung.sensormodule.2_0_lsi_s5k3l6.bin
 vendor/lib/camera/com.samsung.sensor.s5k3l6.so
 vendor/lib/camera/com.samsung.tuned.lsi_gc5035_macro.bin
-vendor/lib/camera/com.qti.eeprom.sec2qcconversion.so
-vendor/lib/camera/com.samsung.tuned.lsi_s5k3l6.bin
 vendor/lib/camera/com.samsung.sensor.hi1336.so
-vendor/lib/camera/com.samsung.sensor.gc5035.so
-vendor/lib/camera/com.samsung.sensormodule.0_1_lsi_s5kgw1p_otp.bin
 vendor/lib/libsegmentationeffect.uniplugin@1.0.so
 vendor/lib/libcamxfdalgov7.so
 vendor/lib/libscveObjectTracker_stub.so
 vendor/lib/libBeauty_v4.camera.samsung.so
 vendor/lib/libhypermotion_core.so
-vendor/lib/libvdis_interface.so
 vendor/lib/libsensorlistener.so
 vendor/lib/libvideobeauty_interface.so
 vendor/lib/libpadm.so
@@ -427,7 +385,6 @@ vendor/lib/libsmartfocus_interface.so
 vendor/lib/libdualcam_optical_zoom_control.so
 vendor/lib/libswregistrationalgo.so
 vendor/lib/libhandgesture.arcsoft.so
-vendor/lib/libface_landmark.arcsoft.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/liblivefocus_preview_engine.so
 vendor/lib/libDualCamBokehCapture.camera.samsung.so
@@ -456,7 +413,6 @@ vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libsmartfocusengine.so
 vendor/lib64/libjpegQtable_interface.so
 vendor/lib64/libdualcam_refocus_image.so
-vendor/lib64/libsec2qc_conversion.so
 vendor/lib64/libFacePreProcessing.camera.samsung.so
 vendor/lib64/libimagecodec_native.quram.so
 vendor/lib64/libHandGesture.camera.samsung.so
@@ -470,7 +426,6 @@ vendor/lib64/libcamxfdengine.so
 vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libjpegencoder_sw.unifunc.so
 vendor/lib64/hw/camera.unihal.default.so
-vendor/lib64/hw/com.samsung.chi.override.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/libbeautyshot.arcsoft.so
 vendor/lib64/libvideobeauty.arcsoft.so
@@ -491,27 +446,18 @@ vendor/lib64/camera/com.samsung.sensormodule.8_1_lsi_s5kgd2_full.bin
 vendor/lib64/camera/com.samsung.sensormodule.8_0_sony_imx616_full.bin
 vendor/lib64/camera/com.samsung.tuned.lsi_s5kgd2.bin
 vendor/lib64/camera/com.samsung.sensormodule.8_1_lsi_s5kgd2_full_otp.bin
-vendor/lib64/camera/com.samsung.tuned.hynix_hi1336.bin
 vendor/lib64/camera/com.samsung.sensor.s5kgd2.so
 vendor/lib64/camera/com.samsung.sensor.imx616.so
-vendor/lib64/camera/com.samsung.sensormodule.4_0_lsi_gc5035_macro.bin
 vendor/lib64/camera/com.samsung.sensor.s5kgw1p.so
-vendor/lib64/camera/com.samsung.tuned.lsi_gc5035.bin
-vendor/lib64/camera/com.samsung.tuned.lsi_s5kgw1p.bin
 vendor/lib64/camera/com.samsung.sensor.gc5035_macro.so
 vendor/lib64/camera/com.samsung.sensormodule.1_0_sony_imx616.bin
-vendor/lib64/camera/com.samsung.sensormodule.0_0_sony_imx682.bin
-vendor/lib64/camera/com.samsung.tuned.sony_imx682.bin
 vendor/lib64/camera/com.samsung.tuned.sony_imx616.bin
-vendor/lib64/camera/com.samsung.sensormodule.4_1_lsi_dv_gc5035_macro_hw_2.bin
 vendor/lib64/camera/com.qti.eeprom.n24s64b_imx616.so
 vendor/lib64/camera/com.samsung.sensormodule.1_1_lsi_s5kgd2.bin
 vendor/lib64/camera/com.samsung.sensormodule.1_1_lsi_s5kgd2_otp.bin
-vendor/lib64/camera/com.samsung.sensormodule.3_lsi_gc5035.bin
 vendor/lib64/camera/com.samsung.sensormodule.0_1_lsi_s5kgw1p.bin
 vendor/lib64/camera/com.samsung.sensor.imx682.so
 vendor/lib64/camera/com.samsung.sensormodule.2_1_hynix_hi1336.bin
-vendor/lib64/camera/components/com.samsung.node.smooth_transition.so
 vendor/lib64/camera/components/com.qti.eisv3.so
 vendor/lib64/camera/components/com.samsung.node.capture_fusion.so
 vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
@@ -525,7 +471,6 @@ vendor/lib64/camera/components/com.qti.eisv2.so
 vendor/lib64/camera/components/com.qti.stats.hafoverride.so
 vendor/lib64/camera/components/com.qti.node.fcv.so
 vendor/lib64/camera/components/com.qti.node.memcpy.so
-vendor/lib64/camera/components/com.wrapper.stats.aec.so
 vendor/lib64/camera/components/com.samsung.node.bayercheck.so
 vendor/lib64/camera/components/com.qti.node.swregistration.so
 vendor/lib64/camera/components/com.wrapper.stats.pdlib.so
@@ -549,17 +494,13 @@ vendor/lib64/camera/com.samsung.sensormodule.2_0_lsi_s5k3l6.bin
 vendor/lib64/camera/com.samsung.sensor.s5k3l6.so
 vendor/lib64/camera/com.samsung.tuned.lsi_gc5035_macro.bin
 vendor/lib64/camera/com.qti.eeprom.sec2qcconversion.so
-vendor/lib64/camera/com.samsung.tuned.lsi_s5k3l6.bin
 vendor/lib64/camera/com.samsung.sensor.hi1336.so
-vendor/lib64/camera/com.samsung.sensor.gc5035.so
-vendor/lib64/camera/com.samsung.sensormodule.0_1_lsi_s5kgw1p_otp.bin
 vendor/lib64/libsegmentationeffect.uniplugin@1.0.so
 vendor/lib64/libLocalTM_wrapper.camera.samsung.so
 vendor/lib64/libcamxfdalgov7.so
 vendor/lib64/libscveObjectTracker_stub.so
 vendor/lib64/libBeauty_v4.camera.samsung.so
 vendor/lib64/libhypermotion_core.so
-vendor/lib64/libvdis_interface.so
 vendor/lib64/libsensorlistener.so
 vendor/lib64/libvideobeauty_interface.so
 vendor/lib64/libpadm.so
@@ -577,7 +518,6 @@ vendor/lib64/libsmartfocus_interface.so
 vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libhandgesture.arcsoft.so
-vendor/lib64/libface_landmark.arcsoft.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/liblivefocus_preview_engine.so
 vendor/lib64/libDualCamBokehCapture.camera.samsung.so
@@ -671,8 +611,6 @@ vendor/lib/libsynaFpSensorTestNwd.so
 vendor/lib64/libsynaFpSensorTestNwd.so
 vendor/lib/libegis_fp_normal_sensor_test.so
 vendor/lib64/libegis_fp_normal_sensor_test.so
-vendor/lib/libgf_in_system_lib.so
-vendor/lib64/libgf_in_system_lib.so
 vendor/lib/libqfp_sensortest.so
 vendor/lib64/libqfp_sensortest.so
 
@@ -869,7 +807,6 @@ vendor/firmware/a618_gmu.bin
 vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
 vendor/firmware/a640_gmu.bin
-vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC3_AMS646YD04_FHD.xml
 
 # HBTP
 vendor/bin/hbtp_daemon
@@ -941,7 +878,6 @@ vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/unnhal-acc-hvx.so
 vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
-vendor/lib/libhta.so
 vendor/lib64/libhta.so
 
 # NFC
@@ -1177,9 +1113,6 @@ vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/sensors/config/atoll_default_sensors.json
 vendor/etc/sensors/config/atoll_dynamic_sensors.json
 vendor/etc/sensors/config/atoll_lsm6dso_0.json
-vendor/etc/sensors/config/atoll_qrd_ak991x_0.json
-vendor/etc/sensors/config/atoll_qrd_ak991x_2.json
-vendor/etc/sensors/config/atoll_qrd_ak991x_6.json
 vendor/etc/sensors/config/atoll_qrd_lsm6dso_0.json
 vendor/etc/sensors/config/atoll_qrd_stk31610_0.json
 vendor/etc/sensors/config/sns_amd.json

@@ -35,7 +35,6 @@ PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.ramdisk \
     fstab.sqzr \
-    init.a52q.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.qcom.usb.rc \

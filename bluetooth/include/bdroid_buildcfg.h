@@ -23,7 +23,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME "Galaxy A52 4G"
+#define BTM_DEF_LOCAL_NAME "Galaxy A52/A72 4G"
 
 #define BLE_VND_INCLUDED   TRUE
 #define MAX_ACL_CONNECTIONS   16
