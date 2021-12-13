@@ -93,7 +93,13 @@ on boot
 on property:sys.boot_completed=1
     swapon_all /vendor/etc/fstab.sqzr
 
+on property:sys.sysctl.zram_balance_ratio=*
+    write /sys/module/zram/parameters/zram_balance_ratio ${sys.sysctl.zram_balance_ratio}
+
 on post-fs-data
     # MST/NFC Switch
     chmod 0660 /dev/mst_ctrl
 
+# SSU (Samsung SIM Unlock)
+on property:ro.boot.carrierid=MXO
+    setprop ssu.support 1

@@ -5,5 +5,4 @@
 
 #<src>  <mnt_point>     <type>    <mnt_flags and options>    <fs_mgr_flags>
 # SWAP (SQZR)
-/dev/block/zram0	none	swap	defaults	zramsize=2684354560,max_comp_streams=8,zram_backingdev_size=256M
-
+/dev/block/zram0	none	swap	defaults	zramsize=4294967296,zram_backingdev_size=1G

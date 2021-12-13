@@ -1,4 +1,4 @@
-# All blobs are from A525FXXU2AUF3, unless pinned
+# All blobs are from A525FXXU4AUJ2, unless pinned
 
 # ACDB
 vendor/lib/libacdb-fts.so
@@ -263,7 +263,7 @@ vendor/lib/camera.device@3.3-impl.so
 vendor/lib/camera.device@3.4-impl.so
 vendor/lib/camera.device@3.5-impl.so
 vendor/lib/hw/vendor.samsung.hardware.camera.provider@4.0-impl.so
-vendor/lib/vendor.samsung.camera.device@5.0-impl.so
+vendor/lib/vendor.samsung.hardware.camera.device@5.0-impl.so
 vendor/lib/vendor.samsung.hardware.camera.device@5.0.so
 vendor/lib/vendor.samsung.hardware.camera.provider@4.0-legacy.so
 vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so
@@ -275,12 +275,14 @@ vendor/lib64/camera.device@3.3-impl.so
 vendor/lib64/camera.device@3.4-impl.so
 vendor/lib64/camera.device@3.5-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.camera.provider@4.0-impl.so
-vendor/lib64/vendor.samsung.camera.device@5.0-impl.so
+vendor/lib64/vendor.samsung.hardware.camera.device@5.0-impl.so
 vendor/lib64/vendor.samsung.hardware.camera.device@5.0.so
 vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so
 vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib64/libsensorndkbridge.so
+vendor/lib/unihal_uniplugin_module@1.0.so
+vendor/lib64/unihal_uniplugin_module@1.0.so
 vendor/lib/libsuper_night_interface.so
 vendor/lib/libcamera_nn_stub.so
 vendor/lib/libscveCommon.so
