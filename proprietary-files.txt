@@ -1255,9 +1255,6 @@ vendor/firmware/wlan/qca_cld/bdwlan.bin
 vendor/firmware/wlan/qca_cld/regdb.bin
 vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 
-#wfd hack - from curtana - RKQ1.200826.002
-vendor/lib64/libdisplayconfig.so:priv-app/WfdService/lib/arm64/libdisplayconfig.so
-
 # WiFi Display - from curtana - RKQ1.200826.002
 -framework/WfdCommon.jar|aa7470dd5ccb2e2c695fd54c3aff01d21e2d7472
 system_ext/bin/rtspclient|27894eaab188c1136a8cf6fb048aecbcf73ac18f
