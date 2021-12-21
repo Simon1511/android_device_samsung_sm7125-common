@@ -77,6 +77,10 @@ persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
 camera.disable_zsl_mode=1
 ro.camera.notify_nfc=1
 
+# Chipset
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM7125
+
 # Dalvik VM
 dalvik.vm.heapgrowthlimit=256m
 dalvik.vm.heapstartsize=8m
