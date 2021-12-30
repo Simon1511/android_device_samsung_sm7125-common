@@ -26,7 +26,7 @@
 #define FINGERPRINT_ACQUIRED_VENDOR 6
 
 #define TSP_CMD_PATH "/sys/class/sec/tsp/cmd"
-#define MASK_BRIGHTNESS_PATH "/sys/class/lcd/panel/mask_brightness"
+#define BRIGHTNESS_PATH "/sys/class/backlight/panel0-backlight/brightness"
 
 #define SEM_FINGER_STATE 22
 #define SEM_PARAM_PRESSED 2
@@ -72,7 +72,8 @@ static hidl_vec<int8_t> stringToVec(const std::string& str) {
 FingerprintInscreen::FingerprintInscreen() {
     mSehBiometricsFingerprintService = ISehBiometricsFingerprint::getService();
     set(TSP_CMD_PATH, "set_fod_rect,421,2018,659,2256");
-    set(MASK_BRIGHTNESS_PATH, "319");
+    mPreviousBrightness = get<std::string>(BRIGHTNESS_PATH, "");
+    set(BRIGHTNESS_PATH, "319");
     set(TSP_CMD_PATH, "fod_enable,1,1,0");
 }
 
@@ -97,6 +98,11 @@ Return<void> FingerprintInscreen::onPress() {
 Return<void> FingerprintInscreen::onRelease() {
     mSehBiometricsFingerprintService->sehRequest(SEM_FINGER_STATE, 
         SEM_PARAM_RELEASED, stringToVec(SEM_AOSP_FQNAME), FingerprintInscreen::requestResult);
+    set(TSP_CMD_PATH, "fod_enable,0");
+    if (!mPreviousBrightness.empty()) {
+        set(BRIGHTNESS_PATH, mPreviousBrightness);
+        mPreviousBrightness = "";
+    }
     return Void();
 }
 
@@ -105,6 +111,11 @@ Return<void> FingerprintInscreen::onShowFODView() {
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
+    set(TSP_CMD_PATH, "fod_enable,0");
+    if (!mPreviousBrightness.empty()) {
+        set(BRIGHTNESS_PATH, mPreviousBrightness);
+        mPreviousBrightness = "";
+    }
     return Void();
 }
 
