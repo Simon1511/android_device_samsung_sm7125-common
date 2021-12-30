@@ -152,7 +152,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.samsung.sm7125
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.samsung.sm7125 \
+    vendor.samsung.hardware.biometrics.fingerprint@3.0-service.sm7125
 
 # fastbootd
 PRODUCT_PACKAGES += \

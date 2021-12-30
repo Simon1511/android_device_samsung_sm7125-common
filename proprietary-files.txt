@@ -599,10 +599,6 @@ vendor/lib64/libsecnativefeature.so
 vendor/etc/floating_feature.xml
 
 # Fingerprint
-vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
-vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
-vendor/lib/hw/fingerprint.default.so
-vendor/lib64/hw/fingerprint.default.so
 vendor/lib/libbauthserver.so
 vendor/lib64/libbauthserver.so
 vendor/lib/libbauthtzcommon.so
