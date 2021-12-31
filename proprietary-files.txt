@@ -598,18 +598,6 @@ vendor/lib/libsecnativefeature.so
 vendor/lib64/libsecnativefeature.so
 vendor/etc/floating_feature.xml
 
-# Fingerprint
-vendor/lib/libbauthserver.so
-vendor/lib64/libbauthserver.so
-vendor/lib/libbauthtzcommon.so
-vendor/lib64/libbauthtzcommon.so
-vendor/lib/libsynaFpSensorTestNwd.so
-vendor/lib64/libsynaFpSensorTestNwd.so
-vendor/lib/libegis_fp_normal_sensor_test.so
-vendor/lib64/libegis_fp_normal_sensor_test.so
-vendor/lib/libqfp_sensortest.so
-vendor/lib64/libqfp_sensortest.so
-
 # FM
 vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
