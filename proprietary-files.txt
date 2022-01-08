@@ -191,13 +191,9 @@ vendor/firmware/dax_param.bin
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
-vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib/libbluetooth_audio_session.so
-vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib/libbluetooth_audio_session_qti.so
-vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib64/libbluetooth_audio_session.so
-vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
@@ -234,8 +230,6 @@ vendor/firmware/apnv11.bin
 # Camera
 vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service
 vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/android.hardware.camera.provider@2.5-legacy.so
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
@@ -246,8 +240,6 @@ vendor/lib/vendor.samsung.hardware.camera.device@5.0-impl.so
 vendor/lib/vendor.samsung.hardware.camera.device@5.0.so
 vendor/lib/vendor.samsung.hardware.camera.provider@4.0-legacy.so
 vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib64/android.hardware.camera.provider@2.5-legacy.so
 vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera.device@3.2-impl.so
 vendor/lib64/camera.device@3.3-impl.so
@@ -380,7 +372,6 @@ vendor/lib/libscveObjectSegmentation.so
 vendor/lib/libdualcam_optical_zoom.so
 vendor/lib/libmfhdr_interface.so
 vendor/lib/liblivefocus_capture_engine.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib/libsmartfocus_interface.so
 vendor/lib/libdualcam_optical_zoom_control.so
 vendor/lib/libswregistrationalgo.so
@@ -513,7 +504,6 @@ vendor/lib64/libscveObjectSegmentation.so
 vendor/lib64/libdualcam_optical_zoom.so
 vendor/lib64/libmfhdr_interface.so
 vendor/lib64/liblivefocus_capture_engine.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/libsmartfocus_interface.so
 vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libswregistrationalgo.so
@@ -920,9 +910,6 @@ vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/lib/libperfconfig.so
-vendor/lib/vendor.qti.hardware.perf@2.2.so
-vendor/lib/vendor.qti.hardware.perf@2.1.so
-vendor/lib/vendor.qti.hardware.perf@2.0.so
 vendor/lib/libperfgluelayer.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
@@ -931,9 +918,6 @@ vendor/lib/libqti-util.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libperfconfig.so
 vendor/lib64/libmeters.so
-vendor/lib64/vendor.qti.hardware.perf@2.2.so
-vendor/lib64/vendor.qti.hardware.perf@2.1.so
-vendor/lib64/vendor.qti.hardware.perf@2.0.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
@@ -973,7 +957,6 @@ vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance
 vendor/lib/libdiag.so
 vendor/lib/libdiagjni.so
 vendor/lib/libpdmapper.so
-vendor/lib/libjson.so
 vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_client_qmux.so
 vendor/lib/libqmiservices.so
@@ -992,7 +975,6 @@ vendor/lib/libqdi.so
 vendor/lib/libqdp.so
 vendor/lib/libqsocket.so
 vendor/lib64/libpdmapper.so
-vendor/lib64/libjson.so
 vendor/lib64/libqmi_common_so.so
 vendor/lib64/libqmi_client_qmux.so
 vendor/lib64/libqmiservices.so
@@ -1066,8 +1048,6 @@ vendor/lib64/libnetmgr.so
 vendor/lib64/libnetmgr_common.so
 vendor/lib/libqrtr.so
 vendor/lib64/libqrtr.so
-vendor/lib/librilutils.so
-vendor/lib64/librilutils.so
 vendor/lib64/libsec-ril.so
 vendor/lib64/libsecril-client.so
 vendor/lib/libsystem_health_mon.so
@@ -1087,8 +1067,6 @@ vendor/lib/libdsi_netctrl.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib/libqcmaputils.so
 vendor/lib64/libqcmaputils.so
-vendor/lib/librmnetctl.so
-vendor/lib64/librmnetctl.so
 
 # Sensors
 vendor/bin/factory.ssc
