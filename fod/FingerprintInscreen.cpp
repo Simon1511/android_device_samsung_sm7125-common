@@ -18,6 +18,7 @@
 
 #include "FingerprintInscreen.h"
 #include <android-base/logging.h>
+#include <android-base/properties.h>
 #include <hidl/HidlTransportSupport.h>
 #include <fstream>
 #include <cmath>
@@ -70,7 +71,17 @@ static hidl_vec<int8_t> stringToVec(const std::string& str) {
 
 FingerprintInscreen::FingerprintInscreen() {
     mSehBiometricsFingerprintService = ISehBiometricsFingerprint::getService();
-    set(TSP_CMD_PATH, "set_fod_rect,421,2018,659,2256");
+
+    const std::string bootloader = android::base::GetProperty("ro.boot.bootloader", "");
+
+    if (bootloader.find("A525") != std::string::npos) {
+        set(TSP_CMD_PATH, "set_fod_rect,421,2018,659,2256");
+    } else if (bootloader.find("A725") != std::string::npos) {
+        set(TSP_CMD_PATH, "set_fod_rect,426,2031,654,2259");
+    } else {
+        LOG(ERROR) << "Device is not an A52 or A72, not setting set_fod_rect";
+    }
+
     set(TSP_CMD_PATH, "fod_enable,1,1,0");
 }
 
