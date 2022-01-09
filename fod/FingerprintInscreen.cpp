@@ -83,8 +83,6 @@ FingerprintInscreen::FingerprintInscreen() {
         LOG(ERROR) << "Device is not an A52 or A72, not setting set_fod_rect";
     }
 
-    mPreviousBrightness = get<std::string>(BRIGHTNESS_PATH, "");
-    set(BRIGHTNESS_PATH, "319");
     set(TSP_CMD_PATH, "fod_enable,1,1,0");
 }
 
@@ -101,6 +99,8 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 }
 
 Return<void> FingerprintInscreen::onPress() {
+    mPreviousBrightness = get<std::string>(BRIGHTNESS_PATH, "");
+    set(BRIGHTNESS_PATH, "331");
     mSehBiometricsFingerprintService->sehRequest(SEM_FINGER_STATE,
         SEM_PARAM_PRESSED, stringToVec(SEM_AOSP_FQNAME), FingerprintInscreen::requestResult);
     return Void();
@@ -164,7 +164,7 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
 }
 
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t cur_brightness) {
-    return (int32_t)(255 + ( -40.9291 * pow((double) cur_brightness, 0.3)));
+    return 0;
 }
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {
