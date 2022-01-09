@@ -27,6 +27,7 @@
 #define FINGERPRINT_ACQUIRED_VENDOR 6
 
 #define TSP_CMD_PATH "/sys/class/sec/tsp/cmd"
+#define BRIGHTNESS_PATH "/sys/class/backlight/panel0-backlight/brightness"
 
 #define SEM_FINGER_STATE 22
 #define SEM_PARAM_PRESSED 2
@@ -82,6 +83,8 @@ FingerprintInscreen::FingerprintInscreen() {
         LOG(ERROR) << "Device is not an A52 or A72, not setting set_fod_rect";
     }
 
+    mPreviousBrightness = get<std::string>(BRIGHTNESS_PATH, "");
+    set(BRIGHTNESS_PATH, "319");
     set(TSP_CMD_PATH, "fod_enable,1,1,0");
 }
 
@@ -98,11 +101,8 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 }
 
 Return<void> FingerprintInscreen::onPress() {
-    std::thread([this]() {
-        std::this_thread::sleep_for(std::chrono::milliseconds(120));
-        mSehBiometricsFingerprintService->sehRequest(SEM_FINGER_STATE,
-            SEM_PARAM_PRESSED, stringToVec(SEM_AOSP_FQNAME), FingerprintInscreen::requestResult);
-    }).detach();
+    mSehBiometricsFingerprintService->sehRequest(SEM_FINGER_STATE,
+        SEM_PARAM_PRESSED, stringToVec(SEM_AOSP_FQNAME), FingerprintInscreen::requestResult);
     return Void();
 }
 
@@ -110,6 +110,10 @@ Return<void> FingerprintInscreen::onRelease() {
     mSehBiometricsFingerprintService->sehRequest(SEM_FINGER_STATE, 
         SEM_PARAM_RELEASED, stringToVec(SEM_AOSP_FQNAME), FingerprintInscreen::requestResult);
     set(TSP_CMD_PATH, "fod_enable,0");
+    if (!mPreviousBrightness.empty()) {
+        set(BRIGHTNESS_PATH, mPreviousBrightness);
+        mPreviousBrightness = "";
+    }
     return Void();
 }
 
@@ -119,6 +123,10 @@ Return<void> FingerprintInscreen::onShowFODView() {
 
 Return<void> FingerprintInscreen::onHideFODView() {
     set(TSP_CMD_PATH, "fod_enable,0");
+    if (!mPreviousBrightness.empty()) {
+        set(BRIGHTNESS_PATH, mPreviousBrightness);
+        mPreviousBrightness = "";
+    }
     return Void();
 }
 
@@ -156,11 +164,11 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
 }
 
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t cur_brightness) {
-    return 0;
+    return (int32_t)(255 + ( -40.9291 * pow((double) cur_brightness, 0.3)));
 }
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {
-    return true;
+    return false;
 }
 
 Return<void> FingerprintInscreen::setCallback(const sp<IFingerprintInscreenCallback>& callback) {
