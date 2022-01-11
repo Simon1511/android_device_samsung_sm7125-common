@@ -107,7 +107,6 @@ vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libplaybackrecorder.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libqcbassboost.so
