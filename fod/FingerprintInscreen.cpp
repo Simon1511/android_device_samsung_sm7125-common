@@ -70,14 +70,16 @@ static hidl_vec<int8_t> stringToVec(const std::string& str) {
     return vec;
 }
 
+std::string getBootloader() {
+    return android::base::GetProperty("ro.boot.bootloader", "");
+}
+
 FingerprintInscreen::FingerprintInscreen() {
     mSehBiometricsFingerprintService = ISehBiometricsFingerprint::getService();
 
-    const std::string bootloader = android::base::GetProperty("ro.boot.bootloader", "");
-
-    if (bootloader.find("A525") != std::string::npos) {
+    if (getBootloader().find("A525") != std::string::npos) {
         set(TSP_CMD_PATH, "set_fod_rect,421,2018,659,2256");
-    } else if (bootloader.find("A725") != std::string::npos) {
+    } else if (getBootloader().find("A725") != std::string::npos) {
         set(TSP_CMD_PATH, "set_fod_rect,426,2031,654,2259");
     } else {
         LOG(ERROR) << "Device is not an A52 or A72, not setting set_fod_rect";
@@ -180,15 +182,45 @@ Return<void> FingerprintInscreen::setCallback(const sp<IFingerprintInscreenCallb
 }
 
 Return<int32_t> FingerprintInscreen::getPositionX() {
-    return 440;
+    int32_t posX;
+
+    if (getBootloader().find("A525") != std::string::npos) {
+        posX = 421;
+    } else if (getBootloader().find("A725") != std::string::npos) {
+        posX = 426;
+    } else {
+        posX = 0;
+    } 
+
+    return posX;
 }
 
 Return<int32_t> FingerprintInscreen::getPositionY() {
-    return 2020;
+    int32_t posY;
+
+    if (getBootloader().find("A525") != std::string::npos) {
+        posY = 2018;
+    } else if (getBootloader().find("A725") != std::string::npos) {
+        posY = 2031;
+    } else {
+        posY = 0;
+    }
+
+    return posY;
 }
 
 Return<int32_t> FingerprintInscreen::getSize() {
-    return 200;
+    int32_t size;
+
+    if (getBootloader().find("A525") != std::string::npos) {
+        size = 238;
+    } else if (getBootloader().find("A725") != std::string::npos) {
+        size = 228;
+    } else {
+        size = 0;
+    }
+
+    return size;
 }
 
 }  // namespace implementation

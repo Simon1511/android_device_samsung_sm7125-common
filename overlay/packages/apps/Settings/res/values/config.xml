@@ -13,7 +13,7 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <dimen name="fingerprint_dot_radius">8dp</dimen>
+    <dimen name="fingerprint_dot_radius">12dp</dimen>
     <item name="fingerprint_sensor_location_fraction_y" type="fraction">85%</item>
 
     <!-- Whether to show min refresh rate in display settings -->
