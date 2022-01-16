@@ -4,6 +4,3 @@ vendor.sensor.file.permission                    u:object_r:vendor_sensors_prop:
 # RIL
 ro.vendor.multisim.				u:object_r:vendor_radio_prop:s0
 ro.vendor.radio.				u:object_r:vendor_radio_prop:s0
-
-# Fastcharge
-persist.vendor.sec.fastchg_enabled		u:object_r:sec_fastcharge_prop:s0

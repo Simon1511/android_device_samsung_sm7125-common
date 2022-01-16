@@ -1,1 +1,0 @@
-allow kernel vendor_sysfs_sensors:dir search;

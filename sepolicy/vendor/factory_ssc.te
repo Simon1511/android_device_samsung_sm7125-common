@@ -10,5 +10,3 @@ allow factory_ssc self:netlink_socket { create bind write read };
 allow factory_ssc efs_file:file { read open };
 
 allow factory_ssc property_socket:sock_file write;
-
-set_prop(factory_ssc, vendor_sensors_prop)
