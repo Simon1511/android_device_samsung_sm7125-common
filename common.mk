@@ -396,7 +396,9 @@ PRODUCT_PACKAGES += \
 # Tether
 PRODUCT_PACKAGES += \
     ipacm \
-    IPACM_cfg.xml
+    IPACM_cfg.xml \
+    android.hardware.tetheroffload.config@1.0.vendor  \
+    android.hardware.tetheroffload.control@1.0.vendor
 
 # WiFi
 PRODUCT_PACKAGES += \

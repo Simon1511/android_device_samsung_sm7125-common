@@ -918,6 +918,8 @@ vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
 vendor/lib64/libqsocket.so
+vendor/lib64/libqmiservices-sem-ext.so
+vendor/lib64/libqmiextservices.so
 vendor/etc/sec_config
 
 # QTI
@@ -929,7 +931,6 @@ vendor/etc/ssg/ta_config.json
 vendor/bin/hw/rild
 vendor/bin/secril_config_svc
 vendor/bin/adpl
-vendor/bin/ATFWD-daemon
 vendor/bin/netmgrd
 vendor/bin/ipacm-diag
 vendor/bin/tftp_server
@@ -939,7 +940,6 @@ vendor/etc/init/ipacm-diag.rc
 vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/init/netmgrd.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
-vendor/etc/seccomp_policy/atfwd@2.0.policy
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/plmn_delta_usagsm.bin
@@ -954,17 +954,10 @@ vendor/etc/plmn_delta_hktw.bin
 vendor/etc/mtu-conf.xml
 vendor/etc/sec_config_oem
 vendor/etc/pdpcnt-conf.xml
-vendor/lib64/libsec-ril.so
-vendor/lib64/libsec-ril-dsds.so
-vendor/lib64/libsecril-client.so
--vendor/lib/libril.so
--vendor/lib64/libril.so
-vendor/lib/librilqmiservices-ext.so
-vendor/lib64/librilqmiservices-ext.so
+vendor/lib64/libril_sem.so
 vendor/lib/libconfigdb.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libengmode_client.so
-vendor/lib64/liblqe.so
 vendor/lib/libnetmgr.so
 vendor/lib/libnetmgr_common.so
 vendor/lib64/libnlnetmgr.so
@@ -979,18 +972,24 @@ vendor/lib64/libsystem_health_mon.so
 vendor/lib64/libvkmanager_vendor.so
 vendor/lib/libxml.so
 vendor/lib64/libxml.so
-vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
-vendor/lib/vendor.samsung.hardware.radio@2.0.so
-vendor/lib/vendor.samsung.hardware.radio@2.1.so
-vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
+vendor/lib64/vendor.samsung.hardware.radio.bridge@2.1.so
 vendor/lib64/vendor.samsung.hardware.radio@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio@2.1.so
+vendor/lib64/vendor.samsung.hardware.radio@2.2.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib/libqcmaputils.so
 vendor/lib64/libqcmaputils.so
+vendor/lib64/liboffloadhal.so
+vendor/lib64/libipanat.so
+vendor/lib64/libnfnetlink.so
+vendor/lib64/libnetfilter_conntrack.so
+
+# A525FXXU4AUJ2 (R)
+-vendor/lib/libril.so|b7759521aeb60a07b929e4ff53ba25338c4cd087
+-vendor/lib64/libril.so|49d4eebf79faefd03b8378c3ed07cf44730a15ff
 
 # Sensors
 vendor/bin/factory.ssc
