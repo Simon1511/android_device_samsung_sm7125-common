@@ -406,7 +406,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.3-service.sm7125
+    android.hardware.vibrator-service.sm7125
 
 # Tether
 PRODUCT_PACKAGES += \
