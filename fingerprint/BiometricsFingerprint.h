@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#ifndef ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_1_BIOMETRICSFINGERPRINT_H
-#define ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_1_BIOMETRICSFINGERPRINT_H
+#ifndef ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
+#define ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
 
 #include <vendor/samsung/hardware/biometrics/fingerprint/3.0/ISehBiometricsFingerprint.h>
 #include <hardware/fingerprint.h>
@@ -50,7 +50,7 @@ public:
     // Method to wrap legacy HAL with BiometricsFingerprint class
     static ISehBiometricsFingerprint* getInstance();
 
-    // Methods from ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint follow.
+    // Methods from ::android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint follow.
     Return<uint64_t> setNotify(
         const sp<IBiometricsFingerprintClientCallback>& clientCallback) override;
     Return<uint64_t> preEnroll() override;
@@ -63,6 +63,9 @@ public:
     Return<RequestStatus> remove(uint32_t gid, uint32_t fid) override;
     Return<RequestStatus> setActiveGroup(uint32_t gid, const hidl_string& storePath) override;
     Return<RequestStatus> authenticate(uint64_t operationId, uint32_t gid) override;
+    Return<bool> isUdfps(uint32_t sensorID) override;
+    Return<void> onFingerDown(uint32_t x, uint32_t y, float minor, float major) override;
+    Return<void> onFingerUp() override;
 
     // Methods from ::vendor::samsung::hardware::biometrics::fingerprint::V3_0::ISehBiometricsFingerprint follow.
     Return<void> sehRequest(int32_t cmd_id, int32_t inParam, const hidl_vec<int8_t>& inputBuf, sehRequest_cb _hidl_cb) override;
@@ -78,6 +81,7 @@ public:
 
     std::mutex mClientCallbackMutex;
     sp<IBiometricsFingerprintClientCallback> mClientCallback;
+    bool mIsUdfps;
 
     int (*ss_fingerprint_close)();
     int (*ss_fingerprint_open)(const char* id);
@@ -94,14 +98,17 @@ public:
     int (*ss_fingerprint_authenticate)(uint64_t operation_id, uint32_t gid);
     int (*ss_fingerprint_request)(int32_t cmd_id, const int8_t* inputBuf, uint32_t value, int8_t* outBuf, uint32_t len, uint32_t inParam);
 
+    static void requestResult(int retval, const hidl_vec<int8_t>& outBuf);
+    std::string mPreviousBrightness;
+
 };
 
 }  // namespace implementation
-}  // namespace V2_1
+}  // namespace V3_0
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware
 }  // namespace samsung
 }  // namespace vendor
 
-#endif  // ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_1_BIOMETRICSFINGERPRINT_H
+#endif  // ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H

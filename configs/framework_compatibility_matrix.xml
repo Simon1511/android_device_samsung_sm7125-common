@@ -50,7 +50,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.biometrics.fingerprint</name>
-        <version>2.1</version>
+        <version>2.3</version>
         <interface>
             <name>IBiometricsFingerprint</name>
             <instance>default</instance>
@@ -64,14 +64,6 @@
             <name>IGnss</name>
             <instance>default</instance>
             <instance>gnss_vendor</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.lineage.biometrics.fingerprint.inscreen</name>
-        <version>1.0</version>
-        <interface>
-            <name>IFingerprintInscreen</name>
-            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">

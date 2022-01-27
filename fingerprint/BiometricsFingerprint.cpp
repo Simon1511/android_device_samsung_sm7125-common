@@ -22,34 +22,120 @@
 #include <hardware/fingerprint.h>
 #include <hardware/hardware.h>
 #include "BiometricsFingerprint.h"
-
+#include <android-base/properties.h>
+#include <fstream>
 #include <dlfcn.h>
 #include <inttypes.h>
 #include <unistd.h>
+#include <thread>
+
+#define SEH_FINGER_STATE 22
+#define SEH_PARAM_PRESSED 2
+#define SEH_PARAM_RELEASED 1
+#define SEH_AOSP_FQNAME "android.hardware.biometrics.fingerprint@2.3::IBiometricsFingerprint"
+#define TSP_CMD_PATH "/sys/class/sec/tsp/cmd"
+#define BRIGHTNESS_PATH "/sys/class/backlight/panel0-backlight/brightness"
 
 namespace vendor {
 namespace samsung {
 namespace hardware {
 namespace biometrics {
 namespace fingerprint {
-namespace V3_0{
+namespace V3_0 {
 namespace implementation {
 
 using RequestStatus = android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
 
 ISehBiometricsFingerprint* SehBiometricsFingerprint::sInstance = nullptr;
 
+template <typename T>
+static void set(const std::string& path, const T& value) {
+    std::ofstream file(path);
+    file << value;
+}
+
+std::string getBootloader() {
+    return android::base::GetProperty("ro.boot.bootloader", "");
+}
+
+template <typename T>
+static T get(const std::string& path, const T& def) {
+    std::ifstream file(path);
+    T result;
+
+    file >> result;
+    return file.fail() ? def : result;
+}
+
 SehBiometricsFingerprint::SehBiometricsFingerprint() : mClientCallback(nullptr) {
     sInstance = this;  // keep track of the most recent instance
     if (!openHal()) {
         LOG(ERROR) << "Can't open HAL module";
     }
+
+    if (getBootloader().find("A525") != std::string::npos) {
+        set(TSP_CMD_PATH, "set_fod_rect,421,2018,659,2256");
+    } else if (getBootloader().find("A725") != std::string::npos) {
+        set(TSP_CMD_PATH, "set_fod_rect,426,2031,654,2259");
+    } else {
+        LOG(ERROR) << "Device is not an A52 or A72, not setting set_fod_rect";
+    }
+
+    std::ifstream in("/sys/devices/virtual/fingerprint/fingerprint/position");
+    mIsUdfps = !!in;
+    if (in)
+        in.close();
+
+    set(TSP_CMD_PATH, "fod_enable,1,1,0");
 }
 
 SehBiometricsFingerprint::~SehBiometricsFingerprint() {
     if (ss_fingerprint_close() != 0) {
         LOG(ERROR) << "Can't close HAL module";
     }
+}
+
+Return<bool> SehBiometricsFingerprint::isUdfps(uint32_t) {
+    return mIsUdfps;
+}
+
+void SehBiometricsFingerprint::requestResult(int, const hidl_vec<int8_t>&) {
+    // Ignore all results
+}
+
+static hidl_vec<int8_t> stringToVec(const std::string& str) {
+    auto vec = hidl_vec<int8_t>();
+    vec.resize(str.size() + 1);
+    for (size_t i = 0; i < str.size(); ++i) {
+        vec[i] = (int8_t) str[i];
+    }
+    vec[str.size()] = '\0';
+    return vec;
+}
+
+Return<void> SehBiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
+    mPreviousBrightness = get<std::string>(BRIGHTNESS_PATH, "");
+    set(BRIGHTNESS_PATH, "331");
+
+    sehRequest(SEH_FINGER_STATE, SEH_PARAM_PRESSED,
+        stringToVec(SEH_AOSP_FQNAME), SehBiometricsFingerprint::requestResult);
+
+    std::thread([this]() {
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        if (!mPreviousBrightness.empty()) {
+            set(BRIGHTNESS_PATH, mPreviousBrightness);
+            mPreviousBrightness = "";
+        }
+    }).detach();
+    return Void();
+}
+
+Return<void> SehBiometricsFingerprint::onFingerUp() {
+    sehRequest(SEH_FINGER_STATE, SEH_PARAM_RELEASED,
+        stringToVec(SEH_AOSP_FQNAME), SehBiometricsFingerprint::requestResult);
+
+    set(TSP_CMD_PATH, "fod_enable,0");
+    return Void();
 }
 
 Return<RequestStatus> SehBiometricsFingerprint::ErrorFilter(int32_t error) {
@@ -147,7 +233,7 @@ Return<uint64_t> SehBiometricsFingerprint::setNotify(
     const sp<IBiometricsFingerprintClientCallback>& clientCallback) {
     std::lock_guard<std::mutex> lock(mClientCallbackMutex);
     mClientCallback = clientCallback;
-    // This is here because HAL 2.1 doesn't have a way to propagate a
+    // This is here because HAL 2.3 doesn't have a way to propagate a
     // unique token for its driver. Subsequent versions should send a unique
     // token for each call to setNotify(). This is fine as long as there's only
     // one fingerprint device on the platform.
@@ -381,7 +467,7 @@ void SehBiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
 }
 
 }  // namespace implementation
-}  // namespace V2_1
+}  // namespace V3_0
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware

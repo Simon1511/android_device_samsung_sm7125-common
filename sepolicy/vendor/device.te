@@ -1,0 +1,2 @@
+# /dev/goodix_fp
+type fingerprint_device, dev_type;

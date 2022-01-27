@@ -30,10 +30,13 @@ LOCAL_SHARED_LIBRARIES := \
     liblog \
     libutils \
     android.hardware.biometrics.fingerprint@2.1 \
+    android.hardware.biometrics.fingerprint@2.2 \
+    android.hardware.biometrics.fingerprint@2.3 \
     vendor.samsung.hardware.biometrics.fingerprint@3.0
 
 LOCAL_MODULE := vendor.samsung.hardware.biometrics.fingerprint@3.0-service.sm7125
 LOCAL_INIT_RC := vendor.samsung.hardware.biometrics.fingerprint@3.0-service.sm7125.rc
+LOCAL_VINTF_FRAGMENTS := vendor.samsung.hardware.biometrics.fingerprint@3.0-service.sm7125.xml
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := samsung

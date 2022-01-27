@@ -13,3 +13,6 @@ allow spu_file labeledfs:filesystem associate;
 type sysfs_sec_switch, fs_type, sysfs_type;
 type sysfs_mdnie_writable, fs_type, sysfs_type;
 type sysfs_lcd_writable, fs_type, sysfs_type;
+
+# EFS types
+type biometrics_efs_file, file_type;

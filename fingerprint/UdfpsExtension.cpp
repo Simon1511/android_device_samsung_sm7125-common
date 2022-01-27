@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-#include <compositionengine/FodExtension.h>
+#include <compositionengine/UdfpsExtension.h>
 
-uint32_t getFodZOrder(uint32_t z, bool touched) {
+uint32_t getUdfpsZOrder(uint32_t z, bool touched) {
     (void) touched;
     return z;
 }
 
-uint64_t getFodUsageBits(uint64_t usageBits, bool touched) {
+uint64_t getUdfpsUsageBits(uint64_t usageBits, bool touched) {
     if (touched) {
         usageBits |= 0x400000000LL;
     }

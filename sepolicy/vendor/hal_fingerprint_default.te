@@ -1,0 +1,19 @@
+allow hal_fingerprint_default default_android_hwservice:hwservice_manager { add find };
+
+allow hal_fingerprint_default {
+    fingerprint_device
+    tee_device
+}:chr_file rw_file_perms;
+
+allow hal_fingerprint_default fingerprint_vendor_data_file:dir { rw_dir_perms create rmdir };
+
+allow hal_fingerprint_default fingerprint_vendor_data_file:file { read write open getattr rename create unlink };
+
+allow hal_fingerprint_default biometrics_efs_file:file r_file_perms;
+allow hal_fingerprint_default biometrics_efs_file:dir search;
+
+allow hal_fingerprint_default sysfs_lcd_writable:dir search;
+allow hal_fingerprint_default sysfs_lcd_writable:file r_file_perms;
+
+allow hal_fingerprint_default vendor_sysfs_graphics:dir r_dir_perms;
+allow hal_fingerprint_default vendor_sysfs_graphics:file rw_file_perms;
