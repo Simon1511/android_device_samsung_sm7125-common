@@ -207,8 +207,6 @@
         <device name="SND_DEVICE_OUT_FM_HEADSET" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_HEADSET_KARAOKE" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_KARAOKE" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_HEADPHONES_AFE_LISTENBACK" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
-        <device name="SND_DEVICE_OUT_HEADSET_AFE_LISTENBACK" backend="headset" interface="RX_CDC_DMA_RX_0"/>
 
         <device name="SND_DEVICE_OUT_HEADPHONES_DSD" backend="headphones-dsd" interface=""/>
 
@@ -256,8 +254,6 @@
         <device name="SND_DEVICE_OUT_VOIP_FMC_USB_HEADSET" backend="usb-headset" interface="USB_AUDIO_RX"/>
         <device name="SND_DEVICE_OUT_LOOPBACK_USB_HEADSET" backend="usb-headset" interface="USB_AUDIO_RX"/>
         <device name="SND_DEVICE_OUT_USB_HEADSET_KARAOKE" backend="usb-headset" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_USB_HEADSET_AFE_LISTENBACK" backend="usb-headset" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_USB_HEADPHONES_AFE_LISTENBACK" backend="usb-headphones" interface="USB_AUDIO_RX"/>
 
         <device name="SND_DEVICE_OUT_USB_HEADSET" backend="usb-headphones" interface="USB_AUDIO_RX"/>
         <device name="SND_DEVICE_OUT_CALL_USB_HEADPHONE" backend="usb-headphones" interface="USB_AUDIO_RX"/>

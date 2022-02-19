@@ -1,4 +1,6 @@
 # Audio
+af.fast_track_multiplier=1
+ro.af.client_heap_size_kbyte=7168
 vendor.audio_hal.period_size=192
 ro.vendor.audio.sdk.fluencetype=none
 persist.vendor.audio.fluence.voicecall=true
@@ -28,8 +30,8 @@ vendor.audio.use.sw.ape.decoder=true
 vendor.audio.use.sw.mpegh.decoder=true
 vendor.audio.hw.aac.encoder=true
 vendor.audio_hal.in_period_size=144
-vendor.audio_hal.period_multiplier=3
-vendor.audio.adm.buffering.ms=2
+vendor.audio_hal.period_multiplier=4
+vendor.audio.adm.buffering.ms=3
 vendor.audio.volume.headset.gain.depcal=true
 persist.vendor.audio.fluence.voicecomm=true
 vendor.audio.hal.output.suspend.supported=true
@@ -56,6 +58,7 @@ vendor.audio.feature.hwdep_cal.enable=false
 vendor.audio.feature.concurrent_capture.enable=false
 vendor.audio.feature.maxx_audio.enable=false
 vendor.audio.feature.audiozoom.enable=false
+ro.config.vc_call_vol_steps=8
 
 # Bluetooth
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
