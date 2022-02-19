@@ -182,8 +182,6 @@ vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so
 vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib64/libsensorndkbridge.so
-vendor/lib/unihal_uniplugin_module@1.0.so
-vendor/lib64/unihal_uniplugin_module@1.0.so
 vendor/lib/libsuper_night_interface.so
 vendor/lib/libcamera_nn_stub.so
 vendor/lib/libscveCommon.so
@@ -214,7 +212,6 @@ vendor/lib/libvideobeauty.arcsoft.so
 vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
 vendor/lib/libdualcapture.so
 vendor/lib/libfocuspeaking.so
-vendor/lib/unihal_utils.so
 vendor/lib/libscaler_hw.unifunc.so
 vendor/lib/libFace_Landmark_API.camera.samsung.so
 vendor/lib/libOpenCv.camera.samsung.so
@@ -322,6 +319,10 @@ vendor/lib/libLocalTM_capture_core.camera.samsung.so
 vendor/lib/liblow_light_hdr.so
 vendor/lib/libdualcam_refocus_video.so
 vendor/lib/libvdis_core.so
+vendor/lib/unihal_main@1.3.so
+vendor/lib/unihal_cutils@1.3.so
+vendor/lib/unihal_uniplugin@1.0.so
+vendor/lib/libface_landmark.arcsoft.so
 vendor/lib64/libsuper_night_interface.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libscveCommon.so
@@ -354,7 +355,6 @@ vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/libdualcapture.so
 vendor/lib64/libfocuspeaking.so
-vendor/lib64/unihal_utils.so
 vendor/lib64/libscaler_hw.unifunc.so
 vendor/lib64/libFace_Landmark_API.camera.samsung.so
 vendor/lib64/libOpenCv.camera.samsung.so
@@ -379,6 +379,8 @@ vendor/lib64/camera/com.samsung.sensormodule.1_1_lsi_s5kgd2_otp.bin
 vendor/lib64/camera/com.samsung.sensormodule.0_1_lsi_s5kgw1p.bin
 vendor/lib64/camera/com.samsung.sensor.imx682.so
 vendor/lib64/camera/com.samsung.sensormodule.2_1_hynix_hi1336.bin
+vendor/lib64/camera/components/com.wrapper.stats.aec.so
+vendor/lib64/camera/components/com.samsung.node.smooth_transition.so
 vendor/lib64/camera/components/com.qti.eisv3.so
 vendor/lib64/camera/components/com.samsung.node.capture_fusion.so
 vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
@@ -453,6 +455,10 @@ vendor/lib64/libmpbase.so
 vendor/lib64/libLocalTM_capture_core.camera.samsung.so
 vendor/lib64/liblow_light_hdr.so
 vendor/lib64/libvdis_core.so
+vendor/lib64/unihal_main@1.3.so
+vendor/lib64/unihal_cutils@1.3.so
+vendor/lib64/unihal_uniplugin@1.0.so
+vendor/lib64/libface_landmark.arcsoft.so
 vendor/firmware/CAMERA_ICP.elf
 
 # Charger
