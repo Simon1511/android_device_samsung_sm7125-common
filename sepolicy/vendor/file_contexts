@@ -23,3 +23,4 @@
 /(vendor|system/vendor)/bin/hw/android.hardware.vibrator-service.sm7125					u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.2-service\.samsung					u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.samsung-libperfmgr				u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.1-service-samsung				u:object_r:hal_health_default_exec:s0
