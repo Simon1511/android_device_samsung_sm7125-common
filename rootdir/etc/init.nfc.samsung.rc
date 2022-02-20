@@ -1,4 +1,8 @@
-on boot
+on post-fs-data
+# NFC KEY
+    mkdir /data/vendor/nfc 0770 nfc nfc
+
+# NFC driver permission
     chmod 0660 /dev/sec-nfc
     chown nfc nfc /dev/sec-nfc
     chmod 0660 /dev/p3
@@ -7,16 +11,16 @@ on boot
     chown nfc nfc /dev/pn547
     chmod 0660 /dev/p61
     chown system system /dev/p61
-
-on post-fs-data
-# NFC KEY
-    mkdir /data/vendor/nfc 0770 nfc nfc
+    chmod 0660 /dev/st21nfc
+    chown nfc nfc /dev/st21nfc
+    chmod 0660 /dev/st54spi
+    chown system system /dev/st54spi
 
 # NFC: create data/nfc for nv storage
     mkdir /data/nfc 0770 nfc nfc
     mkdir /data/nfc/param 0770 nfc nfc
 
-# NFC: create /efs/nfc for nv storage
+# NFC: /efs/nfc for nv storage
     mkdir /efs/nfc 0700 nfc nfc
 
 # NFC KEY

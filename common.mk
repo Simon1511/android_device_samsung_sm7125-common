@@ -37,13 +37,14 @@ AB_OTA_UPDATER := false
 PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.ramdisk \
-    fstab.sqzr \
-    init.qcom.factory.rc \
+    fstab.ramplus \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.samsung.bsp.rc \
     init.samsung.display.rc \
     init.samsung.rc \
+    init.fingerprint.rc \
+    init.ramplus.rc \
     init.target.rc \
     ueventd.qcom.rc \
     wifi_qcom.rc \
@@ -59,19 +60,9 @@ PRODUCT_PACKAGES += \
 # Vendor scripts
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.crda.sh \
-    init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sdio.sh \
     init.qcom.sh \
-    init.qcom.usb.sh \
-    init.qti.chg_policy.sh \
-    init.qti.dcvs.sh \
-    init.qcom.coex.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.sensors.sh \
-    init.qti.qcv.sh \
-    qca6234-service.sh
+    init.qti.chg_policy.sh
 
 # Audio
 PRODUCT_PACKAGES += \

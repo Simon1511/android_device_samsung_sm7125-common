@@ -13,10 +13,6 @@ on post-fs-data
     chmod 0640 /sys/wifi/softap
     symlink /data/vendor/ramdump /data/vendor/log/wifi/ramdump
     chown system wifi /data/vendor/log/wifi/ramdump
-	
-    # for WIFI MEMDUMP
-    # The default value of below memdump file is set in SecProductFeature
-    write /data/vendor/conn/.memdump.info 0
 
     # for WIFI Antenna
     write /data/vendor/conn/.wificable.info E
