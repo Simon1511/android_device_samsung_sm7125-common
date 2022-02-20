@@ -147,6 +147,9 @@ ro.security.keystore.keytype=sakv2,gak
 debug.stagefright.omx_default_rank=0
 debug.stagefright.ccodec=1
 
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
 # RIL
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 ro.vendor.sec.radio.def_network=9
