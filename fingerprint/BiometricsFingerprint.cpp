@@ -121,7 +121,7 @@ Return<void> SehBiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, f
         stringToVec(SEH_AOSP_FQNAME), SehBiometricsFingerprint::requestResult);
 
     std::thread([this]() {
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        std::this_thread::sleep_for(std::chrono::milliseconds(400));
         if (!mPreviousBrightness.empty()) {
             set(BRIGHTNESS_PATH, mPreviousBrightness);
             mPreviousBrightness = "";
@@ -134,7 +134,6 @@ Return<void> SehBiometricsFingerprint::onFingerUp() {
     sehRequest(SEH_FINGER_STATE, SEH_PARAM_RELEASED,
         stringToVec(SEH_AOSP_FQNAME), SehBiometricsFingerprint::requestResult);
 
-    set(TSP_CMD_PATH, "fod_enable,0");
     return Void();
 }
 
