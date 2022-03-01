@@ -80,6 +80,9 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libvolumelistener
 
+PRODUCT_PACKAGES += \
+    SamsungDAP
+
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
     $(COMMON_PATH)/configs/audio/audio_configs_stock.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs_stock.xml \
