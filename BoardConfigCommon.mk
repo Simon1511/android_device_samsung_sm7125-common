@@ -55,7 +55,6 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := := cortex-a55
 
 # Kernel config
-TARGET_KERNEL_CLANG_COMPILE := true
 # Build with Clang 11 for now
 TARGET_KERNEL_CLANG_VERSION := r383902
 TARGET_KERNEL_SOURCE        := kernel/samsung/sm7125
