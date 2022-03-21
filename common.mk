@@ -358,7 +358,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     libxml2 \
     librilutils \
-    librmnetctl
+    librmnetctl \
+    secril_config_svc
 
 # Sensors
 PRODUCT_PACKAGES += \
