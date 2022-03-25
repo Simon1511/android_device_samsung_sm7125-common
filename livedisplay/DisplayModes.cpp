@@ -36,8 +36,12 @@ static constexpr const char* kDefaultPath = "/data/vendor/display/.displaymodede
 
 const std::map<int32_t, std::string> DisplayModes::kModeMap = {
     // clang-format off
+    {0, "Dynamic"},
+    {1, "Standard"},
     {2, "Natural"},
-    {4, "Vivid"},
+    {3, "Cinema"},
+    {4, "Adaptive"},
+    {5, "Reading"},
     // clang-format on
 };
 
