@@ -21,6 +21,7 @@ cc_binary {
         "AdaptiveBacklight.cpp",
         "DisplayModes.cpp",
         "SunlightEnhancement.cpp",
+        "DisplayColorCalibration.cpp",
         "service.cpp",
     ],
     shared_libs: [

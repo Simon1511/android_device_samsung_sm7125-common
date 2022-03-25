@@ -27,6 +27,7 @@
 #include "AdaptiveBacklight.h"
 #include "DisplayModes.h"
 #include "SunlightEnhancement.h"
+#include "DisplayColorCalibration.h"
 
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
@@ -37,11 +38,13 @@ using android::OK;
 using vendor::lineage::livedisplay::V2_0::samsung::AdaptiveBacklight;
 using vendor::lineage::livedisplay::V2_0::samsung::DisplayModes;
 using vendor::lineage::livedisplay::V2_0::samsung::SunlightEnhancement;
+using vendor::lineage::livedisplay::V2_0::samsung::DisplayColorCalibration;
 
 int main() {
     sp<AdaptiveBacklight> adaptiveBacklight;
     sp<DisplayModes> displayModes;
     sp<SunlightEnhancement> sunlightEnhancement;
+    sp<DisplayColorCalibration> displayColorCalibration;
     status_t status;
 
     LOG(INFO) << "LiveDisplay HAL service is starting.";
@@ -63,6 +66,13 @@ int main() {
     if (sunlightEnhancement == nullptr) {
         LOG(ERROR)
             << "Can not create an instance of LiveDisplay HAL SunlightEnhancement Iface, exiting.";
+        goto shutdown;
+    }
+
+    displayColorCalibration = new DisplayColorCalibration();
+    if (displayColorCalibration == nullptr) {
+        LOG(ERROR) << "Can not create an instance of LiveDisplay HAL DisplayColorCalibration "
+                      "Iface, exiting.";
         goto shutdown;
     }
 
@@ -91,6 +101,16 @@ int main() {
         if (status != OK) {
             LOG(ERROR)
                 << "Could not register service for LiveDisplay HAL SunlightEnhancement Iface ("
+                << status << ")";
+            goto shutdown;
+        }
+    }
+
+    if (displayColorCalibration->isSupported()) {
+        status = displayColorCalibration->registerAsService();
+        if (status != OK) {
+            LOG(ERROR)
+                << "Could not register service for LiveDisplay HAL DisplayColorCalibration Iface ("
                 << status << ")";
             goto shutdown;
         }
