@@ -185,14 +185,14 @@ PRODUCT_PACKAGES += \
     vendor.lineage.fastcharge@1.0-service.samsung
 
 # FM
-#PRODUCT_PACKAGES += \
-#    FM2 \
-#    libqcomfm_jni \
-#    qcom.fmradio \
-#    qcom.fmradio.xml
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio \
+    qcom.fmradio.xml
 
-#PRODUCT_BOOT_JARS += \
-#    qcom.fmradio
+PRODUCT_BOOT_JARS += \
+    qcom.fmradio
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
