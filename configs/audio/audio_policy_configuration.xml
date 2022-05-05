@@ -122,6 +122,9 @@
         <!-- Bluetooth Audio HAL -->
         <xi:include href="bluetooth_audio_policy_configuration.xml"/>
 
+        <!-- USB Audio HAL -->
+        <xi:include href="usb_audio_policy_configuration.xml"/>
+
     </modules>
     <!-- End of Modules section -->
 
