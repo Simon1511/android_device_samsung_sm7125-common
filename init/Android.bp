@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_sec",
+    name: "libinit_sm7125",
     recovery_available: true,
-    srcs: ["init_sec.cpp"],
+    srcs: ["init_sm7125.cpp"],
     include_dirs: [
         "system/libbase/include",
         "system/core/init"

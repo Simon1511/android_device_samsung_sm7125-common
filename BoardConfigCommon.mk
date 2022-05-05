@@ -38,6 +38,9 @@ TARGET_BOOTLOADER_BOARD_NAME := atoll
 
 TARGET_NO_BOOTLOADER := true
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_sm7125
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
