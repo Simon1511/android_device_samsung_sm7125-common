@@ -84,6 +84,10 @@ ro.camera.notify_nfc=1
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM7125
 
+# Crypto
+ro.crypto.metadata_init_delete_all_keys.enabled=false
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # Dalvik VM
 dalvik.vm.heapgrowthlimit=256m
 dalvik.vm.heapstartsize=8m
