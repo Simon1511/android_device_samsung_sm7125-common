@@ -1,8 +1,3 @@
-/optics(/.*)?    u:object_r:optics_file:s0
-/prism(/.*)?    u:object_r:prism_file:s0
-/misc(/.*)?    u:object_r:misc_file:s0
-/spu(/.*)?    u:object_r:spu_file:s0
-
 # sysfs
 /sys/devices/virtual/sec/switch(/.*)?										u:object_r:sysfs_sec_switch:s0
 /sys/class/lcd(/.*)?											    --  u:object_r:sysfs_lcd_writable:s0

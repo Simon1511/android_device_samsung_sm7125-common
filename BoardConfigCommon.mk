@@ -91,12 +91,7 @@ BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 BOARD_ROOT_EXTRA_FOLDERS += \
-    prism \
-    product \
-    optics \
     metadata \
-    spu \
-    misc \
     efs
 
 # File systems
