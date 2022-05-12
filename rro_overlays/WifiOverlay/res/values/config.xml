@@ -39,4 +39,31 @@
 
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
     <bool name="config_wifi_dual_band_support">true</bool>
+
+    <!-- Wifi driver supports WPA3 Simultaneous Authentication of Equals (WPA3-SAE) for softap -->
+    <bool translatable="false" name="config_wifi_softap_sae_supported">false</bool>
+
+    <!-- Wifi Hal supports force client disconnect for softap -->
+    <bool translatable="false" name="config_wifiSofapClientForceDisconnectSupported">false</bool>
+
+    <!-- Boolean indicating that softap passphrase need to enable ASCII encodable check -->
+    <bool translatable="false" name="config_wifiSoftapPassphraseAsciiEncodableCheck">false</bool>
+
+    <!-- boolean indicating whether or not to reset channel configuration during cloud configuration restore -->
+    <bool translatable="false" name ="config_wifiSoftapResetChannelConfig">false</bool>
+
+    <!-- boolean indicating whether or not to reset hiddenSsid configuration during cloud configuration restore -->
+    <bool translatable="false" name ="config_wifiSoftapResetHiddenConfig">false</bool>
+
+    <!-- boolean indicating whether or not to reset max client setting configuration during cloud configuration restore -->
+    <bool translatable="false" name ="config_wifiSoftapResetMaxClientSettingConfig">false</bool>
+
+    <!-- Wifi driver supports Automatic channel selection (ACS) for softap -->
+    <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
+
+    <!-- Indicates that connected MAC randomization is supported on this device -->
+    <bool translatable="false" name="config_wifi_connected_mac_randomization_supported">true</bool>
+
+    <!-- Indicates that p2p MAC randomization is supported on this device -->
+    <bool translatable="false" name="config_wifi_p2p_mac_randomization_supported">true</bool>
 </resources>
