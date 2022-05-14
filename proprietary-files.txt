@@ -942,6 +942,7 @@ vendor/etc/sec_config
 vendor/etc/init/init.qti.qcv.rc
 
 # RIL
+vendor/bin/hw/rild
 vendor/bin/adpl
 vendor/bin/netmgrd
 vendor/bin/ipacm-diag
