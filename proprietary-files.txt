@@ -1000,10 +1000,6 @@ vendor/lib64/libipanat.so
 vendor/lib64/libnfnetlink.so
 vendor/lib64/libnetfilter_conntrack.so
 
-# A525FXXU4AUJ2 (R)
--vendor/lib/libril.so|b7759521aeb60a07b929e4ff53ba25338c4cd087
--vendor/lib64/libril.so|49d4eebf79faefd03b8378c3ed07cf44730a15ff
-
 # Sensors
 vendor/bin/factory.ssc
 vendor/bin/sscrpcd
