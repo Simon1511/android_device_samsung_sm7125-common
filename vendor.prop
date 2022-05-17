@@ -159,6 +159,7 @@ vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 ro.vendor.sec.radio.def_network=9
 persist.vendor.radio.enableadvancedscan=true
 ro.telephony.default_cdma_sub=0
+ro.telephony.default_network=9,9
 ro.vendor.use_data_netmgrd=false
 ro.radio.noril=no
 ro.vendor.epdg.support=true
