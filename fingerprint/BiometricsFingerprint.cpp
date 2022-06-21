@@ -178,7 +178,6 @@ Return<RequestStatus> BiometricsFingerprint::ErrorFilter(int32_t error) {
 // Translate from errors returned by traditional HAL (see fingerprint.h) to
 // HIDL-compliant FingerprintError.
 FingerprintError BiometricsFingerprint::VendorErrorFilter(int32_t error, int32_t* vendorCode) {
-    *vendorCode = 0;
     switch (error) {
         case FINGERPRINT_ERROR_HW_UNAVAILABLE:
             return FingerprintError::ERROR_HW_UNAVAILABLE;
@@ -209,7 +208,6 @@ FingerprintError BiometricsFingerprint::VendorErrorFilter(int32_t error, int32_t
 // to HIDL-compliant FingerprintAcquiredInfo.
 FingerprintAcquiredInfo BiometricsFingerprint::VendorAcquiredFilter(int32_t info,
                                                                     int32_t* vendorCode) {
-    *vendorCode = 0;
     switch (info) {
         case FINGERPRINT_ACQUIRED_GOOD:
             return FingerprintAcquiredInfo::ACQUIRED_GOOD;
@@ -261,6 +259,7 @@ Return<RequestStatus> BiometricsFingerprint::enroll(const hidl_array<uint8_t, 69
 }
 
 Return<RequestStatus> BiometricsFingerprint::postEnroll() {
+    getInstance()->onFingerUp();
     return ErrorFilter(ss_fingerprint_post_enroll());
 }
 
@@ -270,6 +269,7 @@ Return<uint64_t> BiometricsFingerprint::getAuthenticatorId() {
 
 Return<RequestStatus> BiometricsFingerprint::cancel() {
     int32_t ret = ss_fingerprint_cancel();
+    getInstance()->onFingerUp();
 
 #ifdef CALL_NOTIFY_ON_CANCEL
     if (ret == 0) {
@@ -440,13 +440,13 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
                 const uint8_t* hat = reinterpret_cast<const uint8_t*>(&msg->data.authenticated.hat);
                 const hidl_vec<uint8_t> token(
                     std::vector<uint8_t>(hat, hat + sizeof(msg->data.authenticated.hat)));
-                set(HBM_PATH, "0");
                 if (!thisPtr->mClientCallback
                          ->onAuthenticated(devId, msg->data.authenticated.finger.fid,
                                            msg->data.authenticated.finger.gid, token)
                          .isOk()) {
                     LOG(ERROR) << "failed to invoke fingerprint onAuthenticated callback";
                 }
+                getInstance()->onFingerUp();
             } else {
                 // Not a recognized fingerprint
                 if (!thisPtr->mClientCallback
