@@ -12,12 +12,9 @@ allow hal_fingerprint_default biometrics_efs_file:file r_file_perms;
 allow hal_fingerprint_default biometrics_efs_file:dir search;
 allow hal_fingerprint_default efs_file:dir search;
 
-# /sys/class/backlight/panel0-backlight/
+# /sys/class/lcd/panel/mask_brightness
 allow hal_fingerprint_default sysfs_lcd_writable:dir search;
-allow hal_fingerprint_default sysfs_lcd_writable:file r_file_perms;
-
-allow hal_fingerprint_default vendor_sysfs_graphics:dir r_dir_perms;
-allow hal_fingerprint_default vendor_sysfs_graphics:file rw_file_perms;
+allow hal_fingerprint_default sysfs_lcd_writable:file rw_file_perms;
 
 # /sys/class/fingerprint/
 allow hal_fingerprint_default sysfs_fingerprint:dir r_dir_perms;

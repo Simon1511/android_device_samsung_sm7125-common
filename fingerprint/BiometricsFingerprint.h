@@ -99,8 +99,6 @@ public:
     int (*ss_fingerprint_request)(int32_t cmd_id, const int8_t* inputBuf, uint32_t value, int8_t* outBuf, uint32_t len, uint32_t inParam);
 
     static void requestResult(int retval, const hidl_vec<int8_t>& outBuf);
-    std::string mPreviousBrightness;
-
 };
 
 }  // namespace implementation

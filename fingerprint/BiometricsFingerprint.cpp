@@ -34,7 +34,7 @@
 #define SEH_PARAM_RELEASED 1
 #define SEH_AOSP_FQNAME "android.hardware.biometrics.fingerprint@2.3::IBiometricsFingerprint"
 #define TSP_CMD_PATH "/sys/class/sec/tsp/cmd"
-#define BRIGHTNESS_PATH "/sys/class/backlight/panel0-backlight/brightness"
+#define HBM_PATH "/sys/class/lcd/panel/mask_brightness"
 
 namespace vendor {
 namespace samsung {
@@ -114,25 +114,22 @@ static hidl_vec<int8_t> stringToVec(const std::string& str) {
 }
 
 Return<void> SehBiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
-    mPreviousBrightness = get<std::string>(BRIGHTNESS_PATH, "");
-    set(BRIGHTNESS_PATH, "331");
+    std::thread([this]() {
+        std::this_thread::sleep_for(std::chrono::milliseconds(35));
+        set(HBM_PATH, "331");
+    }).detach();
 
     sehRequest(SEH_FINGER_STATE, SEH_PARAM_PRESSED,
         stringToVec(SEH_AOSP_FQNAME), SehBiometricsFingerprint::requestResult);
 
-    std::thread([this]() {
-        std::this_thread::sleep_for(std::chrono::milliseconds(400));
-        if (!mPreviousBrightness.empty()) {
-            set(BRIGHTNESS_PATH, mPreviousBrightness);
-            mPreviousBrightness = "";
-        }
-    }).detach();
     return Void();
 }
 
 Return<void> SehBiometricsFingerprint::onFingerUp() {
     sehRequest(SEH_FINGER_STATE, SEH_PARAM_RELEASED,
         stringToVec(SEH_AOSP_FQNAME), SehBiometricsFingerprint::requestResult);
+
+    set(HBM_PATH, "0");
 
     return Void();
 }
@@ -402,6 +399,9 @@ void SehBiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
             }
         } break;
         case FINGERPRINT_TEMPLATE_ENROLLING:
+            if(msg->data.enroll.samples_remaining == 0) {
+                set(HBM_PATH, "0");
+            }
             LOG(DEBUG) << "onEnrollResult(fid=" << msg->data.enroll.finger.fid
                        << ", gid=" << msg->data.enroll.finger.gid
                        << ", rem=" << msg->data.enroll.samples_remaining << ")";
@@ -434,6 +434,7 @@ void SehBiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
                 const uint8_t* hat = reinterpret_cast<const uint8_t*>(&msg->data.authenticated.hat);
                 const hidl_vec<uint8_t> token(
                     std::vector<uint8_t>(hat, hat + sizeof(msg->data.authenticated.hat)));
+                set(HBM_PATH, "0");
                 if (!thisPtr->mClientCallback
                          ->onAuthenticated(devId, msg->data.authenticated.finger.fid,
                                            msg->data.authenticated.finger.gid, token)
