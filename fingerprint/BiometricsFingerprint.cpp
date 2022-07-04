@@ -388,6 +388,7 @@ void SehBiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
             if (!thisPtr->mClientCallback->onError(devId, result, vendorCode).isOk()) {
                 LOG(ERROR) << "failed to invoke fingerprint onError callback";
             }
+            getInstance()->onFingerUp();
         } break;
         case FINGERPRINT_ACQUIRED: {
             int32_t vendorCode = 0;
