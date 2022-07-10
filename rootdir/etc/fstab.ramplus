@@ -4,4 +4,4 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
 # SWAP
-/dev/block/zram0                                   none                swap      defaults                                              zramsize=2147483648,auto_configure
+/dev/block/zram0                                   none                swap      defaults                                              zramsize=5368709120,max_comp_streams=8
