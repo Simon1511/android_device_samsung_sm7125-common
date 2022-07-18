@@ -158,8 +158,6 @@ vendor/firmware/crnv21.bin
 vendor/firmware/apnv11.bin
 
 # Camera
-vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service
-vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
