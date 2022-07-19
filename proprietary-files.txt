@@ -724,22 +724,6 @@ vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so|198198b82c376e13
 vendor/lib/vendor.samsung.hardware.health@2.0.so
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
-# HBTP
-vendor/bin/hbtp_daemon
-vendor/etc/hbtp/loader.cfg
-vendor/lib/libhbtpclient.so
-vendor/lib/libhbtpfrmwk.so
-vendor/lib/libhbtpdsp.so
-vendor/lib/libfastrpc_utf_stub.so
-vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
-vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
-vendor/lib64/libfastrpc_utf_stub.so
-vendor/lib64/libhbtpfrmwk.so
-vendor/lib64/libhbtpclient.so
-vendor/lib64/libhbtpdsp.so
-vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
-vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
-
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleEx3HEXAGON/HotwordEnrollmentOKGoogleEx3HEXAGON.apk
 -product/priv-app/HotwordEnrollmentXGoogleEx3HEXAGON/HotwordEnrollmentXGoogleEx3HEXAGON.apk
