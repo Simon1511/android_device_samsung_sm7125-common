@@ -41,7 +41,6 @@ const std::map<int32_t, std::string> DisplayModes::kModeMap = {
     {2, "Natural"},
     {3, "Cinema"},
     {4, "Adaptive"},
-    {5, "Reading"},
     // clang-format on
 };
 
