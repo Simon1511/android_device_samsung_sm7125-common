@@ -128,6 +128,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service
 
+# Configstore
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.capabilityconfigstore@1.0.vendor
+
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor
