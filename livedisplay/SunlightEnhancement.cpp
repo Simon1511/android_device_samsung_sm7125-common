@@ -43,13 +43,13 @@ bool SunlightEnhancement::isSupported() {
 Return<bool> SunlightEnhancement::isEnabled() {
     std::string brightness;
     ReadFileToString(kBrightnessPath, &brightness);
-    return brightness == "365";
+    return brightness == "486";
 }
 
 Return<bool> SunlightEnhancement::setEnabled(bool enabled) {
     if (enabled) {
         ReadFileToString(kBrightnessPath, &previous_brightness);
-        return WriteStringToFile("365", kBrightnessPath, true);
+        return WriteStringToFile("486", kBrightnessPath, true);
     } else if (!previous_brightness.empty()) {
         return WriteStringToFile(previous_brightness, kBrightnessPath, true);
     }
