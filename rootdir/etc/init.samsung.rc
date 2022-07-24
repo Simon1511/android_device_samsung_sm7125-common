@@ -28,6 +28,7 @@
 #
 
 import /vendor/etc/init/hw/init.samsung.bsp.rc
+import /vendor/etc/init/hw/init.samsung.power.rc
 import /vendor/etc/init/hw/init.samsung.display.rc
 
 on early-init
@@ -37,8 +38,11 @@ on early-init
     mkdir /efs/taas 0770 system system
     mkdir /mnt/vendor/efs/taas 0770 system system
     chown system system /dev/tspio
-    chown system system /sys/class/sec/tsp/enable
+    chown system system /sys/class/sec/tsp/enabled
+    chmod 0660 /sys/class/sec/tsp/enabled
     chown system system /dev/tsp_data
+    chown system system /sys/class/sec/sec_epen/enabled
+    chmod 0660 /sys/class/sec/sec_epen/enabled
 
     # pogo keyboard
     chown system system /sys/class/sec/sec_keypad/fw_update
@@ -185,9 +189,6 @@ on boot
     chown system system /sys/class/sec/tsp/ta_mode
     chown system system /sys/class/sec/tsp/virtual_prox
     chown system system /sys/class/sec/tsp/hw_param
-    chown system system /sys/class/sec/tsp/input/trusted_touch_enable
-    chown system system /sys/class/sec/tsp/input/trusted_touch_event
-    chown system system /sys/class/sec/tsp/input/trusted_touch_type
 
     # Permissions for Touchscreen-1
     chown system radio /sys/class/sec/tsp1/cmd
@@ -248,8 +249,12 @@ on boot
 
     # Permission for Securetouch
     chown system system /sys/class/sec/ss_touch/secure/secure_touch_enable
+    chown system system /sys/class/sec/tsp/input/secure_touch_enable
     chown system system /sys/class/sec/tsp1/input/secure_touch_enable
     chown system system /sys/class/sec/tsp2/input/secure_touch_enable
+    chown system system /sys/class/sec/tsp/input/trusted_touch_enable
+    chown system system /sys/class/sec/tsp/input/trusted_touch_event
+    chown system system /sys/class/sec/tsp/input/trusted_touch_type
 
     # Key
     chown system radio /sys/class/sec/sec_key/wakeup_keys

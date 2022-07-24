@@ -11,3 +11,7 @@ allow hal_health_default app_efs_file:dir { read write add_name search };
 allow hal_health_default app_efs_file:file { read write open create getattr setattr };
 
 allow hal_health_default efs_file:dir search;
+
+# Thermal
+allow hal_health_default hal_thermal_samsung_hwservice:hwservice_manager find;
+binder_call(hal_health_default, hal_thermal_default)

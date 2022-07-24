@@ -1,5 +1,5 @@
 
-# Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+# Copyright (c) 2019-2021, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -27,36 +27,35 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 #
+
+on early-init
+
+on init
+
+on late-init
+
+on post-fs
+
+on late-fs
+
 on post-fs-data
-# Permissions for audio
-    chown system radio /sys/class/audio/earjack/key_state
-    chown system radio /sys/class/audio/earjack/mic_adc
-    chown system radio /sys/class/audio/earjack/select_jack
-    chown system radio /sys/class/audio/earjack/state
 
-on property:sys.boot_completed=1
-# TI Amp Calibration/Validation
-    chown system audio /sys/class/tas25xx/calib/calibration
-    chown system audio /sys/class/tas25xx/calib/cstatus
-    chown system audio /sys/class/tas25xx/calib/cstatus_r
-    chown system audio /sys/class/tas25xx/calib/rdc
-    chown system audio /sys/class/tas25xx/calib/rdc_r
-    chown system audio /sys/class/tas25xx/calib/temp
-    chown system audio /sys/class/tas25xx/calib/temp_r
-    chown system audio /sys/class/tas25xx/valid/status
-    chown system audio /sys/class/tas25xx/valid/status_r
-    chown system audio /sys/class/tas25xx/valid/validation
-    mkdir /efs/tas25xx 0770 audioserver audio
-    chown audioserver audio /efs/tas25xx/calib_re
-    chown audioserver audio /efs/tas25xx/amb_temp
-    chown audioserver audio /efs/tas25xx/calib_re_r
-    chown audioserver audio /efs/tas25xx/amb_temp_r
-    chmod 0660 /efs/tas25xx/calib_re
-    chmod 0660 /efs/tas25xx/amb_temp
-    chmod 0660 /efs/tas25xx/calib_re_r
-    chmod 0660 /efs/tas25xx/amb_temp_r
+on boot
+    chown radio system /sys/power/cpufreq_max_limit
+    chown radio system /sys/power/cpufreq_min_limit
+    chown radio system /sys/power/cpufreq_table
+    chown radio system /sys/power/over_limit
+    chmod 664 /sys/power/cpufreq_max_limit
+    chmod 664 /sys/power/cpufreq_min_limit
+    chmod 444 /sys/power/cpufreq_table
+    chmod 664 /sys/power/over_limit
+    write /sys/power/pm_debug_messages 1
+    chown radio system /sys/module/lpm_levels/parameters/secdebug
+    chmod 664 /sys/module/lpm_levels/parameters/secdebug
 
-# DBMDx
-    chmod 0660 /dev/dbmdx-1
-    chown system audio /dev/dbmdx-1
-    chown system audio /sys/class/voicep/dbmdx/va_mic_mode
+on shutdown
+
+# service definition
+
+# on property triggers
+

@@ -190,8 +190,12 @@ limitations under the License.
             <Limit name="measured-frame-rate-1920x1080" range="27-60" />
         </MediaCodec>
         <MediaCodec name="c2.android.mpeg4.decoder" type="video/mp4v-es" update="true">
-            <!-- measured [424-901] lower-upper [167-1783] median * 1.5 [994] -->
-            <Limit name="measured-frame-rate-176x144" range="368-810" />
+            <!-- measured [392-558] lower-upper [120-1279] median * 1.5 [713] -->
+            <Limit name="measured-frame-rate-176x144" range="264-581" />
+            <!-- measured [338-728] lower-upper [135-1435] median * 1.5 [800] -->
+            <Limit name="measured-frame-rate-480x360" range="296-652" />
+            <!-- measured [95-328] lower-upper [54-570] median * 1.5 [317] -->
+            <Limit name="measured-frame-rate-1280x720" range="118-259" />
         </MediaCodec>
         <MediaCodec name="c2.android.vp8.decoder" type="video/x-vnd.on2.vp8" update="true">
             <!-- measured [241-787] lower-upper [130-1383] median * 1.5 [771] -->

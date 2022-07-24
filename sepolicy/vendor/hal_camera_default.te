@@ -12,3 +12,5 @@ get_prop(hal_camera_default, vendor_mpctl_prop)
 
 # EFS
 allow hal_camera_default efs_file:dir search;
+
+dontaudit hal_camera_default default_prop:file read;

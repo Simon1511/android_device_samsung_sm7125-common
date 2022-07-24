@@ -43,6 +43,7 @@ PRODUCT_PACKAGES += \
     init.samsung.bsp.rc \
     init.samsung.display.rc \
     init.samsung.rc \
+    init.samsung.power.rc \
     init.fingerprint.rc \
     init.ramplus.rc \
     init.target.rc \
@@ -379,6 +380,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.samsung-multihal \
     android.hardware.sensors@2.0-ScopedWakelock.vendor
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0.vendor \
+    android.frameworks.cameraservice.service@2.1.vendor
 
 # Touch features
 PRODUCT_PACKAGES += \

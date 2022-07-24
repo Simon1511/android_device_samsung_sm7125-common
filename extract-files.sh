@@ -66,7 +66,7 @@ BLOB_ROOT="$ANDROID_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary
 function blob_fixup() {
     case "${1}" in
         vendor/lib64/libsec-ril.so)
-            sed -i 's/ril.dds.call.slotid/vendor.calls.slotid/g' "${2}"
+            sed -i 's/ril.dds.call.ongoing/vendor.calls.ongoing/g' "${2}"
             ;;
     esac
 }

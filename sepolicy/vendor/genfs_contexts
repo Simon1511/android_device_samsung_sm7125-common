@@ -39,6 +39,9 @@ genfscon sysfs /devices/virtual/camera/                                         
 genfscon sysfs /devices/virtual/camera/rear/ssrm_camera_info                                                u:object_r:sysfs_camera_writable:s0
 genfscon sysfs /devices/virtual/camera/flash/rear_flash                                                     u:object_r:sysfs_camera_writable:s0
 genfscon sysfs /kernel/mm/vmscan/mem_boost_mode                                                             u:object_r:sysfs_camera_writable:s0
+genfscon sysfs /devices/virtual/sec/sec-ap-thermistor/                                                      u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-pa-thermistor/                                                      u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-wf-thermistor/                                                      u:object_r:sysfs_thermal:s0
 
 genfscon sysfs /power/                                                                                      u:object_r:sysfs_power_writable:s0
 

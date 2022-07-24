@@ -34,20 +34,18 @@ on post-fs-data
     chmod 0640 /sys/wifi/ant
 
 on property:vendor.wlan.ramdump_mode=0
-    write /sys/bus/msm_subsys/devices/subsys9/restart_level "RELATED"
+    write /sys/module/subsystem_restart/parameters/enable_ramdumps 0
     stop vendor.ss_ramdump
 
 on property:vendor.wlan.ramdump_mode=2
     write /sys/module/subsystem_restart/parameters/enable_ramdumps 2
-    write /sys/bus/msm_subsys/devices/subsys9/restart_level "RELATED"
     stop vendor.ss_ramdump
-    start vendor.ss_ramdump
+    #start vendor.ss_ramdump
 
 on property:vendor.wlan.ramdump_mode=3
-    write /sys/module/subsystem_restart/parameters/enable_ramdumps 2
-    write /sys/bus/msm_subsys/devices/subsys9/restart_level "SYSTEM"
+    write /sys/module/subsystem_restart/parameters/enable_ramdumps 3
     stop vendor.ss_ramdump
-    start vendor.ss_ramdump
+    #start vendor.ss_ramdump
 
 on property:sys.boot_completed=1
     chown wifi wifi /sys/module/wlan/parameters/fwpath

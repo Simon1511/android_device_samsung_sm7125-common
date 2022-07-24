@@ -1,4 +1,4 @@
-# All blobs are from A525FXXS4BVA2, unless pinned
+# All blobs are from A525FXXU4BVG1, unless pinned
 
 # ACDB
 vendor/lib/libacdb-fts.so
@@ -38,7 +38,6 @@ vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so
 vendor/lib/rfsa/adsp/libdsp_streamer_skel.so
 vendor/lib/rfsa/adsp/libcamera_nn_skel.so
 vendor/lib/rfsa/adsp/libcvpdsp_skel.so
@@ -320,8 +319,8 @@ vendor/lib/libLocalTM_capture_core.camera.samsung.so
 vendor/lib/liblow_light_hdr.so
 vendor/lib/libdualcam_refocus_video.so
 vendor/lib/libvdis_core.so
-vendor/lib/unihal_main@1.3.so
-vendor/lib/unihal_cutils@1.3.so
+vendor/lib/unihal_main@2.1.so
+vendor/lib/unihal_cutils@2.1.so
 vendor/lib/unihal_uniplugin@1.0.so
 vendor/lib/libface_landmark.arcsoft.so
 vendor/lib64/libsuper_night_interface.so
@@ -456,8 +455,8 @@ vendor/lib64/libmpbase.so
 vendor/lib64/libLocalTM_capture_core.camera.samsung.so
 vendor/lib64/liblow_light_hdr.so
 vendor/lib64/libvdis_core.so
-vendor/lib64/unihal_main@1.3.so
-vendor/lib64/unihal_cutils@1.3.so
+vendor/lib64/unihal_main@2.1.so
+vendor/lib64/unihal_cutils@2.1.so
 vendor/lib64/unihal_uniplugin@1.0.so
 vendor/lib64/libface_landmark.arcsoft.so
 vendor/firmware/CAMERA_ICP.elf
@@ -729,7 +728,7 @@ vendor/bin/hw/android.hardware.health@2.1-service-samsung
 vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
 -vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
 vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
-vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so|198198b82c376e1370e107d154859f95c8e72f86
+vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so|8e7c50b855276f6158d6dac82a5e9192b6ca4d09
 vendor/lib/vendor.samsung.hardware.health@2.0.so
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
@@ -858,8 +857,8 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libperfioctl.so
 vendor/lib64/libqti-util.so
-vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
-vendor/lib/vendor.qti.memory.pasrmanager@1.1.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
 vendor/etc/perf/targetresourceconfigs.xml
 vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/commonresourceconfigs.xml
@@ -972,7 +971,7 @@ vendor/lib64/libnetmgr.so
 vendor/lib64/libnetmgr_common.so
 vendor/lib/libqrtr.so
 vendor/lib64/libqrtr.so
-vendor/lib64/libsec-ril.so|1d97ef6504c6380466d4ea82b3428f496e4d0ab8
+vendor/lib64/libsec-ril.so|27f3bb99e129e7521795c579092527d9da7ee3d2
 vendor/lib64/libsecril-client.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib64/libsystem_health_mon.so
@@ -1067,6 +1066,15 @@ vendor/etc/init/init_thermal-engine.rc
 vendor/etc/thermal-engine.conf
 vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
+vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
+vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
+vendor/lib/vendor.samsung.hardware.thermal@1.0.so
+vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
+vendor/lib/libhypervintf.so
+vendor/lib64/libhypervintf.so
+vendor/lib/vendor.samsung.hardware.hyper-V2-ndk_platform.so
+vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so
 
 # Time services
 -vendor/app/TimeService/TimeService.apk
