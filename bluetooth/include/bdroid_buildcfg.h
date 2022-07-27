@@ -32,6 +32,4 @@
 
 #define AVDT_NUM_SEPS 35
 
-#define BTM_ESCO_TRANSPORT_UNIT_SIZE_PCM16
-
 #endif
