@@ -111,7 +111,8 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.0-impl \
-    android.hardware.bluetooth@1.0.vendor
+    android.hardware.bluetooth@1.0.vendor \
+    libbtdevice.sm7125
 
 # Camera
 PRODUCT_PACKAGES += \
