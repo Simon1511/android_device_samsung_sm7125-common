@@ -173,12 +173,8 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
-BOARD_USES_ADRENO := true
 
-# Fingerprint
-BUILD_FINGERPRINT := "samsung/a52qnsxx/qssi:12/SP1A.210812.016/A525FXXU4BVG1:user/release-keys"
-PRIVATE_BUILD_DESC := "a52qnsxx-user 12 SP1A.210812.016 A525FXXU4BVG1 release-keys"
-
+# Security patch
 VENDOR_SECURITY_PATCH := 2022-07-01
 
 # FM
@@ -199,10 +195,6 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.default
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
-
-# Treble
-BOARD_VNDK_VERSION := current
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Wifi
 BOARD_WLAN_DEVICE := qcwcn
