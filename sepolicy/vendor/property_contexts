@@ -31,4 +31,3 @@ vendor.sys.qseecomd.enable                       u:object_r:vendor_qseecomd_prop
 
 # wifi
 vendor.wifi.                                     u:object_r:vendor_wifi_prop:s0
-ro.vendor.wifi.sap.interface                     u:object_r:vendor_wifi_prop:s0
