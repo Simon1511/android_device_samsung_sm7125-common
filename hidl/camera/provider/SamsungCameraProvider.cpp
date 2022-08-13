@@ -26,6 +26,15 @@ using ::android::OK;
 const int kMaxCameraIdLen = 16;
 
 SamsungCameraProvider::SamsungCameraProvider() : LegacyCameraProviderImpl_2_5() {
+
+#ifdef SAMSUNG_SM7125_MODEL_a72q
+    // tele
+    mExtraIDs.push_back(52);
+#endif
+
+    // macro
+    mExtraIDs.push_back(54);
+
     if (!mInitFailed) {
         for (int i : mExtraIDs) {
             struct camera_info info;

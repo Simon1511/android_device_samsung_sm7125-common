@@ -13,11 +13,28 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+soong_config_module_type {
+    name: "samsung_sm7125_model",
+    module_type: "cc_defaults",
+    config_namespace: "samsung_sm7125CameraVars",
+    value_variables: ["samsung_sm7125_model"],
+    properties: ["cppflags"],
+}
+
+samsung_sm7125_model {
+    name: "samsung_sm7125_model_defaults",
+    soong_config_variables: {
+        samsung_sm7125_model: {
+            cppflags: ["-DSAMSUNG_SM7125_MODEL_%s"],
+        },
+    },
+}
 
 cc_binary {
     name: "android.hardware.camera.provider@2.6-service.sm7125",
     defaults: [
         "hidl_defaults",
+        "samsung_sm7125_model_defaults",
     ],
     compile_multilib: "both",
     proprietary: true,

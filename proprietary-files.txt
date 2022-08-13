@@ -206,7 +206,6 @@ vendor/lib/libcamxfdengine.so
 vendor/lib/libarcsoft_super_night_raw.so
 vendor/lib/libjpegencoder_sw.unifunc.so
 vendor/lib/hw/camera.unihal.default.so
-vendor/lib/hw/camera.qcom.so
 vendor/lib/libbeautyshot.arcsoft.so
 vendor/lib/libvideobeauty.arcsoft.so
 vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
@@ -348,7 +347,6 @@ vendor/lib64/libcamxfdengine.so
 vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libjpegencoder_sw.unifunc.so
 vendor/lib64/hw/camera.unihal.default.so
-vendor/lib64/hw/camera.qcom.so
 vendor/lib64/libbeautyshot.arcsoft.so
 vendor/lib64/libvideobeauty.arcsoft.so
 vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
