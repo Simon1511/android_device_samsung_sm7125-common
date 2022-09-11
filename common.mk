@@ -71,7 +71,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl.sm7125 \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.2-impl \
-    audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
     libaudioalsa \
