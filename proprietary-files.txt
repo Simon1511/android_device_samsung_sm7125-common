@@ -987,7 +987,6 @@ vendor/lib64/libdsi_netctrl.so
 vendor/lib/libqcmaputils.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/liboffloadhal.so
-vendor/lib64/libipanat.so
 vendor/lib64/libnfnetlink.so
 vendor/lib64/libnetfilter_conntrack.so
 
