@@ -316,6 +316,10 @@
             <name>IGloveMode</name>
             <instance>default</instance>
         </interface>
+        <interface>
+            <name>ITouchscreenGesture</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.am</name>
