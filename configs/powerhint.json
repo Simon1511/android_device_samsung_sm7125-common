@@ -106,6 +106,15 @@
         "ResetOnInit": true
     },
     {
+        "Name": "LightSensorEnable",
+        "Path": "/sys/class/sensors/light_sensor/lcd_onoff",
+        "Values": [
+            "1",
+            "0"
+        ],
+        "ResetOnInit": true
+    },
+    {
         "Name": "DoubleTapToWakeEnable",
         "Path": "/sys/class/sec/tsp/cmd",
         "Values": [
@@ -365,6 +374,12 @@
     {
       "PowerHint": "INTERACTIVE",
       "Node": "TouchscreenEnable",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTIVE",
+      "Node": "LightSensorEnable",
       "Duration": 0,
       "Value": "1"
     },
