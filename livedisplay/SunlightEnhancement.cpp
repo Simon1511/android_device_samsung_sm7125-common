@@ -31,29 +31,28 @@ namespace livedisplay {
 namespace V2_0 {
 namespace samsung {
 
-static constexpr const char* kBrightnessPath = "/sys/class/backlight/panel0-backlight/brightness";
+static constexpr const char* kSREPath = "/sys/class/mdnie/mdnie/outdoor";
 
 // Methods from ::vendor::lineage::livedisplay::V2_0::ISunlightEnhancement follow.
 bool SunlightEnhancement::isSupported() {
-    std::fstream brightness(kBrightnessPath, brightness.in | brightness.out);
-    return brightness.good();
+    std::fstream sre(kSREPath, sre.in | sre.out);
+
+    return sre.good();
 }
 
 // Methods from ::vendor::lineage::livedisplay::V2_0::IAdaptiveBacklight follow.
 Return<bool> SunlightEnhancement::isEnabled() {
-    std::string brightness;
-    ReadFileToString(kBrightnessPath, &brightness);
-    return brightness == "486";
+    std::string tmp;
+    int32_t statusSRE = 0;
+    if (ReadFileToString(kSREPath, &tmp)) {
+        statusSRE = std::stoi(Trim(tmp));
+    }
+
+    return statusSRE == 1;
 }
 
 Return<bool> SunlightEnhancement::setEnabled(bool enabled) {
-    if (enabled) {
-        ReadFileToString(kBrightnessPath, &previous_brightness);
-        return WriteStringToFile("486", kBrightnessPath, true);
-    } else if (!previous_brightness.empty()) {
-        return WriteStringToFile(previous_brightness, kBrightnessPath, true);
-    }
-    return true;
+    return WriteStringToFile(enabled ? "1" : "0", kSREPath, true);
 }
 
 }  // namespace samsung
