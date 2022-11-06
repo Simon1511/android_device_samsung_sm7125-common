@@ -38,3 +38,7 @@ allow hal_power_default vendor_sysfs_devfreq:file { write open };
 allow hal_power_default property_socket:sock_file write;
 unix_socket_connect(hal_power_default, property, init)
 set_prop(hal_power_default, vendor_power_prop)
+
+# for lcd_onoff node
+allow hal_power_default { sysfs_sensors vendor_sysfs_sensors }:dir search;
+allow hal_power_default sysfs_sensors:file { open write };
