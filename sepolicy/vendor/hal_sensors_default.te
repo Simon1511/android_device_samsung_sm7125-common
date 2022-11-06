@@ -1,5 +1,7 @@
 # hal_sensors_default.te
 
+binder_call(hal_sensors_default, system_server)
+
 # /dev/iio:device1
 allow hal_sensors_default iio_device:chr_file r_file_perms;
 
