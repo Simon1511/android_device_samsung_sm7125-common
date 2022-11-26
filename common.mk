@@ -177,7 +177,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service-samsung.sm7125
+    android.hardware.biometrics.fingerprint@2.3-service-samsung.sm7125 \
+    SamsungUdfpsHandler.sm7125
 
 # fastbootd
 PRODUCT_PACKAGES += \
