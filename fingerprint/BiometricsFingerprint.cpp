@@ -27,6 +27,7 @@
 #include <fstream>
 #include <inttypes.h>
 #include <unistd.h>
+#include <cutils/properties.h>
 
 #ifdef HAS_FINGERPRINT_GESTURES
 #include <fcntl.h>
@@ -310,6 +311,8 @@ Return<RequestStatus> BiometricsFingerprint::setActiveGroup(uint32_t gid,
 }
 
 Return<RequestStatus> BiometricsFingerprint::authenticate(uint64_t operationId, uint32_t gid) {
+    property_set("vendor.finger.down", "1");
+
     return ErrorFilter(ss_fingerprint_authenticate(operationId, gid));
 }
 
