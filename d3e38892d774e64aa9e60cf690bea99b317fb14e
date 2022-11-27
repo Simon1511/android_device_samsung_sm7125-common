@@ -24,6 +24,30 @@
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a71c3c0c_7946fe70",
+        "filename": "fingerprint/BiometricsFingerprint.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-27T14:10:14Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "90fa3f91_984efe96",
+      "range": {
+        "startLine": 129,
+        "startChar": 4,
+        "endLine": 129,
+        "endChar": 44
+      },
+      "revId": "d3e38892d774e64aa9e60cf690bea99b317fb14e",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "add16fb1_933f638f",
@@ -37,6 +61,30 @@
       "writtenOn": "2022-11-27T11:12:33Z",
       "side": 1,
       "message": "false",
+      "range": {
+        "startLine": 26,
+        "startChar": 41,
+        "endLine": 26,
+        "endChar": 45
+      },
+      "revId": "d3e38892d774e64aa9e60cf690bea99b317fb14e",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "93926775_6c06553c",
+        "filename": "udfps/src/android/hardware/display/BootCompletedReceiver.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-27T14:10:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "add16fb1_933f638f",
       "range": {
         "startLine": 26,
         "startChar": 41,
@@ -70,6 +118,30 @@
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "80328f62_e69daf05",
+        "filename": "udfps/src/android/hardware/display/SamsungUDFPSService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-27T14:10:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "12443ea5_9875f9d2",
+      "range": {
+        "startLine": 28,
+        "startChar": 41,
+        "endLine": 28,
+        "endChar": 45
+      },
+      "revId": "d3e38892d774e64aa9e60cf690bea99b317fb14e",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "72e29bc3_5b900010",
@@ -93,6 +165,30 @@
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1750b967_84234b7a",
+        "filename": "udfps/src/android/hardware/display/SamsungUDFPSService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-27T14:10:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "72e29bc3_5b900010",
+      "range": {
+        "startLine": 34,
+        "startChar": 4,
+        "endLine": 34,
+        "endChar": 10
+      },
+      "revId": "d3e38892d774e64aa9e60cf690bea99b317fb14e",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cd34483d_1c7c8668",
@@ -106,6 +202,24 @@
       "writtenOn": "2022-11-27T11:12:33Z",
       "side": 1,
       "message": "private?",
+      "revId": "d3e38892d774e64aa9e60cf690bea99b317fb14e",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd5d851d_3dbd03a6",
+        "filename": "udfps/src/android/hardware/display/SamsungUDFPSService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-27T14:10:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cd34483d_1c7c8668",
       "revId": "d3e38892d774e64aa9e60cf690bea99b317fb14e",
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     }
