@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "90fa3f91_984efe96",
+        "filename": "fingerprint/BiometricsFingerprint.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-27T11:12:33Z",
+      "side": 1,
+      "message": "Move to authenticate()?",
+      "range": {
+        "startLine": 129,
+        "startChar": 4,
+        "endLine": 129,
+        "endChar": 44
+      },
+      "revId": "d3e38892d774e64aa9e60cf690bea99b317fb14e",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "add16fb1_933f638f",
+        "filename": "udfps/src/android/hardware/display/BootCompletedReceiver.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-27T11:12:33Z",
+      "side": 1,
+      "message": "false",
+      "range": {
+        "startLine": 26,
+        "startChar": 41,
+        "endLine": 26,
+        "endChar": 45
+      },
+      "revId": "d3e38892d774e64aa9e60cf690bea99b317fb14e",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "12443ea5_9875f9d2",
+        "filename": "udfps/src/android/hardware/display/SamsungUDFPSService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-27T11:12:33Z",
+      "side": 1,
+      "message": "false",
+      "range": {
+        "startLine": 28,
+        "startChar": 41,
+        "endLine": 28,
+        "endChar": 45
+      },
+      "revId": "d3e38892d774e64aa9e60cf690bea99b317fb14e",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "72e29bc3_5b900010",
+        "filename": "udfps/src/android/hardware/display/SamsungUDFPSService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-27T11:12:33Z",
+      "side": 1,
+      "message": "private?",
+      "range": {
+        "startLine": 34,
+        "startChar": 4,
+        "endLine": 34,
+        "endChar": 10
+      },
+      "revId": "d3e38892d774e64aa9e60cf690bea99b317fb14e",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd34483d_1c7c8668",
+        "filename": "udfps/src/android/hardware/display/SamsungUDFPSService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-27T11:12:33Z",
+      "side": 1,
+      "message": "private?",
+      "revId": "d3e38892d774e64aa9e60cf690bea99b317fb14e",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
