@@ -22,6 +22,30 @@
       },
       "revId": "39362c28434b9ab7e9d51178219f72f807071ab1",
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c04c5b7e_e39468f3",
+        "filename": "sepolicy/vendor/genfs_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-27T11:29:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ce5e836e_ccf0cd60",
+      "range": {
+        "startLine": 21,
+        "startChar": 16,
+        "endLine": 21,
+        "endChar": 24
+      },
+      "revId": "39362c28434b9ab7e9d51178219f72f807071ab1",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     }
   ]
 }
