@@ -55,8 +55,7 @@ PRODUCT_PACKAGES += \
     init.vendor.onebinary.rc \
     init.vendor.rilchip.rc \
     init.vendor.rilcommon.rc \
-    init.vendor.sensors.rc \
-    init.vendor.sysfw.rc
+    init.vendor.sensors.rc
 
 # Vendor scripts
 PRODUCT_PACKAGES += \
