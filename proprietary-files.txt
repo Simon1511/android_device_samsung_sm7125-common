@@ -1,4 +1,4 @@
-# All blobs are from A525FXXU4BVG1, unless pinned
+# All blobs are from A525FXXU4CVJB (T), unless pinned
 
 # ACDB
 vendor/lib/libacdb-fts.so
@@ -83,6 +83,10 @@ vendor/lib/libsurround_3mic_proc.so
 vendor/lib/libdrc.so
 vendor/lib/libspkrprot.so
 vendor/lib/libprofileparamstorage.so
+vendor/lib/libspatializerparamstorage.so
+vendor/lib64/libspatializerparamstorage.so
+vendor/lib/spatializer-aidl-V1-cpp.so
+vendor/lib64/spatializer-aidl-V1-cpp.so
 
 # Soundtrigger
 vendor/lib/hw/sound_trigger.primary.atoll.so
@@ -106,11 +110,13 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libswdap.so
+vendor/lib/soundfx/libswspatializer.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libqcbassboost.so
+vendor/lib64/soundfx/libswspatializer.so
 vendor/etc/dolby/dax-default.xml
 
 # Audio Firmware
@@ -128,7 +134,11 @@ vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib/hw/vendor.samsung.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/vendor.samsung.hardware.bluetooth@2.0.so
+vendor/lib/libsehbluetooth_audio_session.so
+vendor/lib/vendor.samsung.hardware.bluetooth.audio@2.0.so
+vendor/lib/vendor.samsung.hardware.bluetooth.audio@2.1.so
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
@@ -136,7 +146,11 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/hw/vendor.samsung.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
+vendor/lib/libsehbluetooth_audio_session.so
+vendor/lib64/vendor.samsung.hardware.bluetooth.audio@2.0.so
+vendor/lib64/vendor.samsung.hardware.bluetooth.audio@2.1.so
 vendor/lib/libbtnv.so
 vendor/lib64/libbtnv.so
 vendor/lib/libidl.so
@@ -322,6 +336,14 @@ vendor/lib/unihal_main@2.1.so
 vendor/lib/unihal_cutils@2.1.so
 vendor/lib/unihal_uniplugin@1.0.so
 vendor/lib/libface_landmark.arcsoft.so
+#vendor/lib/libDLInterface_aidl.camera.samsung.so
+#vendor/lib/libHDRVerifier_v1.camera.samsung.so
+#vendor/lib64/libHDRVerifier_v1.camera.samsung.so
+#vendor/lib/libimgproc_sw.unifunc.so
+#vendor/lib64/libimgproc_sw.unifunc.so
+#vendor/lib/libsnap_aidl.snap.samsung.vendor.so
+#vendor/lib/vendor.samsung.hardware.snap-V1-ndk_platform.so
+#vendor/lib64/vendor.samsung.hardware.snap-V1-ndk_platform.so
 vendor/lib64/libsuper_night_interface.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libscveCommon.so
@@ -1072,10 +1094,6 @@ vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
 vendor/lib/vendor.samsung.hardware.thermal@1.0.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
-vendor/lib/libhypervintf.so
-vendor/lib64/libhypervintf.so
-vendor/lib/vendor.samsung.hardware.hyper-V2-ndk_platform.so
-vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so
 
 # Time services
 -vendor/app/TimeService/TimeService.apk
