@@ -30,6 +30,12 @@ on post-fs-data
     chown system wifi /vendor/etc/wifi/indoorchannel.info
     chmod 0664 /vendor/etc/wifi/indoorchannel.info
 
+    # for updating the supported feature
+    chown wifi wifi /data/vendor/conn/.feature.info
+    chmod 0640 /data/vendor/conn/.feature.info
+    chown wifi wifi /sys/wifi/feature
+    chmod 0640 /sys/wifi/feature
+
     # for WIFI MAC
     mkdir /mnt/vendor/efs/wifi 0755 wifi wifi
     chown wifi wifi /mnt/vendor/efs/wifi/.mac.info
@@ -41,6 +47,8 @@ on post-fs-data
 
     chown wifi wifi /sys/wifi/dump_in_progress
     chmod 0660 /sys/wifi/dump_in_progress
+
+    start macloader
 
 on boot
     setprop wifi.interface wlan0
@@ -59,6 +67,7 @@ service macloader /vendor/bin/hw/macloader
     user wifi
     group wifi inet net_raw net_admin
     capabilities NET_ADMIN NET_RAW SYS_MODULE
+    disabled
     oneshot
 
 service wlandutservice /system/bin/wlandutservice
