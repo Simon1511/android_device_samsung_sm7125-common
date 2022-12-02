@@ -38,11 +38,15 @@ on early-init
     mkdir /efs/taas 0770 system system
     mkdir /mnt/vendor/efs/taas 0770 system system
     chown system system /dev/tspio
-    chown system system /sys/class/sec/tsp/enabled
-    chmod 0660 /sys/class/sec/tsp/enabled
     chown system system /dev/tsp_data
+    chown system system /sys/class/sec/tsp/input/enabled
+    chown system system /sys/class/sec/tsp1/input/enabled
+    chown system system /sys/class/sec/tsp2/input/enabled
+    chown system system /sys/class/sec/sec_epen/input/enabled
+    chown system system /sys/class/sec/tsp/enabled
+    chown system system /sys/class/sec/tsp1/enabled
+    chown system system /sys/class/sec/tsp2/enabled
     chown system system /sys/class/sec/sec_epen/enabled
-    chmod 0660 /sys/class/sec/sec_epen/enabled
 
     # pogo keyboard
     chown system system /sys/class/sec/sec_keypad/fw_update
@@ -52,6 +56,8 @@ on init
     symlink /dev/block/bootdevice/by-name/persistent  /dev/block/persistent
 
     chown system radio /sys/class/sec/switch/afc_disable
+
+on early-boot
 
     # Vibrator
     chown system system /sys/class/timed_output/vibrator/intensity
@@ -70,6 +76,7 @@ on init
     chown system system /sys/class/timed_output/vibrator/haptic_intensities
     chown system system /sys/class/timed_output/vibrator/fifo
     chown system system /sys/class/timed_output/vibrator/hybrid_haptic_engine
+    chown system system /sys/class/timed_output/vibrator/use_sep_index
 
     chown system system /sys/class/leds/vibrator/intensity
     chown system system /sys/class/leds/vibrator/force_touch_intensity
@@ -87,6 +94,8 @@ on init
     chown system system /sys/class/leds/vibrator/haptic_intensities
     chown system system /sys/class/leds/vibrator/fifo
     chown system system /sys/class/leds/vibrator/hybrid_haptic_engine
+
+    chown system system /sys/class/sec_vib_inputff/control/use_sep_index
 
     chmod 660 /sys/class/timed_output/vibrator/intensity
     chmod 660 /sys/class/timed_output/vibrator/force_touch_intensity
@@ -190,11 +199,14 @@ on boot
     chown system system /sys/class/sec/tsp/ta_mode
     chown system system /sys/class/sec/tsp/virtual_prox
     chown system system /sys/class/sec/tsp/hw_param
+    chown system system /sys/class/sec/tsp/input/trusted_touch_enable
+    chown system system /sys/class/sec/tsp/input/trusted_touch_event
+    chown system system /sys/class/sec/tsp/input/trusted_touch_type
 
     # Permissions for Touchscreen-1
     chown system radio /sys/class/sec/tsp1/cmd
     chown system system /sys/class/sec/tsp1/input/enabled
-    chmod 0660 /sys/class/sec/tsp/input1/enabled
+    chmod 0660 /sys/class/sec/tsp1/input/enabled
     chown system system /sys/class/sec/tsp1/multi_count
     chown system system /sys/class/sec/tsp1/wet_mode
     chown system system /sys/class/sec/tsp1/noise_mode
@@ -210,7 +222,7 @@ on boot
     # Permissions for Touchscreen-2
     chown system radio /sys/class/sec/tsp2/cmd
     chown system system /sys/class/sec/tsp2/input/enabled
-    chmod 0660 /sys/class/sec/tsp/input2/enabled
+    chmod 0660 /sys/class/sec/tsp2/input/enabled
     chown system system /sys/class/sec/tsp2/multi_count
     chown system system /sys/class/sec/tsp2/wet_mode
     chown system system /sys/class/sec/tsp2/noise_mode
@@ -227,6 +239,8 @@ on boot
     chown system radio /sys/class/sec/sec_epen/cmd
     chown system system /sys/class/sec/sec_epen/input/enabled
     chmod 0660 /sys/class/sec/sec_epen/input/enabled
+    chown system system /sys/class/sec/sec_epen/enabled
+    chmod 0660 /sys/class/sec/sec_epen/enabled
     chown system radio /sys/class/sec/sec_epen/epen_firm_update
     chown system radio /sys/class/sec/sec_epen/epen_reset
     chown system radio /sys/class/sec/sec_epen/epen_reset_result
@@ -250,6 +264,9 @@ on boot
 
     # Permission for Securetouch
     chown system system /sys/class/sec/ss_touch/secure/secure_touch_enable
+    chown system system /sys/class/sec/ss_touch/secure/trusted_touch_enable
+    chown system system /sys/class/sec/ss_touch/secure/trusted_touch_event
+    chown system system /sys/class/sec/ss_touch/secure/trusted_touch_type
     chown system system /sys/class/sec/tsp/input/secure_touch_enable
     chown system system /sys/class/sec/tsp1/input/secure_touch_enable
     chown system system /sys/class/sec/tsp2/input/secure_touch_enable
@@ -264,6 +281,10 @@ on boot
     chown system radio /sys/class/sec/sec_sidekey/cmd
     chown system system /sys/class/sec/sec_sidekey/input/enabled
     chmod 0660 /sys/class/sec/sec_sidekey/input/enabled
+
+    # Permission for Keyboard
+    chown system system /sys/class/sec/sec_keypad/enabled
+    chmod 0660 /sys/class/sec/sec_keypad/enabled
 
     # TAAS
     chown system system /mnt/vendor/efs/taas
@@ -492,6 +513,26 @@ on boot
     chown root system /sys/class/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/max_freq
     chmod 0664 /sys/class/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/min_freq
     chmod 0664 /sys/class/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/max_freq
+
+# enabled permission
+on property:sys.boot_completed=1
+    chown system system /sys/class/sec/tsp/input/enabled
+    chown system system /sys/class/sec/tsp1/input/enabled
+    chown system system /sys/class/sec/tsp2/input/enabled
+    chown system system /sys/class/sec/sec_epen/input/enabled
+    chown system system /sys/class/sec/tsp/enabled
+    chown system system /sys/class/sec/tsp1/enabled
+    chown system system /sys/class/sec/tsp2/enabled
+    chown system system /sys/class/sec/sec_epen/enabled
+    chown system system /sys/class/sec/tsp/input/trusted_touch_enable
+    chown system system /sys/class/sec/tsp/input/trusted_touch_event
+    chown system system /sys/class/sec/tsp/input/trusted_touch_type
+    chown system system /sys/class/sec/tsp1/input/trusted_touch_enable
+    chown system system /sys/class/sec/tsp1/input/trusted_touch_event
+    chown system system /sys/class/sec/tsp1/input/trusted_touch_type
+    chown system system /sys/class/sec/tsp2/input/trusted_touch_enable
+    chown system system /sys/class/sec/tsp2/input/trusted_touch_event
+    chown system system /sys/class/sec/tsp2/input/trusted_touch_type
 
 # FINGERPRINT FRAMEWORK : starts goodixfingerprintd
 service goodixd /vendor/bin/goodixfingerprintd
