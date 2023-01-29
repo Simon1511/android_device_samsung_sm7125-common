@@ -1,5 +1,8 @@
 # audio
 vendor.audio_hal.                                u:object_r:vendor_audio_prop:s0
+vendor.audio.earpiece.voip                       u:object_r:vendor_samsung_audio_prop:s0
+vendor.audio.speaker.voip                        u:object_r:vendor_samsung_audio_prop:s0
+vendor.audio.a2dp.call                           u:object_r:vendor_samsung_audio_prop:s0
 
 # Bluetooth
 vendor.bluetooth_fw_ver                          u:object_r:vendor_bluetooth_prop:s0

@@ -121,6 +121,8 @@ cc_library_shared {
         "android.hardware.audio.common@6.0",
         "android.hardware.audio.common@6.0-util",
         "libcutils",
+        "libtinyalsa",
+        "libbase",
     ],
     cflags: [
         "-DMAJOR_VERSION=6",
