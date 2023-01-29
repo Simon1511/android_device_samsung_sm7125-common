@@ -1,0 +1,6 @@
+# vendor_samsung_audio.te
+
+type vendor_samsung_audio, domain;
+type vendor_samsung_audio_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_samsung_audio)
