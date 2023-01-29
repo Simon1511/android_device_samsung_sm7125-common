@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "abaa28fd_cd5ce630",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-01-29T16:22:51Z",
+      "side": 1,
+      "message": "need to actually run it only during voip/a2dp calls",
+      "revId": "a84d15345ea9d86c948688206ac5d3f0762addcf",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
