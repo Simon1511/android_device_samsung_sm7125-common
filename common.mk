@@ -77,7 +77,8 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
     libvolumelistener \
-    SamsungDAP
+    SamsungDAP \
+    SamsungAudio
 
 TARGET_EXCLUDES_AUDIOFX := true
 
