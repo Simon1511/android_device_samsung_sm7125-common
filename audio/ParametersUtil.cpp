@@ -161,6 +161,7 @@ Result ParametersUtil::setParam(const char* name, const DeviceAddress& address) 
     if (CoreUtils::deviceAddressToHal(address, &halDeviceType, halDeviceAddress) != NO_ERROR) {
         return Result::INVALID_ARGUMENTS;
     }
+
     AudioParameter params{String8(halDeviceAddress)};
     params.addInt(String8(name), halDeviceType);
     return setParams(params);

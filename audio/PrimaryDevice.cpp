@@ -237,7 +237,7 @@ Return<Result> PrimaryDevice::setMode(AudioMode mode) {
     } else if (strcmp(simSlot, "1") == 0) {
         // SIM2
         mDevice->halSetParameters("call_state=2;g_call_state=2;g_call_sim_slot=0x02");
-   } else if (strcmp(simSlot, "-1") == 0) {
+    } else if (strcmp(simSlot, "-1") == 0) {
         // No call
         mDevice->halSetParameters("call_state=1;g_call_state=1");
     }

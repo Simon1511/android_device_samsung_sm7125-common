@@ -1,0 +1,6 @@
+# vendor_voip_call.te
+
+type vendor_voip_call, domain;
+type vendor_voip_call_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_voip_call)
