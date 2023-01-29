@@ -1,0 +1,21 @@
+# vendor_samsung_audio.te
+
+type vendor_samsung_audio, domain;
+type vendor_samsung_audio_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_samsung_audio)
+
+allow vendor_samsung_audio { vendor_toolbox_exec vendor_file }:file { execute_no_trans getattr };
+
+allow vendor_samsung_audio { boot_status_prop vendor_samsung_audio_prop vendor_radio_prop }:file { read open getattr map };
+
+allow vendor_samsung_audio self:capability kill;
+dontaudit vendor_samsung_audio self:capability dac_override;
+
+allow vendor_samsung_audio vndbinder_device:chr_file { read write open ioctl map };
+
+binder_call(vendor_samsung_audio, servicemanager)
+binder_call(vendor_samsung_audio, vndservicemanager)
+
+allow vendor_samsung_audio audio_device:dir search;
+allow vendor_samsung_audio audio_device:chr_file { read write open ioctl };
