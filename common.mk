@@ -62,7 +62,8 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
-    init.qcom.early_boot.sh
+    init.qcom.early_boot.sh \
+    init.audio.samsung.sh
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -77,7 +78,8 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
     libvolumelistener \
-    SamsungDAP
+    SamsungDAP \
+    SamsungAudio
 
 TARGET_EXCLUDES_AUDIOFX := true
 
