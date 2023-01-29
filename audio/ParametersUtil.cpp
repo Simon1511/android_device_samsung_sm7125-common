@@ -21,6 +21,9 @@
 
 #include <util/CoreUtils.h>
 
+#include <cutils/properties.h>
+#include <string.h>
+
 namespace android {
 namespace hardware {
 namespace audio {
@@ -158,9 +161,18 @@ Result ParametersUtil::setParametersImpl(const hidl_vec<ParameterValue>& context
 Result ParametersUtil::setParam(const char* name, const DeviceAddress& address) {
     audio_devices_t halDeviceType;
     char halDeviceAddress[AUDIO_DEVICE_MAX_ADDRESS_LEN];
+    char a2dpState[92];
     if (CoreUtils::deviceAddressToHal(address, &halDeviceType, halDeviceAddress) != NO_ERROR) {
         return Result::INVALID_ARGUMENTS;
     }
+    property_get("vendor.audio.a2dp.connected", a2dpState, "false");
+    if (halDeviceType == AUDIO_DEVICE_OUT_BLUETOOTH_A2DP) {
+        if (strcmp(name, "connect") == 0)
+            property_set("vendor.audio.a2dp.connected", "true");
+    }
+    if (strcmp(a2dpState, "true") == 0 && strcmp(name, "disconnect") == 0)
+        property_set("vendor.audio.a2dp.connected", "false");
+
     AudioParameter params{String8(halDeviceAddress)};
     params.addInt(String8(name), halDeviceType);
     return setParams(params);
