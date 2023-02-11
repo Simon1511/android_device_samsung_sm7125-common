@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5bb9730e_fc00d410",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-11T15:48:28Z",
+      "side": 1,
+      "message": "As of now fixes all of your audio issues.\n\nTODO:\n-Check VoIP fix in more apps (so far just tested with Discord)\n-Test A2DP fix on an actual A2DP device\n-Need to check if service starts automatically or not\n-Possibly need to make switching to Earpiece/Speaker work in phone call while A2DP device is connected",
+      "revId": "3c468c1862f8d4cf9b0ec0a81885a391214fa270",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "81f3ed3b_95b4500f",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 7
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-11T15:48:28Z",
+      "side": 1,
+      "message": "needed?",
+      "range": {
+        "startLine": 33,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 45
+      },
+      "revId": "3c468c1862f8d4cf9b0ec0a81885a391214fa270",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
