@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f5c16cea_417b88fd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-13T20:36:01Z",
+      "side": 1,
+      "message": "-Service starts automatically now\n-VoIP handling works automatically now\n-TODO: Make A2DP handling work automatically",
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
