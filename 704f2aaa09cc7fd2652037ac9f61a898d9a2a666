@@ -16,6 +16,282 @@
       "message": "-Service starts automatically now\n-VoIP handling works automatically now\n-TODO: Make A2DP handling work automatically",
       "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7737ce02_21d892ab",
+        "filename": "audio/SamsungAudio/AndroidManifest.xml",
+        "patchSetId": 12
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-14T07:38:43Z",
+      "side": 1,
+      "message": "android.hardware.media",
+      "range": {
+        "startLine": 3,
+        "startChar": 13,
+        "endLine": 3,
+        "endChar": 35
+      },
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "980ae3ea_f0fa1702",
+        "filename": "audio/SamsungAudio/src/android/hardware/audio/BootCompletedReceiver.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-14T07:38:43Z",
+      "side": 1,
+      "message": "media",
+      "range": {
+        "startLine": 17,
+        "startChar": 25,
+        "endLine": 17,
+        "endChar": 30
+      },
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c59f4f95_cf8e01bd",
+        "filename": "audio/SamsungAudio/src/android/hardware/audio/SamsungAudioService.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-14T07:38:43Z",
+      "side": 1,
+      "message": "media",
+      "range": {
+        "startLine": 17,
+        "startChar": 25,
+        "endLine": 17,
+        "endChar": 30
+      },
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad75807e_f5c7681b",
+        "filename": "audio/SamsungAudio/src/android/hardware/audio/SamsungAudioService.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-14T07:38:43Z",
+      "side": 1,
+      "message": "false",
+      "range": {
+        "startLine": 30,
+        "startChar": 41,
+        "endLine": 30,
+        "endChar": 45
+      },
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f92b1a0c_8d452559",
+        "filename": "audio/SamsungAudio/src/android/hardware/audio/SamsungAudioService.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-14T07:38:43Z",
+      "side": 1,
+      "message": "TODO",
+      "range": {
+        "startLine": 48,
+        "startChar": 16,
+        "endLine": 52,
+        "endChar": 17
+      },
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "27b4aed6_c0acf851",
+        "filename": "audio/SamsungAudio/src/android/hardware/audio/SamsungAudioService.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-14T07:38:43Z",
+      "side": 1,
+      "message": "Log.d",
+      "range": {
+        "startLine": 57,
+        "startChar": 28,
+        "endLine": 57,
+        "endChar": 29
+      },
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "df9cebfc_8b831cb9",
+        "filename": "audio/SamsungAudio/src/android/hardware/audio/SamsungAudioService.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-14T07:38:43Z",
+      "side": 1,
+      "message": "Log.d",
+      "range": {
+        "startLine": 64,
+        "startChar": 28,
+        "endLine": 64,
+        "endChar": 29
+      },
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "456070f1_535424c9",
+        "filename": "audio/SamsungAudio/src/android/hardware/audio/Utils.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-14T07:38:43Z",
+      "side": 1,
+      "message": "media",
+      "range": {
+        "startLine": 17,
+        "startChar": 25,
+        "endLine": 17,
+        "endChar": 30
+      },
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d03c5d9f_5ba8d8eb",
+        "filename": "rootdir/bin/init.audio.samsung.sh",
+        "patchSetId": 12
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-14T07:38:43Z",
+      "side": 1,
+      "message": "uneeded?",
+      "range": {
+        "startLine": 30,
+        "startChar": 1,
+        "endLine": 30,
+        "endChar": 35
+      },
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "046c030e_8bd15799",
+        "filename": "rootdir/bin/init.audio.samsung.sh",
+        "patchSetId": 12
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-14T07:38:43Z",
+      "side": 1,
+      "message": "SIM 2 too",
+      "range": {
+        "startLine": 82,
+        "startChar": 32,
+        "endLine": 82,
+        "endChar": 98
+      },
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8ae873ae_fe9764d3",
+        "filename": "rootdir/etc/init.audio.samsung.rc",
+        "patchSetId": 12
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-14T07:38:43Z",
+      "side": 1,
+      "message": "needed?",
+      "range": {
+        "startLine": 70,
+        "startChar": 3,
+        "endLine": 70,
+        "endChar": 22
+      },
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "23092ec1_90dc8439",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 12
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-14T07:38:43Z",
+      "side": 1,
+      "message": "init.audio.samsung.sh",
+      "range": {
+        "startLine": 54,
+        "startChar": 28,
+        "endLine": 54,
+        "endChar": 52
+      },
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     }
   ]
 }
