@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "89fa1e5e_2463c91d",
+        "filename": "audio/SamsungAudio/src/android/hardware/audio/IncomingBroadcastReceiver.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2023-02-14T22:50:10Z",
+      "side": 1,
+      "message": "Doesnt seem to set this value and me too dum to figure it out",
+      "revId": "c21a04f0ae40a7339a72cf0db4d308371530df52",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
