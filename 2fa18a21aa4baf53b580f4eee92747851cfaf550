@@ -16,6 +16,75 @@
       "message": "A2DP detection works fine now.\nThere doesnt seem to be any way to detect when an A2DP call is started since the framework itself is kinda confused whether its in an A2DP call or not",
       "revId": "2fa18a21aa4baf53b580f4eee92747851cfaf550",
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5b1405a5_64e1293c",
+        "filename": "audio/SamsungAudio/AndroidManifest.xml",
+        "patchSetId": 15
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-15T19:27:37Z",
+      "side": 1,
+      "message": "can be removed",
+      "range": {
+        "startLine": 9,
+        "startChar": 4,
+        "endLine": 9,
+        "endChar": 74
+      },
+      "revId": "2fa18a21aa4baf53b580f4eee92747851cfaf550",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fe207c2f_4fac953e",
+        "filename": "audio/SamsungAudio/src/android/hardware/media/SamsungAudioService.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-15T19:27:37Z",
+      "side": 1,
+      "message": "should possibly increase this, polling every 100ms seems too much",
+      "range": {
+        "startLine": 65,
+        "startChar": 48,
+        "endLine": 65,
+        "endChar": 51
+      },
+      "revId": "2fa18a21aa4baf53b580f4eee92747851cfaf550",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "421067ac_e27bd32a",
+        "filename": "rootdir/bin/init.audio.samsung.sh",
+        "patchSetId": 15
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-15T19:27:37Z",
+      "side": 1,
+      "message": "forgot sim2 here",
+      "range": {
+        "startLine": 84,
+        "startChar": 1,
+        "endLine": 84,
+        "endChar": 66
+      },
+      "revId": "2fa18a21aa4baf53b580f4eee92747851cfaf550",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     }
   ]
 }
