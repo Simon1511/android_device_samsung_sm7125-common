@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "afba240e_3bfa20ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-15T09:22:10Z",
+      "side": 1,
+      "message": "should also check if we can simplify sim1/sim2 handling",
+      "revId": "c21a04f0ae40a7339a72cf0db4d308371530df52",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "89fa1e5e_2463c91d",
@@ -20,6 +37,52 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "b6623fba_7eb1f201",
+        "filename": "rootdir/bin/init.audio.samsung.sh",
+        "patchSetId": 13
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-15T09:22:10Z",
+      "side": 1,
+      "message": "should be unneeded now",
+      "range": {
+        "startLine": 19,
+        "startChar": 1,
+        "endLine": 20,
+        "endChar": 56
+      },
+      "revId": "c21a04f0ae40a7339a72cf0db4d308371530df52",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e0be8752_4c800048",
+        "filename": "rootdir/bin/init.audio.samsung.sh",
+        "patchSetId": 13
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-15T09:22:10Z",
+      "side": 1,
+      "message": "should be unneeded now",
+      "range": {
+        "startLine": 86,
+        "startChar": 2,
+        "endLine": 86,
+        "endChar": 37
+      },
+      "revId": "c21a04f0ae40a7339a72cf0db4d308371530df52",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "982a826a_1d89974c",
         "filename": "rootdir/bin/init.audio.samsung.sh",
         "patchSetId": 13
@@ -31,6 +94,29 @@
       "writtenOn": "2023-02-15T06:04:11Z",
       "side": 1,
       "message": "Need to seperate scripts for the 2 sims or it doesnt work for me.",
+      "revId": "c21a04f0ae40a7339a72cf0db4d308371530df52",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "54f21fc4_6b52589e",
+        "filename": "rootdir/bin/init.audio.samsung.sh",
+        "patchSetId": 13
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-15T09:22:10Z",
+      "side": 1,
+      "message": "should be unneeded now",
+      "range": {
+        "startLine": 133,
+        "startChar": 2,
+        "endLine": 133,
+        "endChar": 37
+      },
       "revId": "c21a04f0ae40a7339a72cf0db4d308371530df52",
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     }
