@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab53a567_bd18f327",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-15T20:38:13Z",
+      "side": 1,
+      "message": "-Move this thing to system fully, otherwise sepolicy will complain",
+      "revId": "cd1b422bc6f1e8025235dc9e493601a86b4981be",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}

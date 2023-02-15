@@ -487,6 +487,30 @@
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a122fa0e_1446db9d",
+        "filename": "rootdir/etc/init.audio.samsung.rc",
+        "patchSetId": 12
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-15T20:38:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8ae873ae_fe9764d3",
+      "range": {
+        "startLine": 70,
+        "startChar": 3,
+        "endLine": 70,
+        "endChar": 22
+      },
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "23092ec1_90dc8439",
