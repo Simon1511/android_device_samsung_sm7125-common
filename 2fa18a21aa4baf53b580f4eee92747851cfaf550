@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "db286ed2_56cbef89",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-15T19:22:33Z",
+      "side": 1,
+      "message": "A2DP detection works fine now.\nThere doesnt seem to be any way to detect when an A2DP call is started since the framework itself is kinda confused whether its in an A2DP call or not",
+      "revId": "2fa18a21aa4baf53b580f4eee92747851cfaf550",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
