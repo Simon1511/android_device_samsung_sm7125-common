@@ -16,6 +16,23 @@
       "message": "Doesnt seem to set this value and me too dum to figure it out",
       "revId": "c21a04f0ae40a7339a72cf0db4d308371530df52",
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "982a826a_1d89974c",
+        "filename": "rootdir/bin/init.audio.samsung.sh",
+        "patchSetId": 13
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2023-02-15T06:04:11Z",
+      "side": 1,
+      "message": "Need to seperate scripts for the 2 sims or it doesnt work for me.",
+      "revId": "c21a04f0ae40a7339a72cf0db4d308371530df52",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     }
   ]
 }
