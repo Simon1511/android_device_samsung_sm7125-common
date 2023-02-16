@@ -1,0 +1,10 @@
+cc_binary {
+    name: "samsungaudioservice",
+    srcs: ["service.cpp"],
+    init_rc: ["samsung-audio-service.rc"],
+    shared_libs: [
+        "libtinyalsa",
+        "libcutils",
+        "libbase",
+    ],
+}

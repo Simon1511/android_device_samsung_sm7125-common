@@ -16,3 +16,4 @@ set_prop(system_app, vendor_fingerprint_prop)
 get_prop(system_app, vendor_fingerprint_prop)
 
 set_prop(system_app, vendor_samsung_audio_prop)
+get_prop(system_app, vendor_samsung_audio_prop)

@@ -1,0 +1,3 @@
+service vendor.samsung-audio-service /vendor/bin/samsungaudioservice
+    class main
+    user root

@@ -24,6 +24,7 @@ import android.util.Log;
 import android.os.Handler;
 import android.media.AudioManager;
 import android.media.AudioDeviceInfo;
+import android.media.AudioSystem;
 
 public class SamsungAudioService extends Service {
     private static final String TAG = "SamsungAudioService";
@@ -44,22 +45,34 @@ public class SamsungAudioService extends Service {
             public void run() {
                 if (DEBUG) Log.d(TAG, "onCreate: " + TAG + " is running");
 
+                Log.e(TAG, "vendor.audio.a2dp.call is " + SystemProperties.get("vendor.audio.a2dp.call"));
+
+                if (SystemProperties.get("vendor.audio.a2dp.call").equals("true") && mAudioManager.getMode() == AudioManager.MODE_IN_CALL) {
+                    if (DEBUG) Log.d(TAG, "setting parameters");
+                    AudioSystem.setParameters("a2dp_call=1");
+                    AudioSystem.setParameters("a2dp_call=0");
+                    SystemProperties.set("vendor.audio.a2dp.call", "false");
+                }
+
                 if (mAudioManager.getMode() == AudioManager.MODE_IN_COMMUNICATION) {
 
                     if (mAudioManager.getCommunicationDevice().getType() == AudioDeviceInfo.TYPE_BUILTIN_EARPIECE) {
                         if (DEBUG) Log.d(TAG, "Earpiece");
                         SystemProperties.set("vendor.audio.earpiece.voip", "true");
                         SystemProperties.set("vendor.audio.speaker.voip", "false");
+                        AudioSystem.setParameters("voip_call=1");
+                        AudioSystem.setParameters("voip_call=0");
                     }
 
                     if (mAudioManager.getCommunicationDevice().getType() == AudioDeviceInfo.TYPE_BUILTIN_SPEAKER) {
                         if (DEBUG) Log.d(TAG, "Speaker");
                         SystemProperties.set("vendor.audio.speaker.voip", "true");
                         SystemProperties.set("vendor.audio.earpiece.voip", "false");
-
+                        AudioSystem.setParameters("voip_call=1");
+                        AudioSystem.setParameters("voip_call=0");
                     }
                 }
-                mHandler.postDelayed(mRunnable, 100);
+                mHandler.postDelayed(mRunnable, 500);
             }
         };
 
