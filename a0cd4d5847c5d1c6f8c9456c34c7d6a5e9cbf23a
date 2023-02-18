@@ -41,6 +41,30 @@
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2b1ece99_78083c7d",
+        "filename": "audio/SamsungAudio/AndroidManifest.xml",
+        "patchSetId": 19
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-18T11:17:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f9510557_3fe6f3b3",
+      "range": {
+        "startLine": 9,
+        "startChar": 4,
+        "endLine": 9,
+        "endChar": 74
+      },
+      "revId": "a0cd4d5847c5d1c6f8c9456c34c7d6a5e9cbf23a",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fea5cd78_089747ef",
@@ -64,6 +88,30 @@
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c19c88a7_bd5b8d93",
+        "filename": "audio/SamsungAudio/src/android/hardware/media/SamsungAudioService.java",
+        "patchSetId": 19
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-18T11:17:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fea5cd78_089747ef",
+      "range": {
+        "startLine": 48,
+        "startChar": 16,
+        "endLine": 48,
+        "endChar": 22
+      },
+      "revId": "a0cd4d5847c5d1c6f8c9456c34c7d6a5e9cbf23a",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1faac0ee_6def1064",
@@ -77,6 +125,30 @@
       "writtenOn": "2023-02-18T11:05:30Z",
       "side": 1,
       "message": "possibly increase even more?",
+      "range": {
+        "startLine": 75,
+        "startChar": 48,
+        "endLine": 75,
+        "endChar": 51
+      },
+      "revId": "a0cd4d5847c5d1c6f8c9456c34c7d6a5e9cbf23a",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a70e85e5_bf3cc588",
+        "filename": "audio/SamsungAudio/src/android/hardware/media/SamsungAudioService.java",
+        "patchSetId": 19
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-18T11:17:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1faac0ee_6def1064",
       "range": {
         "startLine": 75,
         "startChar": 48,
