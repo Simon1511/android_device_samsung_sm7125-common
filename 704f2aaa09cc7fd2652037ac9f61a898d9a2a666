@@ -417,6 +417,30 @@
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8f96ee6_acd48b0b",
+        "filename": "rootdir/bin/init.audio.samsung.sh",
+        "patchSetId": 12
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-02-18T11:00:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d03c5d9f_5ba8d8eb",
+      "range": {
+        "startLine": 30,
+        "startChar": 1,
+        "endLine": 30,
+        "endChar": 35
+      },
+      "revId": "704f2aaa09cc7fd2652037ac9f61a898d9a2a666",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "046c030e_8bd15799",
