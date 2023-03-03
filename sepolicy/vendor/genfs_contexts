@@ -23,6 +23,7 @@ genfscon sysfs /devices/virtual/lcd/panel/                                      
 genfscon sysfs /devices/platform/soc/9800000.qcom,npu/subsys6/                                              u:object_r:sysfs_npu:s0
 genfscon sysfs /devices/platform/soc/soc:battery/power_supply/                                              u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/soc/soc:battery/power_supply/battery/lcd                                   u:object_r:sysfs_battery_writable:s0
+genfscon sysfs /devices/platform/soc/soc:battery/power_supply/battery/batt_slate_mode                       u:object_r:sysfs_battery_writable:s0
 genfscon sysfs /devices/platform/soc/soc:sec-direct-charger/power_supply/                                   u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/soc/890000.i2c/i2c-22/22-0049/                                             u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/soc/890000.i2c/i2c-22/22-0057/                                             u:object_r:sysfs_battery:s0
