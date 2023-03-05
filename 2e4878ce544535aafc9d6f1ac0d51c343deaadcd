@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "93f73b25_952c5910",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 36
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-03-05T14:36:00Z",
+      "side": 1,
+      "message": "needs testing if it\u0027s rock solid or not",
+      "revId": "2e4878ce544535aafc9d6f1ac0d51c343deaadcd",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1aacae6c_a2738dcb",
+        "filename": "audio/impl/ParametersUtil.cpp",
+        "patchSetId": 36
+      },
+      "lineNbr": 382,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-03-05T14:36:00Z",
+      "side": 1,
+      "message": "probably uneeded",
+      "range": {
+        "startLine": 382,
+        "startChar": 17,
+        "endLine": 382,
+        "endChar": 26
+      },
+      "revId": "2e4878ce544535aafc9d6f1ac0d51c343deaadcd",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
