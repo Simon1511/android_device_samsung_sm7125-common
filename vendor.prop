@@ -185,5 +185,9 @@ ro.vendor.epdg.support=true
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0
 
+# Vibrator
+ro.vendor.vibrator_hal.click_duration=80
+ro.vendor.vibrator_hal.tick_duration=40
+
 # Wifi
 wifi.aware.interface=wifi-aware0
