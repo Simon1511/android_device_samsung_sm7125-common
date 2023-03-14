@@ -154,10 +154,6 @@ vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib/libbthost_if.so
 vendor/lib64/libbthost_if.so
 
-# Bluetooth (aptX) - form redfin (SQ1A.220105.002)
-system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
-system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
-
 # Bluetooth firmware
 vendor/firmware/apbtfw11.tlv
 vendor/firmware/crbtfw21.tlv
