@@ -109,7 +109,6 @@ vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libswdap.so
 vendor/lib/soundfx/libswspatializer.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libasphere.so
@@ -117,7 +116,6 @@ vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libswspatializer.so
-vendor/etc/dolby/dax-default.xml
 
 # Audio Firmware
 vendor/firmware/dax_param.bin
