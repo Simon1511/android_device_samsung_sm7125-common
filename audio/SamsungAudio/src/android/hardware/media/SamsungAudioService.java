@@ -26,19 +26,14 @@ import android.os.Handler;
 import android.media.AudioManager;
 import android.media.AudioDeviceInfo;
 import android.media.AudioSystem;
-import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothManager;
 
 public class SamsungAudioService extends Service {
     private static final String TAG = "SamsungAudioService";
     private static final boolean DEBUG = false;
-    private boolean hasBTcallSet = false;
 
     private Handler mHandler;
     private static Runnable mRunnable;
     private AudioManager mAudioManager;
-    private BluetoothManager mBluetoothManager;
-    private BluetoothAdapter mBluetoothAdapter;
 
     @Override
     public void onCreate() {
@@ -46,38 +41,10 @@ public class SamsungAudioService extends Service {
 
         mAudioManager = getSystemService(AudioManager.class);
 
-        mBluetoothManager = (BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
-        mBluetoothAdapter = mBluetoothManager.getAdapter();
-
         mHandler = new Handler();
         mRunnable = new Runnable() {
             public void run() {
                 if (DEBUG) Log.d(TAG, "onCreate: " + TAG + " is running");
-
-                if (!mBluetoothAdapter.isEnabled()) {
-                    if (DEBUG) Log.d(TAG, "Bluetooth is not enabled");
-                    SystemProperties.set("vendor.audio.a2dp.connected", "false");
-                }
-
-                if (mAudioManager.getMode() != AudioManager.MODE_IN_CALL && mAudioManager.getMode() != AudioManager.MODE_IN_COMMUNICATION && hasBTcallSet) {
-                    if (DEBUG) Log.d(TAG, "Call ended, reset everything");
-                    hasBTcallSet = false;
-                    SystemProperties.set("vendor.audio.call.switched", "false");
-                    AudioSystem.setParameters("reset_a2dp=1");
-                }
-
-                if (SystemProperties.get("vendor.audio.a2dp.connected").equals("true") && mAudioManager.getMode() == AudioManager.MODE_IN_CALL
-                        && mBluetoothAdapter.isEnabled()) {
-                    if (hasBTcallSet) {
-                        SystemProperties.set("vendor.audio.call.switched", "true");
-                    }
-                    if (!hasBTcallSet) {
-                        if (DEBUG) Log.d(TAG, "Setting A2DP parameter");
-                        AudioSystem.setParameters("a2dp_call=1");
-                        hasBTcallSet = true;
-                        SystemProperties.set("vendor.audio.call.switched", "false");
-                    }
-                }
 
                 if (mAudioManager.getMode() == AudioManager.MODE_IN_COMMUNICATION) {
 

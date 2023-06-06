@@ -215,106 +215,6 @@ void setMixerValueByNameString(mixer *mixer, const char *name, const char *value
     }
 }
 
-void setBTincall(bool enabled, char *slot) {
-    const auto mixer = mixer_open(0);
-
-    if (mixer == nullptr) {
-        ALOGE("Failed to open mixer");
-        return;
-    }
-
-    if (enabled) {
-        ALOGD("Fixing BT in-call mixers");
-        setMixerValueByName(mixer, "QUIN_MI2S_RX_Voice Mixer VoiceMMode1", 0);
-        setMixerValueByName(mixer, "QUIN_MI2S_RX_Voice Mixer VoiceMMode2", 0);
-        setMixerValueByName(mixer, "VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1", 0);
-        setMixerValueByName(mixer, "VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2", 0);
-        setMixerValueByNameString(mixer, "SLIM7_RX ADM Channels", "Two");
-        setMixerValueByName(mixer, "TAS256X IVSENSE ENABLE", 0);
-        setMixerValueByName(mixer, "BT SOC status", 1);
-        setMixerValueByName(mixer, "Voip_Tx Mixer TX_CDC_DMA_TX_3_Voip", 0);
-        setMixerValueByName(mixer, "QUIN_MI2S_RX_Voice Mixer Voip", 0);
-        setMixerValueByName(mixer, "TAS256X RECEIVER ENABLE LEFT", 0);
-        setMixerValueByName(mixer, "SmartPA Mute", 1);
-        setMixerValueByNameString(mixer, "TX_CDC_DMA_TX_3 Channels", "One");
-        setMixerValueByName(mixer, "TAS256X ASI Left Switch", 0);
-        setMixerValueByNameString(mixer, "TAS256X ASI1 SEL LEFT", "I2C offset");
-        setMixerValueByName(mixer, "TAS256X AMP OUTPUT LVL LEFT", 20);
-        setMixerValueByName(mixer, "Compress Gapless Playback", 1);
-        setMixerValueByName(mixer, "TX_AIF1_CAP Mixer DEC0", 0);
-        setMixerValueByName(mixer, "TX_AIF1_CAP Mixer DEC1", 0);
-        setMixerValueByNameString(mixer, "TX SMIC MUX0", "ZERO");
-        setMixerValueByNameString(mixer, "TX SMIC MUX1", "ZERO");
-        setMixerValueByNameString(mixer, "TX DEC0 MUX", "MSM_DMIC");
-        setMixerValueByNameString(mixer, "TX DEC1 MUX", "MSM_DMIC");
-        setMixerValueByNameString(mixer, "EC Reference Bit Format", "S16_LE");
-        setMixerValueByName(mixer, "ADC1 Volume", 12);
-        setMixerValueByName(mixer, "ADC3 Volume", 12);
-        setMixerValueByNameString(mixer, "BT SampleRate", "KHZ_16");
-        setMixerValueByNameString(mixer, "BT SampleRate RX", "KHZ_16");
-        setMixerValueByNameString(mixer, "BT SampleRate TX", "KHZ_16");
-        setMixerValueByName(mixer, "ADC3_MIXER Switch", 0);
-
-        if (strcmp(slot, "0") == 0) {
-            setMixerValueByName(mixer, "SLIM_7_RX_Voice Mixer VoiceMMode1", 1);
-            setMixerValueByName(mixer, "VoiceMMode1_Tx Mixer SLIM_7_TX_MMode1", 1);
-            setMixerValueByName(mixer, "SLIM_7_RX_Voice Mixer VoiceMMode1", 0);
-            setMixerValueByName(mixer, "VoiceMMode1_Tx Mixer SLIM_7_TX_MMode1", 0);
-            setMixerValueByName(mixer, "SLIM_7_RX_Voice Mixer VoiceMMode1", 1);
-            setMixerValueByName(mixer, "VoiceMMode1_Tx Mixer SLIM_7_TX_MMode1", 1);
-        } else if (strcmp(slot, "1") == 0) {
-            setMixerValueByName(mixer, "SLIM_7_RX_Voice Mixer VoiceMMode2", 1);
-            setMixerValueByName(mixer, "VoiceMMode2_Tx Mixer SLIM_7_TX_MMode2", 1);
-            setMixerValueByName(mixer, "SLIM_7_RX_Voice Mixer VoiceMMode2", 0);
-            setMixerValueByName(mixer, "VoiceMMode2_Tx Mixer SLIM_7_TX_MMode2", 0);
-            setMixerValueByName(mixer, "SLIM_7_RX_Voice Mixer VoiceMMode2", 1);
-            setMixerValueByName(mixer, "VoiceMMode2_Tx Mixer SLIM_7_TX_MMode2", 1);
-        }
-    } else {
-        ALOGD("Resetting BT in-call mixers");
-        setMixerValueByNameString(mixer, "SLIM7_RX ADM Channels", "Zero");
-        setMixerValueByName(mixer, "TAS256X IVSENSE ENABLE", 1);
-        setMixerValueByName(mixer, "TAS256X RECEIVER ENABLE LEFT", 1);
-        setMixerValueByName(mixer, "SmartPA Mute", 0);
-        setMixerValueByNameString(mixer, "TX_CDC_DMA_TX_3 Channels", "Two");
-        setMixerValueByName(mixer, "TAS256X ASI Left Switch", 1);
-        setMixerValueByNameString(mixer, "TAS256X ASI1 SEL LEFT", "LeftRightDiv2");
-        setMixerValueByName(mixer, "TAS256X AMP OUTPUT LVL LEFT", 0);
-        setMixerValueByName(mixer, "TX_AIF1_CAP Mixer DEC0", 1);
-        setMixerValueByName(mixer, "TX_AIF1_CAP Mixer DEC1", 1);
-        setMixerValueByNameString(mixer, "TX SMIC MUX0", "ADC0");
-        setMixerValueByNameString(mixer, "TX SMIC MUX1", "ADC2");
-        setMixerValueByNameString(mixer, "TX DEC0 MUX", "SWR_MIC");
-        setMixerValueByNameString(mixer, "TX DEC1 MUX", "SWR_MIC");
-        setMixerValueByName(mixer, "EC Reference Bit Format", 0);
-        setMixerValueByName(mixer, "ADC1 Volume", 0);
-        setMixerValueByName(mixer, "ADC3 Volume", 0);
-        setMixerValueByName(mixer, "ADC3_MIXER Switch", 1);
-        setMixerValueByName(mixer, "SLIM_7_RX_Voice Mixer VoiceMMode1", 0);
-        setMixerValueByName(mixer, "VoiceMMode1_Tx Mixer SLIM_7_TX_MMode1", 0);
-        setMixerValueByName(mixer, "SLIM_7_RX_Voice Mixer VoiceMMode2", 0);
-        setMixerValueByName(mixer, "VoiceMMode2_Tx Mixer SLIM_7_TX_MMode2", 0);
-
-        if (strcmp(slot, "0") == 0) {
-            setMixerValueByName(mixer, "QUIN_MI2S_RX_Voice Mixer VoiceMMode1", 1);
-            setMixerValueByName(mixer, "VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1", 1);
-            setMixerValueByName(mixer, "QUIN_MI2S_RX_Voice Mixer VoiceMMode1", 0);
-            setMixerValueByName(mixer, "VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1", 0);
-            setMixerValueByName(mixer, "QUIN_MI2S_RX_Voice Mixer VoiceMMode1", 1);
-            setMixerValueByName(mixer, "VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1", 1);
-        } else if (strcmp(slot, "1") == 0) {
-            setMixerValueByName(mixer, "QUIN_MI2S_RX_Voice Mixer VoiceMMode2", 1);
-            setMixerValueByName(mixer, "VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2", 1);
-            setMixerValueByName(mixer, "QUIN_MI2S_RX_Voice Mixer VoiceMMode2", 0);
-            setMixerValueByName(mixer, "VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2", 0);
-            setMixerValueByName(mixer, "QUIN_MI2S_RX_Voice Mixer VoiceMMode2", 1);
-            setMixerValueByName(mixer, "VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2", 1);
-        }
-    }
-
-    mixer_close(mixer);
-}
-
 void setEarpieceVoipMixers(bool enabled) {
     const auto mixer = mixer_open(0);
 
@@ -420,18 +320,14 @@ void setBTVoipMixers(bool enabled) {
     mixer_close(mixer);
 }
 
-void fixupMixers(int state) {
-    char a2dpcall[92];
+void fixupMixers() {
     char simslot[92];
     char voipdevice[92];
-    char callswitched[92];
     const char *ampstatus;
     int voipstatus, btvoipstatus;
 
-    property_get("vendor.audio.a2dp.connected", a2dpcall, "false");
     property_get("vendor.calls.slotid", simslot, "-1");
     property_get("vendor.audio.voip.device", voipdevice, "none");
-    property_get("vendor.audio.call.switched", callswitched, "false");
 
     voipstatus = getMixerValueByName("QUIN_MI2S_RX_Voice Mixer Voip");
     ampstatus = getMixerValueString("TAS256X RECEIVER ENABLE LEFT");
@@ -440,19 +336,6 @@ void fixupMixers(int state) {
     ALOGD("ampstatus is %s", ampstatus);
     ALOGD("voipstatus is %d", voipstatus);
     ALOGD("bluetooth VoIP status is %d", btvoipstatus);
-
-    // BT in-call
-    if (strcmp(simslot, "0") == 0 || strcmp(simslot, "1") == 0) {
-        ALOGD("In phone call");
-        if (strcmp(a2dpcall, "true") == 0 && state == 1) {
-            ALOGD("In BT phone call");
-            setBTincall(true, simslot);
-        } else if (strcmp(a2dpcall, "true") == 0 && state == 2 && strcmp(callswitched, "true") == 0) {
-            setBTincall(false, simslot);
-        }
-    } else if (state == 3) {
-        setBTincall(false, simslot);
-    }
 
     // VoIP call
     if (voipstatus == 1 || btvoipstatus == 1) {
@@ -489,24 +372,9 @@ Result ParametersUtil::setParametersImpl(const hidl_vec<ParameterValue>& context
             params.add(String8("g_sco_samplerate"),
                        String8(parameters[i].value == AudioParameter::valueOn ? "16000" : "8000"));
         }
-        if (parameters[i].key == "a2dp_call" || parameters[i].key == "A2dpSuspended") {
-            if (parameters[i].value == "1" || parameters[i].value == "true") {
-                fixupMixers(1);
-            }
-        }
         if (parameters[i].key == "voip_call") {
             if (parameters[i].value == "1") {
-                fixupMixers(0);
-            }
-        }
-        if (parameters[i].key == "BT_SCO") {
-            if (parameters[i].value == "off") {
-                fixupMixers(2);
-            }
-        }
-        if (parameters[i].key == "reset_a2dp") {
-            if (parameters[i].value == "1") {
-               fixupMixers(3);
+                fixupMixers();
             }
         }
         params.add(String8(parameters[i].key.c_str()), String8(parameters[i].value.c_str()));
@@ -519,14 +387,6 @@ Result ParametersUtil::setParam(const char* name, const DeviceAddress& address) 
     char halDeviceAddress[AUDIO_DEVICE_MAX_ADDRESS_LEN];
     if (CoreUtils::deviceAddressToHal(address, &halDeviceType, halDeviceAddress) != NO_ERROR) {
         return Result::INVALID_ARGUMENTS;
-    }
-    if (halDeviceType == AUDIO_DEVICE_OUT_BLUETOOTH_A2DP || halDeviceType == AUDIO_DEVICE_OUT_BLUETOOTH_SCO
-        || halDeviceType == AUDIO_DEVICE_IN_BLUETOOTH_SCO_HEADSET) {
-        if (strcmp(name, "connect") == 0) {
-            property_set("vendor.audio.a2dp.connected", "true");
-        } else if (strcmp(name, "disconnect") == 0) {
-            property_set("vendor.audio.a2dp.connected", "false");
-        }
     }
     AudioParameter params{String8(halDeviceAddress)};
     params.addInt(String8(name), halDeviceType);
