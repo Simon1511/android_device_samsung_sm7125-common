@@ -43,7 +43,6 @@ cc_defaults {
         "libmemunreachable",
         "libutils",
         "android.hardware.audio.common-util",
-        "libtinyalsa",
     ],
 
     header_libs: [
@@ -70,7 +69,6 @@ cc_library_shared {
         "android.hardware.audio.common@2.0",
         "android.hardware.audio.common@2.0-util",
         "libcutils",
-        "libtinyalsa",
     ],
     cflags: [
         "-DMAJOR_VERSION=2",
@@ -89,7 +87,6 @@ cc_library_shared {
         "android.hardware.audio.common@4.0",
         "android.hardware.audio.common@4.0-util",
         "libcutils",
-        "libtinyalsa",
     ],
     cflags: [
         "-DMAJOR_VERSION=4",
@@ -107,7 +104,6 @@ cc_library_shared {
         "android.hardware.audio.common@5.0",
         "android.hardware.audio.common@5.0-util",
         "libcutils",
-        "libtinyalsa",
     ],
     cflags: [
         "-DMAJOR_VERSION=5",
@@ -125,7 +121,6 @@ cc_library_shared {
         "android.hardware.audio.common@6.0",
         "android.hardware.audio.common@6.0-util",
         "libcutils",
-        "libtinyalsa",
     ],
     cflags: [
         "-DMAJOR_VERSION=6",
@@ -145,7 +140,6 @@ cc_library_shared {
         "android.hardware.audio.common@7.0-util",
         "libbase",
         "libcutils",
-        "libtinyalsa",
     ],
     cflags: [
         "-DMAJOR_VERSION=7",
@@ -166,7 +160,6 @@ cc_library_shared {
         "android.hardware.audio.common@7.1-util",
         "libbase",
         "libcutils",
-        "libtinyalsa",
     ],
     cflags: [
         "-DMAJOR_VERSION=7",

@@ -1,5 +1,2 @@
-# Audio
-system_public_prop(vendor_samsung_audio_prop)
-
 # Fingerprint
 system_public_prop(vendor_fingerprint_prop)
