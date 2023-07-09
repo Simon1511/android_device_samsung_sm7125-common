@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "41d2795c_f25aac97",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-07-09T08:37:39Z",
+      "side": 1,
+      "message": "Not tested yet, might give improvements due to not being gunzip compressed?",
+      "revId": "e2e6a7b1ee75d3db83145d864204d8ff6a44725a",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
