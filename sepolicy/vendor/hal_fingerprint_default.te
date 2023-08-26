@@ -12,10 +12,6 @@ allow hal_fingerprint_default biometrics_efs_file:file r_file_perms;
 allow hal_fingerprint_default biometrics_efs_file:dir search;
 allow hal_fingerprint_default efs_file:dir search;
 
-# /sys/class/lcd/panel/mask_brightness
-allow hal_fingerprint_default sysfs_lcd_writable:dir search;
-allow hal_fingerprint_default sysfs_lcd_writable:file rw_file_perms;
-
 # /sys/class/fingerprint/
 allow hal_fingerprint_default sysfs_fingerprint:dir r_dir_perms;
 allow hal_fingerprint_default sysfs_fingerprint:file r_file_perms;
@@ -23,7 +19,3 @@ allow hal_fingerprint_default sysfs_fingerprint:file r_file_perms;
 # /data/vendor/biometrics/*
 allow hal_fingerprint_default biometrics_vendor_data_file:file create_file_perms;
 allow hal_fingerprint_default biometrics_vendor_data_file:dir { read write open add_name create rmdir remove_name search };
-
-# /sys/class/sec/tsp/
-allow hal_fingerprint_default sysfs_sec_touchscreen:dir search;
-allow hal_fingerprint_default sysfs_touchscreen_writable:file { write open getattr };
