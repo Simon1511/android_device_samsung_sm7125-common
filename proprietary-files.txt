@@ -116,6 +116,8 @@ vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libswspatializer.so
+system_ext/etc/permissions/audiosphere.xml
+system_ext/framework/audiosphere.jar
 
 # Audio Firmware
 vendor/firmware/dax_param.bin
