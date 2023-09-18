@@ -5,7 +5,7 @@
     <globalConfiguration speaker_drc_enabled="false" call_screen_mode_supported="true"/>
 
     <modules>
-        <module name="primary" halVersion="2.0">
+        <module name="primary" halVersion="3.0">
             <attachedDevices>
                 <item>Earpiece</item>
                 <item>Speaker</item>
