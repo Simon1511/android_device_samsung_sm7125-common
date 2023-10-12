@@ -48,6 +48,30 @@
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c629e1d1_a887403f",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 196,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-12T16:27:07Z",
+      "side": 1,
+      "message": "Would preferably keep it as-is",
+      "parentUuid": "7edfb32a_203905ef",
+      "range": {
+        "startLine": 195,
+        "startChar": 0,
+        "endLine": 196,
+        "endChar": 35
+      },
+      "revId": "fbdc30d14c7ac16a2ccf43aff7885a91bc52339c",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7f53dd55_ad7e0006",
