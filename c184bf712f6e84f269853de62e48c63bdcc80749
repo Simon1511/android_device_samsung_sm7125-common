@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d85b7650_ebb9d23c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-12T13:56:45Z",
+      "side": 1,
+      "message": "sm7125-common",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 8
+      },
+      "revId": "c184bf712f6e84f269853de62e48c63bdcc80749",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7d515822_12c42c1b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-12T13:56:45Z",
+      "side": 1,
+      "message": "sm7125-common",
+      "range": {
+        "startLine": 12,
+        "startChar": 15,
+        "endLine": 12,
+        "endChar": 29
+      },
+      "revId": "c184bf712f6e84f269853de62e48c63bdcc80749",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b9b31415_3e3f7883",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-12T13:56:45Z",
+      "side": 1,
+      "message": "audio/configs",
+      "range": {
+        "startLine": 12,
+        "startChar": 29,
+        "endLine": 12,
+        "endChar": 42
+      },
+      "revId": "c184bf712f6e84f269853de62e48c63bdcc80749",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2c4d6c33_14efd12e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-12T13:56:45Z",
+      "side": 1,
+      "message": "remove",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 85
+      },
+      "revId": "c184bf712f6e84f269853de62e48c63bdcc80749",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ee018d7f_9fefe824",
+        "filename": "audio/configs/audio_policy_configuration.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 245,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-12T13:56:45Z",
+      "side": 1,
+      "message": "We removed this before: https://github.com/Simon1511/android_device_samsung_sm7125-common/commit/fd171990bc5660a6a6453a5776f0d6653e4da50e",
+      "range": {
+        "startLine": 244,
+        "startChar": 0,
+        "endLine": 245,
+        "endChar": 72
+      },
+      "revId": "c184bf712f6e84f269853de62e48c63bdcc80749",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "574397b9_d5693cb7",
+        "filename": "common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-12T13:56:45Z",
+      "side": 1,
+      "message": "remove",
+      "range": {
+        "startLine": 91,
+        "startChar": 0,
+        "endLine": 91,
+        "endChar": 163
+      },
+      "revId": "c184bf712f6e84f269853de62e48c63bdcc80749",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
