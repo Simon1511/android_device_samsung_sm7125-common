@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "df4279ca_7a53be5f",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 196,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-12T13:52:31Z",
+      "side": 1,
+      "message": "this is set in device-specific trees already",
+      "range": {
+        "startLine": 195,
+        "startChar": 0,
+        "endLine": 196,
+        "endChar": 35
+      },
+      "revId": "fbdc30d14c7ac16a2ccf43aff7885a91bc52339c",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7f53dd55_ad7e0006",
+        "filename": "audio/configs/audio_effects.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 227,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-12T13:52:31Z",
+      "side": 1,
+      "message": "We removed this before: https://github.com/Simon1511/android_device_samsung_sm7125-common/commit/d8dd60abf9293b0c214f8d1166b244e09f1828af",
+      "range": {
+        "startLine": 224,
+        "startChar": 0,
+        "endLine": 227,
+        "endChar": 3
+      },
+      "revId": "fbdc30d14c7ac16a2ccf43aff7885a91bc52339c",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5fec22c_88fb9a65",
+        "filename": "audio/configs/audio_effects.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-12T13:52:31Z",
+      "side": 1,
+      "message": "same here",
+      "range": {
+        "startLine": 84,
+        "startChar": 8,
+        "endLine": 84,
+        "endChar": 100
+      },
+      "revId": "fbdc30d14c7ac16a2ccf43aff7885a91bc52339c",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
