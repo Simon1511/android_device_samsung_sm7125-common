@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a9a26ec4_a3f64e78",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-12T13:53:21Z",
+      "side": 1,
+      "message": "can maybe drop audio_effects.conf too...?",
+      "revId": "a346569a11a17ff78afa127d8b75af8f7ec86958",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
