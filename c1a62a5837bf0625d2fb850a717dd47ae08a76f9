@@ -16,6 +16,24 @@
       "message": "Stock doesn\u0027t use these, neither does any device that officially ships lineage",
       "revId": "c1a62a5837bf0625d2fb850a717dd47ae08a76f9",
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2ec98d6_4a31a311",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2023-10-12T15:10:20Z",
+      "side": 1,
+      "message": "Stock fw does ship these blobs though\nhttps://github.com/Simon1511/android_device_samsung_sm7125-common/blob/lineage-20/proprietary-files.txt#L111\nShouldnt be an issue since this is the case (in my opinion)",
+      "parentUuid": "61194f12_9d392fb6",
+      "revId": "c1a62a5837bf0625d2fb850a717dd47ae08a76f9",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     }
   ]
 }
