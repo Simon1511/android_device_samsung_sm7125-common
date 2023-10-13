@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9909dabd_c9bc94bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-13T12:00:33Z",
+      "side": 1,
+      "message": "no noticeable difference in audio quality here",
+      "revId": "e1709bffc30ce4a85ab5c1ab765fcc3fd60ad47c",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
