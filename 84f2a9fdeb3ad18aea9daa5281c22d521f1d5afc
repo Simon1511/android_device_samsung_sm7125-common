@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e64ec9b1_cc5c6d79",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2023-10-13T09:08:10Z",
+      "side": 1,
+      "message": "https://github.com/PixelExperience-Devices/device_samsung_a52q/commit/60ba8f7d3c478629bf286704c9f351cef43757d0\n\nhttps://github.com/PixelExperience-Devices/device_samsung_a72q/commit/08dff6a051fa43c8eeadc0feaa0c888ce036bbfa\n\n# Security patch\nVENDOR_SECURITY_PATCH :\u003d 2023-09-01",
+      "revId": "84f2a9fdeb3ad18aea9daa5281c22d521f1d5afc",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
