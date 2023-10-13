@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2066e530_16f80381",
+        "filename": "audio/configs/audio_policy_configuration.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-13T11:54:58Z",
+      "side": 1,
+      "message": "stock still uses 2.0 here, see audio_policy_configuration_base.xml.\nThe regular audio_policy_configuration.xml is ignored on stock",
+      "range": {
+        "startLine": 8,
+        "startChar": 8,
+        "endLine": 8,
+        "endChar": 49
+      },
+      "revId": "9ccc90641b22bac490f7aa709ea18420da05eef9",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
