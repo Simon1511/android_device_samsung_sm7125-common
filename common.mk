@@ -348,7 +348,8 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson
+    libjson \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # Radio
 PRODUCT_PACKAGES += \
