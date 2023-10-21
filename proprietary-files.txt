@@ -753,7 +753,7 @@ vendor/firmware/ipa_fws.mdt
 
 # Keymaster
 vendor/lib64/libkeymaster_helper.so
--vendor/lib64/libskeymaster4device.so
+-vendor/lib64/libskeymaster4device.so|2c921afc48d4d10a6ff50d7013af86fa09827f1a
 
 # Machine learning
 vendor/lib64/libreffeature.so
