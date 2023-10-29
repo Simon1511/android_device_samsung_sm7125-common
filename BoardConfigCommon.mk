@@ -143,13 +143,6 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
 
-# Camera
-SOONG_CONFIG_NAMESPACES += samsung_sm7125CameraVars
-SOONG_CONFIG_samsung_sm7125CameraVars += \
-    samsung_sm7125_model
-
-SOONG_CONFIG_samsung_sm7125CameraVars_samsung_sm7125_model := $(TARGET_DEVICE)
-
 # Keymaster
 TARGET_KEYMASTER_VARIANT := samsung
 
