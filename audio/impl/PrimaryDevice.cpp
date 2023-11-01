@@ -19,11 +19,6 @@
 #include "core/default/PrimaryDevice.h"
 #include "core/default/Util.h"
 
-#include <cutils/properties.h>
-#include <string.h>
-#include <chrono>
-#include <thread>
-
 #if MAJOR_VERSION >= 4
 #include <cmath>
 #endif
@@ -213,35 +208,6 @@ Return<Result> PrimaryDevice::setVoiceVolume(float volume) {
 }
 
 Return<Result> PrimaryDevice::setMode(AudioMode mode) {
-    /* On stock ROM Samsung sets the g_call_state and g_call_sim_slot audio parameters
-     * in the framework, breaking it on AOSP ROMs. For the audio params call_state and
-     * g_call_state 2 corresponds to CALL_ACTIVE and 1 to CALL_INACTIVE respectively.
-     * For the g_call_sim_slot parameter 0x01 describes SIM1 and 0x02 SIM2.
-     */
-
-    char simSlot[92];
-
-    // This prop returns either -1 (no SIM is calling),
-    // 0 (SIM1 is calling) or 1 (SIM2 is calling)
-    property_get("vendor.calls.slotid", simSlot, "");
-
-    // Wait until RIL reports which SIM is being used
-    while (strcmp(simSlot, "-1") == 0 && mode == AudioMode::IN_CALL) {
-        std::this_thread::sleep_for(std::chrono::milliseconds(50));
-        property_get("vendor.calls.slotid", simSlot, "");
-    }
-
-    if (strcmp(simSlot, "0") == 0) {
-        // SIM1
-        mDevice->halSetParameters("call_state=2;g_call_state=2;g_call_sim_slot=0x01");
-    } else if (strcmp(simSlot, "1") == 0) {
-        // SIM2
-        mDevice->halSetParameters("call_state=2;g_call_state=2;g_call_sim_slot=0x02");
-   } else if (strcmp(simSlot, "-1") == 0) {
-        // No call
-        mDevice->halSetParameters("call_state=1;g_call_state=1");
-    }
-
     // INVALID, CURRENT, CNT, MAX are reserved for internal use.
     // TODO: remove the values from the HIDL interface
     switch (mode) {
