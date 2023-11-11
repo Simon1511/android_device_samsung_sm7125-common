@@ -41,7 +41,5 @@ allow macloader sysfs_wifi:file r_file_perms;
 # /sys/kernel/boot_wlan
 allow macloader sysfs_wifi_writable:file { write open };
 
-set_prop(macloader, vendor_wifi_prop)
-
 # Don't set ro.vendor.wifi.sap.interface
 dontaudit macloader vendor_default_prop:property_service set;

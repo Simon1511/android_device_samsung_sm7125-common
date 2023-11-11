@@ -5,5 +5,4 @@ init_daemon_domain(audio_parameter_service)
 
 hal_client_domain(audio_parameter_service, hal_audio)
 
-get_prop(audio_parameter_service, vendor_call_prop)
 set_prop(audio_parameter_service, vendor_call_prop)
