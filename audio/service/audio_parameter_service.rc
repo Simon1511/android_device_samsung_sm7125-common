@@ -17,3 +17,5 @@ on property:vendor.calls.slotid=1 && property:vendor.calls.parameter_state=0
 
 on property:vendor.calls.slotid=-1 && property:vendor.calls.parameter_state=1
     setprop vendor.calls.parameter_state 0
+    stop audioserver
+    start audioserver
