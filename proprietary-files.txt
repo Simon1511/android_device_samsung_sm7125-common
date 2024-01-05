@@ -967,8 +967,8 @@ vendor/lib64/libnetmgr_common.so|9ffa3e00702aa3db43908cf44af70fb438aa5bd5
 vendor/lib/libqcmaputils.so|287f2558403918db436c39b39fa731ddda2235ee
 vendor/lib64/libqcmaputils.so|7ecfbdbec099854c60a6393ee7f568bedc28989b
 vendor/lib64/libengmode_client.so|a0d931e18a4e81a8de4169a419b187568d042708
-vendor/lib64/libsec-ril.so|83ec3554c733543d75148a045f51385868f308ad
-vendor/lib64/libsec-ril-dsds.so|bf3d12e806e343082aa2842517b45415d5b70498
+vendor/lib64/libsec-ril.so|5bc6b84fb09f11202d5bb61ca422bae351e9d0c7
+vendor/lib64/libsec-ril-dsds.so|12bc89df6348392265fc240d461dfdba114aa434
 vendor/lib64/libsecril-client.so|c49dbd56d93e00ccb3f008b955e81495573ff313
 vendor/lib/libril.so|b7759521aeb60a07b929e4ff53ba25338c4cd087
 vendor/lib64/libril.so|49d4eebf79faefd03b8378c3ed07cf44730a15ff
