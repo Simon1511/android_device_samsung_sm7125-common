@@ -1,4 +1,4 @@
-# All blobs are from A525FXXS5DWD1 (T), unless pinned
+# All blobs are from A525FXXU6EWL3 (U), unless pinned
 
 # ACDB
 vendor/lib/libacdb-fts.so
@@ -175,7 +175,6 @@ vendor/lib/libscveObjectTracker.so
 vendor/lib/libsmartfocusengine.so
 vendor/lib/libjpegQtable_interface.so
 vendor/lib/libdualcam_refocus_image.so
-vendor/lib/libFacePreProcessing.camera.samsung.so
 vendor/lib/libimagecodec_native.quram.so
 vendor/lib/libarcsoft_stereodistancemeasure.so
 vendor/lib/libHandGesture.camera.samsung.so
@@ -300,8 +299,8 @@ vendor/lib/libLocalTM_capture_core.camera.samsung.so
 vendor/lib/liblow_light_hdr.so
 vendor/lib/libdualcam_refocus_video.so
 vendor/lib/libvdis_core.so
-vendor/lib/unihal_main@2.1.so
-vendor/lib/unihal_cutils@2.1.so
+vendor/lib/unihal_main@2.15.so
+vendor/lib/unihal_cutils@2.15.so
 vendor/lib/unihal_uniplugin@1.0.so
 vendor/lib/libface_landmark.arcsoft.so
 vendor/lib64/libsuper_night_interface.so
@@ -316,7 +315,6 @@ vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libsmartfocusengine.so
 vendor/lib64/libjpegQtable_interface.so
 vendor/lib64/libdualcam_refocus_image.so
-vendor/lib64/libFacePreProcessing.camera.samsung.so
 vendor/lib64/libimagecodec_native.quram.so
 vendor/lib64/libHandGesture.camera.samsung.so
 vendor/lib64/libhand_interaction.uniplugin@1.0.so
@@ -435,8 +433,8 @@ vendor/lib64/libmpbase.so
 vendor/lib64/libLocalTM_capture_core.camera.samsung.so
 vendor/lib64/liblow_light_hdr.so
 vendor/lib64/libvdis_core.so
-vendor/lib64/unihal_main@2.1.so
-vendor/lib64/unihal_cutils@2.1.so
+vendor/lib64/unihal_main@2.15.so
+vendor/lib64/unihal_cutils@2.15.so
 vendor/lib64/unihal_uniplugin@1.0.so
 vendor/lib64/libface_landmark.arcsoft.so
 vendor/firmware/CAMERA_ICP.elf
@@ -522,7 +520,7 @@ system_ext/lib/vendor.qti.hardware.fm@1.0.so
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Gatekeeper
-vendor/lib64/hw/gatekeeper.mdfpp.so|b4141d6c0e115f82c3d5fb9d5b0ad7a1b888b2cd
+vendor/lib64/hw/gatekeeper.mdfpp.so|5a16f16d118cdaa990b6b7924b94c419d366d624
 
 # GPS
 -vendor/app/CACertService/CACertService.apk
@@ -708,7 +706,7 @@ vendor/bin/hw/android.hardware.health@2.1-service-samsung
 vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
 -vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
 vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
-vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so|ca16e2899855991b3131a6fbfce8fecbedbd21b6
+vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so|c2fe30e1db417bf33262f4a126f4ee496499958a
 vendor/lib/vendor.samsung.hardware.health@2.0.so
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
@@ -742,7 +740,7 @@ vendor/firmware/ipa_fws.mdt
 
 # Keymaster
 vendor/lib64/libkeymaster_helper.so
--vendor/lib64/libskeymaster4device.so|2c921afc48d4d10a6ff50d7013af86fa09827f1a
+-vendor/lib64/libskeymaster4device.so|e4dcee6306be79bb3ca271466afeabd1b0b966d5
 
 # Machine learning
 vendor/lib64/libreffeature.so

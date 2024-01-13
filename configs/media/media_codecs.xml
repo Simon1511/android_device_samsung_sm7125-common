@@ -198,7 +198,8 @@ Only the three quirks included above are recognized at this point:
             <Limit name="blocks-per-second" min="36" max="48600" />
             <Limit name="bitrate" range="1-2000000" />
             <Limit name="frame-rate" range="1-30" />
-             <Feature name="can-swap-width-height" required="true" />
+            <Feature name="can-swap-width-height" required="true" />
+            <Attribute name="software-codec" />
             <Limit name="concurrent-instances" max="16" />
             <Limit name="performance-point-864x480" value="30" />
             <Limit name="performance-point-720x480" value="30" />
@@ -216,10 +217,22 @@ Only the three quirks included above are recognized at this point:
              <Limit name="frame-rate" range="1-30" />
              <Attribute name="software-codec" />
              <Feature name="can-swap-width-height" required="true" />
+             <Attribute name="software-codec" />
              <Limit name="concurrent-instances" max="16" />
              <Limit name="performance-point-864x480" value="30" />
              <Limit name="performance-point-720x480" value="30" />
              <Limit name="performance-point-720x576" value="25" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.av1.encoder" type="video/av01" enabled="false" minsdk="34" update="true">
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="size" min="2x2" max="720x720" />
+            <Limit name="block-count" range="1-1350" /> <!-- max 720x480 -->
+            <Limit name="bitrate" range="1-5000000" />
+            <Limit name="quality" range="0-100"  default="80" />
+            <Limit name="complexity" range="0-5"  default="0" />
+            <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
+            <Attribute name="software-codec" />
         </MediaCodec>
     </Encoders>
     <Decoders>
