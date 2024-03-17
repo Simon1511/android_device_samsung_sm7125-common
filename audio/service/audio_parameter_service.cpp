@@ -38,7 +38,7 @@ int main() {
     if (audioDevice != nullptr) {
         std::string value = "";
 
-        if (strcmp(GetProperty("vendor.calls.slotid", "-1").c_str(), "1") == 0) {
+        if (strcmp(GetProperty("vendor.calls.slot_id1", "0").c_str(), "1") == 0) {
             // SIM 2
             value = "0x02";
         }

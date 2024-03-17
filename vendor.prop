@@ -177,7 +177,6 @@ ro.vendor.extension_library=libqti-perfd-client.so
 
 # RIL
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
-vendor.sec.rild.libpath2=/vendor/lib64/libsec-ril-dsds.so
 persist.vendor.radio.atfwd.start=true
 ro.vendor.sec.radio.def_network=9
 persist.vendor.radio.enableadvancedscan=true
