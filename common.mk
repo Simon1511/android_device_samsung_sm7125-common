@@ -358,7 +358,8 @@ PRODUCT_PACKAGES += \
     libxml2 \
     librilutils \
     librmnetctl \
-    secril_config_svc
+    secril_config_svc \
+    sehradiomanager
 
 # Sensors
 PRODUCT_PACKAGES += \
