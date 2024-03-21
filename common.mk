@@ -379,10 +379,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.sm7125
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
