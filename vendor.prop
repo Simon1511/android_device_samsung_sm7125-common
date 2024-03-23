@@ -161,6 +161,9 @@ ro.opengles.version=196610
 ro.vendor.fingerprint.request_touch_event=true
 ro.vendor.fingerprint.type=udfps_optical
 
+# FRP
+ro.frp.pst=/dev/block/persistent
+
 # Gatekeeper
 ro.hardware.gatekeeper=mdfpp
 
