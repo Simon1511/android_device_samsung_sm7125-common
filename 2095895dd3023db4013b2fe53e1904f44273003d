@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eff03270_8d5bcb99",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-03-23T15:13:35Z",
+      "side": 1,
+      "message": "Not needed, https://review.simon1511.de/c/android_device_samsung_sm7325-common/+/2415 is enough (even though Linux4 doesnt like it)",
+      "revId": "2095895dd3023db4013b2fe53e1904f44273003d",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
