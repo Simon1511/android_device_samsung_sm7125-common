@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "06623380_d65947f1",
+        "filename": "extract-files.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-03-24T13:19:00Z",
+      "side": 1,
+      "message": "check if correct",
+      "range": {
+        "startLine": 67,
+        "startChar": 12,
+        "endLine": 67,
+        "endChar": 168
+      },
+      "revId": "a7ff946f1b21a632e9d97564337591e4f3a5e7ee",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0a47bed2_062274b3",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 935,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-03-24T13:19:00Z",
+      "side": 1,
+      "message": "pin",
+      "range": {
+        "startLine": 935,
+        "startChar": 1,
+        "endLine": 935,
+        "endChar": 27
+      },
+      "revId": "a7ff946f1b21a632e9d97564337591e4f3a5e7ee",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
