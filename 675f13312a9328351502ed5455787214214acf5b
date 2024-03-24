@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fe997154_6d8c07ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2024-03-24T13:46:52Z",
+      "side": 1,
+      "message": "duplicate of \nhttps://review.simon1511.de/c/android_device_samsung_sm7125-common/+/2384",
+      "revId": "675f13312a9328351502ed5455787214214acf5b",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
