@@ -19,3 +19,6 @@ allow hal_fingerprint_default sysfs_fingerprint:file r_file_perms;
 # /data/vendor/biometrics/*
 allow hal_fingerprint_default biometrics_vendor_data_file:file create_file_perms;
 allow hal_fingerprint_default biometrics_vendor_data_file:dir { read write open add_name create rmdir remove_name search };
+
+# /sys/class/lcd/panel/
+allow hal_fingerprint_default sysfs_lcd_writable:file r_file_perms;
