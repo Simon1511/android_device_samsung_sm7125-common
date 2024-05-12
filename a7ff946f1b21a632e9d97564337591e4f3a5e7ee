@@ -24,6 +24,30 @@
       "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "771ba926_90d7e433",
+        "filename": "extract-files.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-05-12T17:25:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "06623380_d65947f1",
+      "range": {
+        "startLine": 67,
+        "startChar": 12,
+        "endLine": 67,
+        "endChar": 168
+      },
+      "revId": "a7ff946f1b21a632e9d97564337591e4f3a5e7ee",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0a47bed2_062274b3",
