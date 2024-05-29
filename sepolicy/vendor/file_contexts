@@ -50,7 +50,7 @@
 # VENDOR
 /(vendor|system/vendor)/bin/factory\.ssc                                                                    u:object_r:factory_ssc_exec:s0
 /(vendor|system/vendor)/bin/hw/macloader                                                                    u:object_r:macloader_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider@2\.5-service\.samsung                    u:object_r:hal_camera_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider-service_32\.samsung                      u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@[0-9]\.[0-9]-service\.widevine                        u:object_r:hal_drm_widevine_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@[0-9]\.[0-9]-service\.samsung                   u:object_r:hal_keymaster_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power(@[0-9]\.[0-9])?-service\.pixel-libperfmgr           u:object_r:hal_power_default_exec:s0
