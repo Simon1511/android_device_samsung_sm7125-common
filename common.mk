@@ -72,7 +72,8 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
-    libvolumelistener
+    libvolumelistener \
+    libprocessgroup.vendor \
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/audio/configs/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
@@ -101,7 +102,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service.samsung \
     libgrallocusage.vendor \
-    vendor.qti.hardware.camera.device@1.0.vendor \
+    vendor.qti.hardware.camera.device@1.0.vendor
 
 # CAS
 PRODUCT_PACKAGES += \
@@ -336,10 +337,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-# QMI
+# QCOM
 PRODUCT_PACKAGES += \
     libjson \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
+    libprotobuf-cpp-lite-3.9.1-vendorcompat \
+    libsqlite.vendor
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -358,7 +360,8 @@ PRODUCT_PACKAGES += \
     librilutils \
     librmnetctl \
     secril_config_svc \
-    sehradiomanager
+    sehradiomanager \
+    libjsoncpp.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -373,7 +376,8 @@ PRODUCT_COPY_FILES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor \
-    android.frameworks.cameraservice.service@2.1.vendor
+    android.frameworks.cameraservice.service@2.1.vendor \
+    libcamera_metadata.vendor
 
 # Touch features
 PRODUCT_PACKAGES += \
