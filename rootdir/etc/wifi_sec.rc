@@ -37,9 +37,10 @@ on post-fs-data
     chmod 0640 /sys/wifi/feature
 
     # for WIFI MAC
-    mkdir /mnt/vendor/efs/wifi 0755 wifi wifi
-    chown wifi wifi /mnt/vendor/efs/wifi/.mac.info
-    chmod 0644 /mnt/vendor/efs/wifi/.mac.info
+    mkdir /mnt/vendor/efs/wifi 0775 system wifi
+    chmod 0775 /mnt/vendor/efs/wifi
+    chown system wifi /mnt/vendor/efs/wifi/.mac.info
+    chmod 0664 /mnt/vendor/efs/wifi/.mac.info
     chown wifi wifi /mnt/vendor/efs/wifi/.mac.cob
     chmod 0644 /mnt/vendor/efs/wifi/.mac.cob
     chown wifi wifi /sys/wifi/mac_addr

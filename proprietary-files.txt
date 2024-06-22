@@ -1,4 +1,4 @@
-# All blobs are from A525FXXU6EWL3 (U), unless pinned
+# All blobs are from A525FXXS7FXE2 (U), unless pinned
 
 # ACDB
 vendor/lib/libacdb-fts.so
