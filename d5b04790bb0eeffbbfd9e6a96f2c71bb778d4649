@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a32641e_bf6368af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-06-22T10:42:13Z",
+      "side": 1,
+      "message": "libqmiservices-ext and -sem-ext removed",
+      "revId": "d5b04790bb0eeffbbfd9e6a96f2c71bb778d4649",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
