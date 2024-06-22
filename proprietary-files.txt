@@ -1,4 +1,4 @@
-# All blobs are from A525FXXU6EWL3 (U), unless pinned
+# All blobs are from A525FXXS7FXE2 (U), unless pinned
 
 # ACDB
 vendor/lib/libacdb-fts.so
@@ -930,7 +930,7 @@ vendor/lib64/libdsi_netctrl.so
 vendor/lib/libqcmaputils.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libengmode_client.so
-vendor/lib64/libsec-ril.so|581c3cc3814bd3450f0228a9f3b46eab53a5ba09
+vendor/lib64/libsec-ril.so|a5e33da6edd1bfe0b4dc6ae90c6db6a34ea029fb
 vendor/lib64/libsecril-client.so
 vendor/lib64/libril_sem.so
 vendor/lib64/libSemTelephonyProps.so
