@@ -1,0 +1,1 @@
+allow charger_vendor sysfs_battery:file r_file_perms;

@@ -7,9 +7,6 @@ vendor.samsung.hardware.bluetooth.audio::ISehBluetoothAudioProvidersFactory     
 # GNSS
 vendor.samsung.hardware.gnss::ISehGnss                                                      u:object_r:hal_gnss_hwservice:s0
 
-# Health
-vendor.samsung.hardware.health::ISehHealth                                                  u:object_r:hal_health_hwservice:s0
-
 # RIL
 vendor.samsung.hardware.radio.bridge::ISehBridge                                            u:object_r:hal_telephony_hwservice:s0
 vendor.samsung.hardware.radio::ISehRadio                                                    u:object_r:hal_telephony_hwservice:s0
