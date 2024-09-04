@@ -22,7 +22,7 @@ cc_library_static {
     include_dirs: [
         "system/libbase/include",
         "bootable/recovery",
-        "bootable/recovery/edify/include",
+        "bootable/deprecated-ota/edify/include",
         "bootable/recovery/otautil/include"
     ],
 }
