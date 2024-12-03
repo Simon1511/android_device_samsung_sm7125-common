@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2e3c9ba6_a44fcf84",
+        "filename": "common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-12-03T16:50:37Z",
+      "side": 1,
+      "message": "Thats already set here",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 23
+      },
+      "revId": "2e3f8ddf61d65aeb853820d6a4c0678c7ff7e60f",
+      "serverId": "f2ad53df-6715-461d-bac1-42871177773f"
+    }
+  ]
+}
