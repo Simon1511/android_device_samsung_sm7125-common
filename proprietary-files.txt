@@ -1,4 +1,4 @@
-# All blobs are from A525FXXS7FXE2 (U), unless pinned
+# All blobs are from A525FXXUAFXL2 (U), unless pinned
 
 # ACDB
 vendor/lib/libacdb-fts.so
@@ -496,8 +496,8 @@ vendor/lib/liboemcrypto.so
 vendor/lib64/liboemcrypto.so
 vendor/lib/libtrustedapploader.so
 vendor/lib64/libtrustedapploader.so
-vendor/lib/libwvhidl.so|b2000f7c3059eb3006f86ea94d11ed0011506995
-vendor/lib/mediadrm/libwvdrmengine.so|c298713070699c0e70ff067ad11d79d58906ec93
+vendor/lib/libwvhidl.so|751ddea8edd3d50e010a62cdfa3ed86293f6ce7c
+vendor/lib/mediadrm/libwvdrmengine.so|5ecaaa08b83aed7b9368fd47bf4066a00a92d939
 
 # Feature
 vendor/lib/libsemnativecarrierfeature.so
@@ -903,7 +903,7 @@ vendor/lib64/libdsi_netctrl.so
 vendor/lib/libqcmaputils.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libengmode_client.so
-vendor/lib64/libsec-ril.so|a5e33da6edd1bfe0b4dc6ae90c6db6a34ea029fb
+vendor/lib64/libsec-ril.so|8064276c21564763ab7a36bdfad0b81a771a6f5e
 vendor/lib64/libsecril-client.so
 vendor/lib64/libril_sem.so
 vendor/lib64/libSemTelephonyProps.so
