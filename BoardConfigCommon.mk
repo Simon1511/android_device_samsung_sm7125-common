@@ -151,7 +151,6 @@ TARGET_KEYMASTER_VARIANT := samsung
 
 # FOD
 TARGET_SURFACEFLINGER_UDFPS_LIB := //$(COMMON_PATH):libudfps_extension.sm7125
-TARGET_USES_FOD_ZPOS := true
 TARGET_SEC_FP_REQUEST_FORCE_CALIBRATE := true
 TARGET_SEC_FP_REQUEST_TOUCH_EVENT := true
 
@@ -182,8 +181,10 @@ TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
-# Display
-TARGET_USES_HWC2 := true
+# Graphics
+$(call soong_config_set,qtidisplay,udfps,true)
+
+# Media
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
 
