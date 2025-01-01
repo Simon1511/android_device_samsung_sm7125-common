@@ -27,8 +27,6 @@ vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libsnpe_wrapper.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libVC1Dec.so
@@ -36,12 +34,12 @@ vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
-vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libdsp_streamer_skel.so
 vendor/lib/rfsa/adsp/libcamera_nn_skel.so
 vendor/lib/rfsa/adsp/libcvpdsp_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
+vendor/lib/libc++_shared.so
+vendor/lib64/libc++_shared.so
 
 # Audio
 vendor/lib/btaudio_offload_if.so
@@ -67,24 +65,23 @@ vendor/lib/lib_soundaliveresampler.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib/librecordalive.so
 vendor/lib/lib_SamsungRec_07010.so
-vendor/lib/libexthwplugin.so
-vendor/lib/libsndmonitor.so
-vendor/lib/libbatterylistener.so
-vendor/lib/liba2dpoffload.so
+vendor/lib/libexthwplugin.so;MODULE_SUFFIX=_vendor
+vendor/lib/libsndmonitor.so;MODULE_SUFFIX=_vendor
+vendor/lib/libbatterylistener.so;MODULE_SUFFIX=_vendor
+vendor/lib/liba2dpoffload.so;MODULE_SUFFIX=_vendor
 vendor/lib/libadm.so
-vendor/lib/libcomprcapture.so
-vendor/lib/libhdmiedid.so
-vendor/lib/libhdmipassthru.so
-vendor/lib/libhfp.so
+vendor/lib/libcomprcapture.so;MODULE_SUFFIX=_vendor
+vendor/lib/libhdmiedid.so;MODULE_SUFFIX=_vendor
+vendor/lib/libhdmipassthru.so;MODULE_SUFFIX=_vendor
+vendor/lib/libhfp.so;MODULE_SUFFIX=_vendor
 vendor/lib/libqtigef.so
 vendor/lib64/libqtigef.so
-vendor/lib/libcirrusspkrprot.so
+vendor/lib/libcirrusspkrprot.so;MODULE_SUFFIX=_vendor
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/libdrc.so
-vendor/lib/libspkrprot.so
+vendor/lib/libspkrprot.so;MODULE_SUFFIX=_vendor
 vendor/lib/libprofileparamstorage.so
 vendor/lib/libspatializerparamstorage.so
-vendor/lib64/libspatializerparamstorage.so
 vendor/lib/spatializer-aidl-V1-cpp.so
 vendor/lib64/spatializer-aidl-V1-cpp.so
 
@@ -110,12 +107,6 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libswspatializer.so
-vendor/lib64/soundfx/libqcvirt.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libqcreverb.so
-vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libswspatializer.so
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 
@@ -149,8 +140,6 @@ vendor/lib/libidl.so
 vendor/lib64/libidl.so
 vendor/lib/com.qualcomm.qti.ant@1.0.so
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
-vendor/lib/libqti_vndfwk_detect.so
-vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib/libbthost_if.so
 vendor/lib64/libbthost_if.so
 
@@ -173,7 +162,6 @@ vendor/lib/libHprFace_GAE_api.camera.samsung.so
 vendor/lib/libcamxswprocessalgo.so
 vendor/lib/libscveObjectTracker.so
 vendor/lib/libsmartfocusengine.so
-vendor/lib/libjpegQtable_interface.so
 vendor/lib/libdualcam_refocus_image.so
 vendor/lib/libimagecodec_native.quram.so
 vendor/lib/libarcsoft_stereodistancemeasure.so
@@ -185,14 +173,12 @@ vendor/lib/libcamxstatscore.so
 vendor/lib/libexifa.camera.samsung.so
 vendor/lib/libcamxfdengine.so
 vendor/lib/libarcsoft_super_night_raw.so
-vendor/lib/libjpegencoder_sw.unifunc.so
 vendor/lib/hw/camera.unihal.default.so
 vendor/lib/libbeautyshot.arcsoft.so
 vendor/lib/libvideobeauty.arcsoft.so
 vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
 vendor/lib/libdualcapture.so
 vendor/lib/libfocuspeaking.so
-vendor/lib/libscaler_hw.unifunc.so
 vendor/lib/libFace_Landmark_API.camera.samsung.so
 vendor/lib/libOpenCv.camera.samsung.so
 vendor/lib/libscveCommon_stub.so
@@ -269,7 +255,6 @@ vendor/lib/libBeauty_v4.camera.samsung.so
 vendor/lib/libhypermotion_core.so
 vendor/lib/libsensorlistener.so
 vendor/lib/libvideobeauty_interface.so
-vendor/lib/libpadm.so
 vendor/lib/libfocuspeaking_interface.so
 vendor/lib/libimage_enhancement.arcsoft.so
 vendor/lib/libhigh_dynamic_range.so
@@ -299,7 +284,7 @@ vendor/lib/libLocalTM_capture_core.camera.samsung.so
 vendor/lib/liblow_light_hdr.so
 vendor/lib/libdualcam_refocus_video.so
 vendor/lib/libvdis_core.so
-vendor/lib/unihal_main@2.15.so
+vendor/lib/unihal_main@2.15.so;DISABLE_CHECKELF
 vendor/lib/unihal_cutils@2.15.so
 vendor/lib/unihal_uniplugin@1.0.so
 vendor/lib/libface_landmark.arcsoft.so
@@ -313,19 +298,16 @@ vendor/lib64/libHprFace_GAE_api.camera.samsung.so
 vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libsmartfocusengine.so
-vendor/lib64/libjpegQtable_interface.so
 vendor/lib64/libdualcam_refocus_image.so
 vendor/lib64/libimagecodec_native.quram.so
 vendor/lib64/libHandGesture.camera.samsung.so
 vendor/lib64/libhand_interaction.uniplugin@1.0.so
 vendor/lib64/libremosaic_daemon.so
 vendor/lib64/libarcsoft_picportrait_video.so
-vendor/lib64/libDLInterface.camera.samsung.so
 vendor/lib64/libcamxstatscore.so
 vendor/lib64/libexifa.camera.samsung.so
 vendor/lib64/libcamxfdengine.so
 vendor/lib64/libarcsoft_super_night_raw.so
-vendor/lib64/libjpegencoder_sw.unifunc.so
 vendor/lib64/hw/camera.unihal.default.so
 vendor/lib64/libbeautyshot.arcsoft.so
 vendor/lib64/libvideobeauty.arcsoft.so
@@ -333,7 +315,6 @@ vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/libdualcapture.so
 vendor/lib64/libfocuspeaking.so
-vendor/lib64/libscaler_hw.unifunc.so
 vendor/lib64/libFace_Landmark_API.camera.samsung.so
 vendor/lib64/libOpenCv.camera.samsung.so
 vendor/lib64/libscveCommon_stub.so
@@ -404,7 +385,6 @@ vendor/lib64/libBeauty_v4.camera.samsung.so
 vendor/lib64/libhypermotion_core.so
 vendor/lib64/libsensorlistener.so
 vendor/lib64/libvideobeauty_interface.so
-vendor/lib64/libpadm.so
 vendor/lib64/libfocuspeaking_interface.so
 vendor/lib64/libimage_enhancement.arcsoft.so
 vendor/lib64/libhigh_dynamic_range.so
@@ -433,7 +413,7 @@ vendor/lib64/libmpbase.so
 vendor/lib64/libLocalTM_capture_core.camera.samsung.so
 vendor/lib64/liblow_light_hdr.so
 vendor/lib64/libvdis_core.so
-vendor/lib64/unihal_main@2.15.so
+vendor/lib64/unihal_main@2.15.so;DISABLE_CHECKELF
 vendor/lib64/unihal_cutils@2.15.so
 vendor/lib64/unihal_uniplugin@1.0.so
 vendor/lib64/libface_landmark.arcsoft.so
@@ -508,9 +488,9 @@ vendor/lib/libsecnativefeature.so
 vendor/lib64/libsecnativefeature.so
 
 # FM
-vendor/lib/vendor.qti.hardware.fm@1.0.so
+vendor/lib/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 system_ext/lib/fm_helium.so
 system_ext/lib64/fm_helium.so
@@ -526,7 +506,7 @@ vendor/lib64/hw/gatekeeper.mdfpp.so|5a16f16d118cdaa990b6b7924b94c419d366d624
 -vendor/app/CACertService/CACertService.apk
 vendor/lib/libjnihelper.so
 vendor/lib64/libjnihelper.so
-vendor/bin/lowi-server
+vendor/bin/lowi-server;DISABLE_DEPS
 vendor/bin/xtra-daemon
 vendor/bin/loc_launcher
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
@@ -730,7 +710,7 @@ vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
 # Keymaster
-vendor/lib64/libkeymaster_helper.so
+vendor/lib64/libkeymaster_helper.so|78d06cca7d6d3aa94d5d243f09278acb288339a8
 -vendor/lib64/libskeymaster4device.so|e4dcee6306be79bb3ca271466afeabd1b0b966d5
 
 # Machine learning
@@ -898,13 +878,11 @@ vendor/etc/plmn_se13.bin
 vendor/etc/mtu-conf.xml
 vendor/lib/libconfigdb.so
 vendor/lib64/libconfigdb.so
-vendor/lib/libdsi_netctrl.so
-vendor/lib64/libdsi_netctrl.so
 vendor/lib/libqcmaputils.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libengmode_client.so
 vendor/lib64/libsec-ril.so|8064276c21564763ab7a36bdfad0b81a771a6f5e
-vendor/lib64/libsecril-client.so
+vendor/lib64/libsecril-client.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libril_sem.so
 vendor/lib64/libSemTelephonyProps.so
 vendor/lib64/libSemDataProps.so
