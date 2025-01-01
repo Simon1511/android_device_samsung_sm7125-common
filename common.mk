@@ -76,7 +76,8 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
     libvolumelistener \
-    libprocessgroup.vendor
+    libprocessgroup.vendor \
+    libqti_vndfwk_detect.vendor_32
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/audio/configs/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
