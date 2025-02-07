@@ -167,6 +167,9 @@ ro.hardware.gatekeeper=mdfpp
 ro.hardware.keystore=mdfpp
 ro.security.keystore.keytype=sakv2,gak
 
+# Media
+debug.stagefright.c2inputsurface=-1
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
