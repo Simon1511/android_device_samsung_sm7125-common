@@ -23,9 +23,6 @@ vendor/lib64/libadsprpc.so
 
 # ADSP modules
 vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
-vendor/lib64/libsnpe_dsp_domains_v2.so
-vendor/lib64/libSNPE.so
-vendor/lib64/libsnpe_wrapper.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
@@ -249,61 +246,6 @@ vendor/lib64/libscveCommon_stub.so
 vendor/lib64/libqcwrappercommon.so
 vendor/lib64/libscveObjectSegmentation_stub.so
 vendor/lib64/libcamxfdalgov8.so
-vendor/lib64/camera/com.samsung.sensormodule.8_1_lsi_s5kgd2_full.bin
-vendor/lib64/camera/com.samsung.sensormodule.8_0_sony_imx616_full.bin
-vendor/lib64/camera/com.samsung.tuned.lsi_s5kgd2.bin
-vendor/lib64/camera/com.samsung.sensormodule.8_1_lsi_s5kgd2_full_otp.bin
-vendor/lib64/camera/com.samsung.sensor.s5kgd2.so
-vendor/lib64/camera/com.samsung.sensor.imx616.so
-vendor/lib64/camera/com.samsung.sensor.s5kgw1p.so
-vendor/lib64/camera/com.samsung.sensor.gc5035_macro.so
-vendor/lib64/camera/com.samsung.sensormodule.1_0_sony_imx616.bin
-vendor/lib64/camera/com.samsung.tuned.sony_imx616.bin
-vendor/lib64/camera/com.qti.eeprom.n24s64b_imx616.so
-vendor/lib64/camera/com.samsung.sensormodule.1_1_lsi_s5kgd2.bin
-vendor/lib64/camera/com.samsung.sensormodule.1_1_lsi_s5kgd2_otp.bin
-vendor/lib64/camera/com.samsung.sensormodule.0_1_lsi_s5kgw1p.bin
-vendor/lib64/camera/com.samsung.sensor.imx682.so
-vendor/lib64/camera/com.samsung.sensormodule.2_1_hynix_hi1336.bin
-vendor/lib64/camera/components/com.wrapper.stats.aec.so
-vendor/lib64/camera/components/com.samsung.node.smooth_transition.so
-vendor/lib64/camera/components/com.qti.eisv3.so
-vendor/lib64/camera/components/com.samsung.node.capture_fusion.so
-vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
-vendor/lib64/camera/components/com.qti.stats.pdlibsony.so
-vendor/lib64/camera/components/com.samsung.node.capture_bokeh.so
-vendor/lib64/camera/components/com.qti.node.depth.so
-vendor/lib64/camera/components/com.qtistatic.stats.af.so
-vendor/lib64/camera/components/com.qti.node.dummyrtb.so
-vendor/lib64/camera/components/com.qti.node.stich.so
-vendor/lib64/camera/components/com.qti.eisv2.so
-vendor/lib64/camera/components/com.qti.stats.hafoverride.so
-vendor/lib64/camera/components/com.qti.node.fcv.so
-vendor/lib64/camera/components/com.qti.node.memcpy.so
-vendor/lib64/camera/components/com.samsung.node.bayercheck.so
-vendor/lib64/camera/components/com.qti.node.swregistration.so
-vendor/lib64/camera/components/com.wrapper.stats.pdlib.so
-vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
-vendor/lib64/camera/components/com.qti.node.eisv3.so
-vendor/lib64/camera/components/com.wrapper.stats.awb.so
-vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
-vendor/lib64/camera/components/libdepthmapwrapper.so
-vendor/lib64/camera/components/com.qti.stats.asd.so
-vendor/lib64/camera/components/com.wrapper.stats.af.so
-vendor/lib64/camera/components/com.qti.node.gpu.so
-vendor/lib64/camera/components/com.samsung.node.realtimebokeh.so
-vendor/lib64/camera/components/com.qti.node.dummysat.so
-vendor/lib64/camera/components/com.qtistatic.stats.aec.so
-vendor/lib64/camera/components/com.samsung.node.remosaic.so
-vendor/lib64/camera/components/com.qtistatic.stats.awb.so
-vendor/lib64/camera/components/com.samsung.node.bayerfuse.so
-vendor/lib64/camera/components/com.qti.node.eisv2.so
-vendor/lib64/camera/components/com.qti.stats.afd.so
-vendor/lib64/camera/com.samsung.sensormodule.2_0_lsi_s5k3l6.bin
-vendor/lib64/camera/com.samsung.sensor.s5k3l6.so
-vendor/lib64/camera/com.samsung.tuned.lsi_gc5035_macro.bin
-vendor/lib64/camera/com.qti.eeprom.sec2qcconversion.so
-vendor/lib64/camera/com.samsung.sensor.hi1336.so
 vendor/lib64/libcamxfdalgov7.so
 vendor/lib64/libsensorlistener.so
 vendor/lib64/libscveObjectSegmentation.so
@@ -680,12 +622,6 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
-
-# Protobuf
-vendor/lib/libprotobuf-cpp-full-3.9.1.so
-vendor/lib/libprotobuf-cpp-lite-3.9.1.so
-vendor/lib64/libprotobuf-cpp-full-3.9.1.so
-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
 
 # Public libraries
 vendor/etc/public.libraries.txt
