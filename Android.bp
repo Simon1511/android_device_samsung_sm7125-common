@@ -1,2 +1,9 @@
 soong_namespace {
 }
+
+prebuilt_hidl_interfaces {
+     name: "vendor.qti.hardware.iop",
+     interfaces: [
+        "vendor.qti.hardware.iop@2.0::IIop",
+     ],
+}
